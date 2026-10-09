@@ -1,0 +1,28 @@
+appId: com.openjm.mobile.fixture
+---
+- launchApp:
+    clearState: true
+- tapOn:
+    text: "Email"
+    index: 1
+- inputText: "avery@example.test"
+- hideKeyboard
+- tapOn:
+    text: "Password"
+    index: 1
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn: "Sign in"
+- tapOn:
+    text: "Verification code"
+    index: 1
+- assertNotVisible: "fictional-password"
+- inputText: "123456"
+- assertVisible: "123456"
+- takeScreenshot: fixture-r5-otp-keyboard
+- hideKeyboard
+- tapOn: "Verify and sign in"
+- scrollUntilVisible:
+    element: "Fixture conversation"
+    direction: DOWN
+- assertVisible: "Fixture conversation"

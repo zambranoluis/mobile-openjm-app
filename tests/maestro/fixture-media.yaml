@@ -1,0 +1,49 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Fixture conversation"
+- scrollUntilVisible:
+    element: "Create or view media"
+    direction: DOWN
+- tapOn: "Create or view media"
+- tapOn: "fixture-image"
+- tapOn:
+    text: "Media prompt"
+    index: 1
+- inputText: "A fictional hummingbird placeholder"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Generate image"
+    direction: DOWN
+- tapOn: "Generate image"
+- assertVisible: "queued"
+- tapOn: "Refresh media status"
+- assertVisible: "completed"
+- tapOn: "View image"
+- takeScreenshot: fixture-image-result
+- back
+- scrollUntilVisible:
+    element: "Start a separate media request"
+    direction: DOWN
+- tapOn: "Start a separate media request"
+- scrollUntilVisible:
+    element: "music"
+    direction: UP
+- tapOn: "music"
+- tapOn: "openjm-music-1"
+- tapOn:
+    text: "Media prompt"
+    index: 1
+- inputText: "A fictional 30-second test tone"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Generate music"
+    direction: DOWN
+- tapOn: "Generate music"
+- assertVisible: "queued"
+- tapOn: "Refresh media status"
+- assertVisible: "completed"
+- tapOn: "Load music"
+- tapOn: "Play music"
+- assertVisible: "Pause music"
+- takeScreenshot: fixture-music-playing

@@ -1,0 +1,5 @@
+appId: com.openjm.mobile
+---
+- launchApp:
+    clearState: true
+- runFlow: guest-actions.yaml

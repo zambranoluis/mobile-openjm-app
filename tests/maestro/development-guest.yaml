@@ -1,0 +1,17 @@
+appId: com.openjm.mobile
+---
+- launchApp:
+    clearState: true
+- openLink: ${DEVELOPMENT_URL}
+- extendedWaitUntil:
+    visible: "Welcome to OpenJM|http://.*:8095"
+    timeout: 60000
+- runFlow:
+    when:
+      visible: "http://.*:8095"
+    commands:
+      - tapOn: "http://.*:8095"
+- extendedWaitUntil:
+    visible: "Welcome to OpenJM"
+    timeout: 60000
+- runFlow: guest-actions.yaml

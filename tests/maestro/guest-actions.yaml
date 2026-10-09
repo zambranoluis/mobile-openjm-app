@@ -1,0 +1,27 @@
+appId: com.openjm.mobile
+---
+- extendedWaitUntil:
+    visible: "Welcome to OpenJM"
+    timeout: 60000
+- takeScreenshot: guest-login
+- scrollUntilVisible:
+    element: "Create an account"
+    direction: DOWN
+- tapOn: "Create an account"
+- assertVisible: "Create your account"
+- takeScreenshot: guest-register
+- back
+- scrollUntilVisible:
+    element: "Forgot password"
+    direction: DOWN
+- tapOn: "Forgot password"
+- assertVisible: "Recover access"
+- back
+- scrollUntilVisible:
+    element: "Legal documents"
+    direction: DOWN
+- tapOn: "Legal documents"
+- assertVisible: "Terms of service"
+- tapOn: "Privacy policy"
+- assertVisible: "All legal documents"
+- takeScreenshot: guest-privacy

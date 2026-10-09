@@ -1,0 +1,45 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Fixture conversation"
+- scrollUntilVisible:
+    element:
+      text: "Message"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Message"
+    index: 1
+- inputText: "Render a fictional formula"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Send message"
+    direction: DOWN
+- tapOn: "Send message"
+- scrollUntilVisible:
+    element: "Read formula source"
+    direction: UP
+- takeScreenshot: fixture-native-formula
+- tapOn: "Read formula source"
+- assertVisible: '\\frac\{1\}\{2\}\+x\^2'
+- back
+- tapOn: "Account"
+- scrollUntilVisible:
+    element: "Interface language"
+    direction: DOWN
+- tapOn: "Interface language"
+- tapOn: "Español"
+- assertVisible: "Idioma de la interfaz"
+- takeScreenshot: fixture-language-spanish
+- back
+- assertVisible: "Cuenta"
+- stopApp
+- launchApp
+- assertVisible: "Cuenta"
+- tapOn: "Cuenta"
+- scrollUntilVisible:
+    element: "Idioma de la interfaz"
+    direction: DOWN
+- tapOn: "Idioma de la interfaz"
+- tapOn: "English"
+- assertVisible: "Interface language"

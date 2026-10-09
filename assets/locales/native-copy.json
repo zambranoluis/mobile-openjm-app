@@ -1,0 +1,370 @@
+{
+  "Conversations": {
+    "en": "Conversations",
+    "es": "Conversaciones",
+    "pt": "Conversas",
+    "hi": "बातचीत",
+    "zh": "对话",
+    "ru": "Беседы"
+  },
+  "Apps": {
+    "en": "Apps",
+    "es": "Aplicaciones",
+    "pt": "Aplicativos",
+    "hi": "ऐप्स",
+    "zh": "应用",
+    "ru": "Приложения"
+  },
+  "Account": {
+    "en": "Account",
+    "es": "Cuenta",
+    "pt": "Conta",
+    "hi": "खाता",
+    "zh": "账户",
+    "ru": "Аккаунт"
+  },
+  "Interface language": {
+    "en": "Interface language",
+    "es": "Idioma de la interfaz",
+    "pt": "Idioma da interface",
+    "hi": "इंटरफ़ेस की भाषा",
+    "zh": "界面语言",
+    "ru": "Язык интерфейса"
+  },
+  "Welcome to OpenJM": {
+    "en": "Welcome to OpenJM",
+    "es": "Bienvenido a OpenJM",
+    "pt": "Boas-vindas ao OpenJM",
+    "hi": "OpenJM में आपका स्वागत है",
+    "zh": "欢迎使用 OpenJM",
+    "ru": "Добро пожаловать в OpenJM"
+  },
+  "Email": {
+    "en": "Email",
+    "es": "Correo electrónico",
+    "pt": "E-mail",
+    "hi": "ईमेल",
+    "zh": "电子邮件",
+    "ru": "Электронная почта"
+  },
+  "Password": {
+    "en": "Password",
+    "es": "Contraseña",
+    "pt": "Senha",
+    "hi": "पासवर्ड",
+    "zh": "密码",
+    "ru": "Пароль"
+  },
+  "Verification code": {
+    "en": "Verification code",
+    "es": "Código de verificación",
+    "pt": "Código de verificação",
+    "hi": "सत्यापन कोड",
+    "zh": "验证码",
+    "ru": "Код подтверждения"
+  },
+  "Verify and sign in": {
+    "en": "Verify and sign in",
+    "es": "Verificar e iniciar sesión",
+    "pt": "Verificar e entrar",
+    "hi": "सत्यापित करें और साइन इन करें",
+    "zh": "验证并登录",
+    "ru": "Подтвердить и войти"
+  },
+  "Create an account": {
+    "en": "Create an account",
+    "es": "Crear una cuenta",
+    "pt": "Criar uma conta",
+    "hi": "खाता बनाएं",
+    "zh": "创建账户",
+    "ru": "Создать аккаунт"
+  },
+  "Forgot password": {
+    "en": "Forgot password",
+    "es": "Olvidé mi contraseña",
+    "pt": "Esqueci minha senha",
+    "hi": "पासवर्ड भूल गए",
+    "zh": "忘记密码",
+    "ru": "Забыли пароль"
+  },
+  "Legal documents": {
+    "en": "Legal documents",
+    "es": "Documentos legales",
+    "pt": "Documentos legais",
+    "hi": "कानूनी दस्तावेज़",
+    "zh": "法律文件",
+    "ru": "Юридические документы"
+  },
+  "Profile and security": {
+    "en": "Profile and security",
+    "es": "Perfil y seguridad",
+    "pt": "Perfil e segurança",
+    "hi": "प्रोफ़ाइल और सुरक्षा",
+    "zh": "个人资料与安全",
+    "ru": "Профиль и безопасность"
+  },
+  "Credits and plan": {
+    "en": "Credits and plan",
+    "es": "Créditos y plan",
+    "pt": "Créditos e plano",
+    "hi": "क्रेडिट और योजना",
+    "zh": "额度与套餐",
+    "ru": "Кредиты и тариф"
+  },
+  "Usage": {
+    "en": "Usage",
+    "es": "Uso",
+    "pt": "Uso",
+    "hi": "उपयोग",
+    "zh": "用量",
+    "ru": "Использование"
+  },
+  "Conversation preferences": {
+    "en": "Conversation preferences",
+    "es": "Preferencias de conversación",
+    "pt": "Preferências de conversa",
+    "hi": "बातचीत की प्राथमिकताएं",
+    "zh": "对话偏好",
+    "ru": "Настройки бесед"
+  },
+  "API keys": {
+    "en": "API keys",
+    "es": "Claves de API",
+    "pt": "Chaves de API",
+    "hi": "API कुंजियां",
+    "zh": "API 密钥",
+    "ru": "Ключи API"
+  },
+  "Domains": {
+    "en": "Domains",
+    "es": "Dominios",
+    "pt": "Domínios",
+    "hi": "डोमेन",
+    "zh": "域名",
+    "ru": "Домены"
+  },
+  "Saved memories": {
+    "en": "Saved memories",
+    "es": "Recuerdos guardados",
+    "pt": "Memórias salvas",
+    "hi": "सहेजी गई यादें",
+    "zh": "已保存记忆",
+    "ru": "Сохранённые воспоминания"
+  },
+  "Completion alerts": {
+    "en": "Completion alerts",
+    "es": "Avisos de finalización",
+    "pt": "Alertas de conclusão",
+    "hi": "पूरा होने की सूचनाएं",
+    "zh": "完成提醒",
+    "ru": "Уведомления о завершении"
+  },
+  "Refresh account": {
+    "en": "Refresh account",
+    "es": "Actualizar cuenta",
+    "pt": "Atualizar conta",
+    "hi": "खाता रीफ़्रेश करें",
+    "zh": "刷新账户",
+    "ru": "Обновить аккаунт"
+  },
+  "Sign out": {
+    "en": "Sign out",
+    "es": "Cerrar sesión",
+    "pt": "Sair",
+    "hi": "साइन आउट करें",
+    "zh": "退出登录",
+    "ru": "Выйти"
+  },
+  "Message": {
+    "en": "Message",
+    "es": "Mensaje",
+    "pt": "Mensagem",
+    "hi": "संदेश",
+    "zh": "消息",
+    "ru": "Сообщение"
+  },
+  "Send message": {
+    "en": "Send message",
+    "es": "Enviar mensaje",
+    "pt": "Enviar mensagem",
+    "hi": "संदेश भेजें",
+    "zh": "发送消息",
+    "ru": "Отправить сообщение"
+  },
+  "Create conversation": {
+    "en": "Create conversation",
+    "es": "Crear conversación",
+    "pt": "Criar conversa",
+    "hi": "बातचीत बनाएं",
+    "zh": "创建对话",
+    "ru": "Создать беседу"
+  },
+  "Choose a model": {
+    "en": "Choose a model",
+    "es": "Elegir un modelo",
+    "pt": "Escolher um modelo",
+    "hi": "मॉडल चुनें",
+    "zh": "选择模型",
+    "ru": "Выбрать модель"
+  },
+  "Attach file": {
+    "en": "Attach file",
+    "es": "Adjuntar archivo",
+    "pt": "Anexar arquivo",
+    "hi": "फ़ाइल संलग्न करें",
+    "zh": "附加文件",
+    "ru": "Прикрепить файл"
+  },
+  "Try anonymous chat": {
+    "en": "Try anonymous chat",
+    "es": "Probar chat anónimo",
+    "pt": "Experimentar chat anônimo",
+    "hi": "अनाम चैट आज़माएं",
+    "zh": "试用匿名聊天",
+    "ru": "Попробовать анонимный чат"
+  },
+  "Anonymous chat": {
+    "en": "Anonymous chat",
+    "es": "Chat anónimo",
+    "pt": "Chat anônimo",
+    "hi": "अनाम चैट",
+    "zh": "匿名聊天",
+    "ru": "Анонимный чат"
+  },
+  "Anonymous message": {
+    "en": "Anonymous message",
+    "es": "Mensaje anónimo",
+    "pt": "Mensagem anônima",
+    "hi": "अनाम संदेश",
+    "zh": "匿名消息",
+    "ru": "Анонимное сообщение"
+  },
+  "Send anonymously": {
+    "en": "Send anonymously",
+    "es": "Enviar de forma anónima",
+    "pt": "Enviar anonimamente",
+    "hi": "अनाम रूप से भेजें",
+    "zh": "匿名发送",
+    "ru": "Отправить анонимно"
+  },
+  "Clear anonymous session": {
+    "en": "Clear anonymous session",
+    "es": "Borrar sesión anónima",
+    "pt": "Limpar sessão anônima",
+    "hi": "अनाम सत्र साफ़ करें",
+    "zh": "清除匿名会话",
+    "ru": "Очистить анонимный сеанс"
+  },
+  "Create or view media": {
+    "en": "Create or view media",
+    "es": "Crear o ver contenido multimedia",
+    "pt": "Criar ou ver mídia",
+    "hi": "मीडिया बनाएं या देखें",
+    "zh": "创建或查看媒体",
+    "ru": "Создать или посмотреть медиа"
+  },
+  "Open conversation files": {
+    "en": "Open conversation files",
+    "es": "Abrir archivos de la conversación",
+    "pt": "Abrir arquivos da conversa",
+    "hi": "बातचीत की फ़ाइलें खोलें",
+    "zh": "打开对话文件",
+    "ru": "Открыть файлы беседы"
+  },
+  "Create media": {
+    "en": "Create media",
+    "es": "Crear contenido multimedia",
+    "pt": "Criar mídia",
+    "hi": "मीडिया बनाएं",
+    "zh": "创建媒体",
+    "ru": "Создать медиа"
+  },
+  "Generated image": {
+    "en": "Generated image",
+    "es": "Imagen generada",
+    "pt": "Imagem gerada",
+    "hi": "जनरेट की गई छवि",
+    "zh": "生成的图像",
+    "ru": "Созданное изображение"
+  },
+  "Generated music": {
+    "en": "Generated music",
+    "es": "Música generada",
+    "pt": "Música gerada",
+    "hi": "जनरेट किया गया संगीत",
+    "zh": "生成的音乐",
+    "ru": "Созданная музыка"
+  },
+  "Generated video": {
+    "en": "Generated video",
+    "es": "Video generado",
+    "pt": "Vídeo gerado",
+    "hi": "जनरेट किया गया वीडियो",
+    "zh": "生成的视频",
+    "ru": "Созданное видео"
+  },
+  "Load music": {
+    "en": "Load music",
+    "es": "Cargar música",
+    "pt": "Carregar música",
+    "hi": "संगीत लोड करें",
+    "zh": "加载音乐",
+    "ru": "Загрузить музыку"
+  },
+  "Play music": {
+    "en": "Play music",
+    "es": "Reproducir música",
+    "pt": "Reproduzir música",
+    "hi": "संगीत चलाएं",
+    "zh": "播放音乐",
+    "ru": "Воспроизвести музыку"
+  },
+  "Pause music": {
+    "en": "Pause music",
+    "es": "Pausar música",
+    "pt": "Pausar música",
+    "hi": "संगीत रोकें",
+    "zh": "暂停音乐",
+    "ru": "Приостановить музыку"
+  },
+  "Restart music": {
+    "en": "Restart music",
+    "es": "Reiniciar música",
+    "pt": "Reiniciar música",
+    "hi": "संगीत फिर से शुरू करें",
+    "zh": "重新播放音乐",
+    "ru": "Начать музыку заново"
+  },
+  "View image": {
+    "en": "View image",
+    "es": "Ver imagen",
+    "pt": "Ver imagem",
+    "hi": "छवि देखें",
+    "zh": "查看图像",
+    "ru": "Посмотреть изображение"
+  },
+  "Language could not be saved.": {
+    "en": "Language could not be saved.",
+    "es": "No se pudo guardar el idioma.",
+    "pt": "Não foi possível salvar o idioma.",
+    "hi": "भाषा सहेजी नहीं जा सकी।",
+    "zh": "无法保存语言。",
+    "ru": "Не удалось сохранить язык."
+  },
+  "Some settings use English while translations are reviewed.": {
+    "en": "Some settings use English while translations are reviewed.",
+    "es": "Algunos ajustes usan inglés mientras se revisan las traducciones.",
+    "pt": "Algumas configurações usam inglês enquanto as traduções são revisadas.",
+    "hi": "अनुवादों की समीक्षा के दौरान कुछ सेटिंग्स अंग्रेज़ी में हैं।",
+    "zh": "部分设置在翻译审核期间使用英语。",
+    "ru": "Некоторые настройки пока используют английский язык, переводы проходят проверку."
+  },
+  "Your conversations and server data keep their original language.": {
+    "en": "Your conversations and server data keep their original language.",
+    "es": "Tus conversaciones y los datos del servidor mantienen su idioma original.",
+    "pt": "Suas conversas e os dados do servidor mantêm o idioma original.",
+    "hi": "आपकी बातचीत और सर्वर डेटा अपनी मूल भाषा में रहते हैं।",
+    "zh": "对话和服务器数据保留原始语言。",
+    "ru": "Беседы и данные сервера сохраняют исходный язык."
+  }
+}

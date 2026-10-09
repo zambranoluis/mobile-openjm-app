@@ -1,0 +1,26 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Fixture conversation"
+- scrollUntilVisible:
+    element: "Open conversation files"
+    direction: DOWN
+- tapOn: "Open conversation files"
+- tapOn: "fictional-note.txt"
+- scrollUntilVisible:
+    element: "Save or share file"
+    direction: DOWN
+- tapOn: "Save or share file"
+- assertVisible: "Sharing.*"
+- takeScreenshot: fixture-file-native-sharing
+- back
+- scrollUntilVisible:
+    element: "Delete file"
+    direction: DOWN
+- tapOn: "Delete file"
+- tapOn: "Delete file"
+- scrollUntilVisible:
+    element: "File deletion confirmed by OpenJM."
+    direction: UP
+- assertVisible: "File deletion confirmed by OpenJM."
+- takeScreenshot: fixture-file-deleted

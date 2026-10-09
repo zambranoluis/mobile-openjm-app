@@ -1,0 +1,59 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-r5-sign-in.yaml
+- tapOn: "Account"
+- tapOn: "Profile and security"
+- scrollUntilVisible:
+    element: "Profile photo"
+    direction: DOWN
+- tapOn: "Profile photo"
+- assertVisible: "Your profile photo"
+- takeScreenshot: fixture-profile-photo
+- scrollUntilVisible:
+    element: "Remove profile photo"
+    direction: DOWN
+- tapOn: "Remove profile photo"
+- tapOn: "Remove photo"
+- assertVisible: "No profile photo is configured."
+- tapOn: "Refresh profile photo"
+- assertVisible: "No profile photo is configured."
+- back
+- scrollUntilVisible:
+    element: "Delete account"
+    direction: DOWN
+- tapOn: "Delete account"
+- assertVisible: "avery@example.test"
+- tapOn:
+    text: "Deletion confirmation"
+    index: 1
+- inputText: "DELETE"
+- hideKeyboard
+- tapOn: "Verify account deletion"
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "000000"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Verify account deletion"
+    direction: DOWN
+- tapOn: "Verify account deletion"
+- assertVisible: "The fictional code is invalid."
+- scrollUntilVisible:
+    element: "Verification code"
+    direction: UP
+- tapOn:
+    text: "Verification code"
+    index: 1
+- eraseText
+- inputText: "123456"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Verify account deletion"
+    direction: DOWN
+- tapOn: "Verify account deletion"
+- assertVisible: "Welcome to OpenJM"
+- stopApp
+- launchApp
+- assertVisible: "Welcome to OpenJM"
+- takeScreenshot: fixture-account-deleted-restart

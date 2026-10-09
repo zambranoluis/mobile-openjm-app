@@ -1,0 +1,75 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Account"
+- scrollUntilVisible:
+    element: "Saved memories"
+    direction: DOWN
+- tapOn: "Saved memories"
+- tapOn: "Add a memory"
+- scrollUntilVisible:
+    element:
+      text: "Memory content"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Memory content"
+    index: 1
+- inputText: "A fictional device memory"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Save new memory"
+    direction: DOWN
+- tapOn: "Save new memory"
+- scrollUntilVisible:
+    element: "Memory creation confirmed by OpenJM. Reload the list to see it."
+    direction: UP
+- assertVisible: "Memory creation confirmed by OpenJM. Reload the list to see it."
+- tapOn: "Search and browse memories"
+- scrollUntilVisible:
+    element:
+      text: "Search saved memories"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Search saved memories"
+    index: 1
+- inputText: "device memory"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Search memories"
+    direction: DOWN
+- tapOn: "Search memories"
+- scrollUntilVisible:
+    element: "A fictional device memory"
+    direction: DOWN
+- assertVisible: "A fictional device memory"
+- takeScreenshot: fixture-memory-search
+- scrollUntilVisible:
+    element: "Delete this memory"
+    direction: DOWN
+- tapOn: "Delete this memory"
+- tapOn: "Continue to verification"
+- scrollUntilVisible:
+    element: "Verify and delete selected memory"
+    direction: DOWN
+- tapOn: "Verify and delete selected memory"
+- scrollUntilVisible:
+    element:
+      text: "Verification code"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "123456"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Verify and delete selected memory"
+    direction: DOWN
+- tapOn: "Verify and delete selected memory"
+- scrollUntilVisible:
+    element: "Deletion confirmed by OpenJM. Reload to refresh usage."
+    direction: UP
+- assertVisible: "Deletion confirmed by OpenJM. Reload to refresh usage."
+- takeScreenshot: fixture-memory-deleted

@@ -1,0 +1,14 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow:
+    when:
+      visible: "Pause music"
+    commands:
+      - tapOn: "Pause music"
+- tapOn: "Restart music"
+- runFlow:
+    when:
+      visible: "Play music"
+    commands:
+      - tapOn: "Play music"
+- assertVisible: "Pause music"

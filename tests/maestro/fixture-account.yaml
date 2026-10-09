@@ -1,0 +1,75 @@
+appId: com.openjm.mobile.fixture
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Welcome to OpenJM"
+- tapOn:
+    text: "Email"
+    index: 1
+- inputText: "avery@example.test"
+- hideKeyboard
+- tapOn:
+    text: "Password"
+    index: 1
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn: "Sign in"
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "123456"
+- hideKeyboard
+- tapOn: "Verify and sign in"
+- assertVisible: "Fixture conversation"
+- tapOn: "Account"
+- tapOn: "Credits and plan"
+- scrollUntilVisible:
+    element:
+      text: "Gift card code"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Gift card code"
+    index: 1
+- inputText: "ABCDEFGH0123"
+- hideKeyboard
+- tapOn: "Redeem gift card"
+- scrollUntilVisible:
+    element: "13.5 usd"
+    direction: UP
+- assertVisible: "13.5 usd"
+- takeScreenshot: fixture-redeemed-balance
+- scrollUntilVisible:
+    element: "Buy Fictional Regular with account credit"
+    direction: DOWN
+- tapOn: "Buy Fictional Regular with account credit"
+- assertVisible: "Buy Fictional Regular?"
+- tapOn: "Keep current plan"
+- tapOn: "Buy Fictional Regular with account credit"
+- tapOn: "Confirm purchase"
+- scrollUntilVisible:
+    element: "8.5 usd"
+    direction: UP
+- assertVisible: "8.5 usd"
+- takeScreenshot: fixture-purchased-plan
+- back
+- tapOn: "Conversation preferences"
+- assertVisible: "Use related memories"
+- tapOn: "Use related memories"
+- scrollUntilVisible:
+    element: "Save preferences"
+    direction: DOWN
+- tapOn: "Save preferences"
+- assertVisible: "Preferences saved to your account."
+- assertVisible:
+    text: "Create new memories"
+    enabled: false
+- takeScreenshot: fixture-preferences
+- back
+- tapOn: "Usage"
+- tapOn: "Detailed activity and filters"
+- assertVisible: "125 total tokens"
+- takeScreenshot: fixture-usage-details
+- tapOn: "Refine usage filters"
+- assertVisible: "From (ISO date)"
+- takeScreenshot: fixture-usage-filters

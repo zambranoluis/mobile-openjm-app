@@ -1,0 +1,94 @@
+appId: com.openjm.mobile.fixture
+---
+- launchApp:
+    clearState: true
+- assertVisible: "Welcome to OpenJM"
+- tapOn:
+    text: "Email"
+    index: 1
+- inputText: "avery@example.test"
+- hideKeyboard
+- tapOn:
+    text: "Password"
+    index: 1
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn: "Sign in"
+- assertVisible: "Verification code"
+- takeScreenshot: fixture-mfa
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "123456"
+- hideKeyboard
+- tapOn: "Verify and sign in"
+- scrollUntilVisible:
+    element: "Fixture conversation"
+    direction: DOWN
+- assertVisible: "Fixture conversation"
+- takeScreenshot: fixture-history
+- tapOn: "Fixture conversation"
+- assertVisible: "This is fictional test content."
+- tapOn:
+    text: "Message"
+    index: 1
+- inputText: "A fictional device test"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Send message"
+    direction: DOWN
+- tapOn: "Send message"
+- scrollUntilVisible:
+    element: "Fixture response received."
+    direction: UP
+- assertVisible: "Fixture response received."
+- takeScreenshot: fixture-conversation
+- back
+- tapOn: "Apps"
+- assertVisible: "Fictional notes connector"
+- takeScreenshot: fixture-apps
+- tapOn: "Account"
+- assertVisible: "Avery Sample"
+- tapOn: "Profile and security"
+- assertVisible: "Country calling code"
+- takeScreenshot: fixture-profile
+- back
+- tapOn: "Credits and plan"
+- assertVisible: "Fictional test plan"
+- takeScreenshot: fixture-billing
+- back
+- scrollUntilVisible:
+    element: "Completion alerts"
+    direction: DOWN
+- tapOn: "Completion alerts"
+- assertVisible: "Completion alerts are unavailable on this service."
+- takeScreenshot: fixture-alerts-unavailable
+- back
+- scrollUntilVisible:
+    element: "Sign out"
+    direction: DOWN
+- tapOn: "Sign out"
+- assertVisible: "Welcome to OpenJM"
+- scrollUntilVisible:
+    element: "Forgot password"
+    direction: DOWN
+- tapOn: "Forgot password"
+- tapOn: "I have reset instructions"
+- tapOn:
+    text: "Reset link or token"
+    index: 1
+- inputText: "fictional-token"
+- hideKeyboard
+- tapOn:
+    text: "New password"
+    index: 1
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn:
+    text: "Confirm new password"
+    index: 1
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn: "Reset password"
+- assertVisible: "Your password was reset. Sign in with your new password."
+- takeScreenshot: fixture-reset-complete

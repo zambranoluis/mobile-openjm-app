@@ -1,0 +1,79 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Account"
+- scrollUntilVisible:
+    element: "API keys"
+    direction: DOWN
+- tapOn: "API keys"
+- tapOn: "Create API key"
+- tapOn: "usage:read"
+- scrollUntilVisible:
+    element: "Create selected API key"
+    direction: DOWN
+- tapOn: "Create selected API key"
+- scrollUntilVisible:
+    element: "fictional-key-one-time"
+    direction: UP
+- assertVisible: "fictional-key-one-time"
+- takeScreenshot: fixture-key-created
+- tapOn: "Dismiss secret"
+- assertNotVisible: "fictional-key-one-time"
+- tapOn: "fictional-prefix"
+- scrollUntilVisible:
+    element: "Revoke key"
+    direction: DOWN
+- tapOn: "Revoke key"
+- tapOn: "Continue to verification"
+- scrollUntilVisible:
+    element: "Verify and revoke key"
+    direction: DOWN
+- tapOn: "Verify and revoke key"
+- scrollUntilVisible:
+    element:
+      text: "Verification code"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "123456"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Verify and revoke key"
+    direction: DOWN
+- tapOn: "Verify and revoke key"
+- assertVisible: "No keys were returned."
+- tapOn: "Show revoked keys"
+- assertVisible: "fictional-prefix"
+- takeScreenshot: fixture-key-revoked
+- back
+- scrollUntilVisible:
+    element: "Domains"
+    direction: DOWN
+- tapOn: "Domains"
+- tapOn:
+    text: "Domain name"
+    index: 1
+- inputText: "example.test"
+- hideKeyboard
+- tapOn: "Request new DNS challenge"
+- assertVisible: "example.test: Verification pending"
+- scrollUntilVisible:
+    element: "Check saved DNS challenge"
+    direction: DOWN
+- tapOn: "Check saved DNS challenge"
+- scrollUntilVisible:
+    element: "example.test: Verification pending"
+    direction: UP
+- assertVisible: "example.test: Verification pending"
+- takeScreenshot: fixture-domain-pending
+- scrollUntilVisible:
+    element: "Check saved DNS challenge"
+    direction: DOWN
+- tapOn: "Check saved DNS challenge"
+- scrollUntilVisible:
+    element: "example.test: Verified by OpenJM"
+    direction: UP
+- assertVisible: "example.test: Verified by OpenJM"
+- takeScreenshot: fixture-domain-verified

@@ -1,0 +1,19 @@
+// Optional Windows-only local build setup. Retains earlier CMake products.
+gradle.beforeProject { project ->
+    project.plugins.withId('com.android.application') {
+        project.android {
+            externalNativeBuild {
+                cmake {
+                    def slot = project.findProperty('openjmNativeBuildSlot') ?: 'default'
+                    if (!(slot ==~ /[A-Za-z0-9_-]{1,32}/)) throw new GradleException('Invalid native build slot')
+                    buildStagingDirectory project.rootProject.file('../.native-cxx/' + slot)
+                }
+            }
+            defaultConfig {
+                externalNativeBuild {
+                    cmake { arguments '-DCMAKE_OBJECT_PATH_MAX=250', '-DCMAKE_JOB_POOLS=compile=2;link=1', '-DCMAKE_JOB_POOL_COMPILE=compile', '-DCMAKE_JOB_POOL_LINK=link' }
+                }
+            }
+        }
+    }
+}

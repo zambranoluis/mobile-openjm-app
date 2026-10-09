@@ -1,0 +1,89 @@
+{
+  "identity": "Approved OpenJM hummingbird and unmodified legal text",
+  "files": [
+    {
+      "file": "assets/hummingbird.svg",
+      "bytes": 33601,
+      "sha256": "9461adc4d857b729b67920d6998a6111ece6e68021d53c70e764f24b28ab62d3",
+      "source": "../web-openjm-frontend/public/images/logos/SVG/hummingbird.svg",
+      "derivation": null
+    },
+    {
+      "file": "assets/hummingbird.png",
+      "bytes": 42227,
+      "sha256": "8e4407f45bdb96b2a13876e118006ca12aad1dbb4dbe8806fc19aded10be35f3",
+      "source": null,
+      "derivation": "Rasterized from retained hummingbird.svg with Sharp; icon 1024 dark canvas; mark 256 transparent"
+    },
+    {
+      "file": "assets/icon.png",
+      "bytes": 173474,
+      "sha256": "128a17c8437cf1a2c67fc47cf71ff860d629ef2102e0c4622a277be5133551f3",
+      "source": null,
+      "derivation": "Rasterized from retained hummingbird.svg with Sharp; icon 1024 dark canvas; mark 256 transparent"
+    },
+    {
+      "file": "assets/legal/acceptable_use_policy.md",
+      "bytes": 8364,
+      "sha256": "c38c87ba57eaeeb93807b1816022a532b226076c4ef5d78a4456f917c81ac93d",
+      "source": "../web-openjm-frontend/public/legal/acceptable_use_policy.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/ai_transparency.md",
+      "bytes": 3721,
+      "sha256": "e7194905ce79cc180ebb528c50223bc27f02ef3a27f6388820bdc72b75e80fbf",
+      "source": "../web-openjm-frontend/public/legal/ai_transparency.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/cookie_policy.md",
+      "bytes": 3869,
+      "sha256": "105228e4edf8d9ace4050bc7af285d275bc254d2a6748f119e4343b105210b71",
+      "source": "../web-openjm-frontend/public/legal/cookie_policy.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/copyright_policy.md",
+      "bytes": 4490,
+      "sha256": "55723db766dd49f7e4794bd783ab4a64cffd61af0e8141099bf1830a845aee5d",
+      "source": "../web-openjm-frontend/public/legal/copyright_policy.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/data_processing_addendum.md",
+      "bytes": 21426,
+      "sha256": "6cc9e914f48d6db12e07443c09cac4f7e2f7e769201e546f09e2679feafb1ed8",
+      "source": "../web-openjm-frontend/public/legal/data_processing_addendum.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/privacy_policy.md",
+      "bytes": 22057,
+      "sha256": "0ed9753fcb580e9c89cb591dca77380202e686b44fedf3f7b15acbbcd6d60c52",
+      "source": "../web-openjm-frontend/public/legal/privacy_policy.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/security_policy.md",
+      "bytes": 3096,
+      "sha256": "95224e9e11a14a34f209179312cc82748fd14af51d6e49530753dbfd22ff0bf7",
+      "source": "../web-openjm-frontend/public/legal/security_policy.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/subprocessors.md",
+      "bytes": 5491,
+      "sha256": "be410ecf6abb44f4217ba99806f23a691ca34baf1788c2fc561805b39c005121",
+      "source": "../web-openjm-frontend/public/legal/subprocessors.md",
+      "derivation": null
+    },
+    {
+      "file": "assets/legal/terms_of_service.md",
+      "bytes": 16023,
+      "sha256": "fa17c95871aa2219851dd198ae1081129819a503c11b4a7bfcccacd6ccfe2e43",
+      "source": "../web-openjm-frontend/public/legal/terms_of_service.md",
+      "derivation": null
+    }
+  ]
+}

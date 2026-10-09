@@ -1,0 +1,915 @@
+{
+  "recordedAt": "2026-10-08",
+  "sourceHashes": [
+    {
+      "path": "app/(tabs)/_layout.tsx",
+      "sha256": "2b7458c73e4fffcf642b5b6929be4504ddc7c1f200082ef85f86c6e5c74f294f"
+    },
+    {
+      "path": "app/(tabs)/account.tsx",
+      "sha256": "99afaa01a3ae1606acaeb13182b1b67303f85673c4f0467cec5c06261112c3ee"
+    },
+    {
+      "path": "app/(tabs)/apps.tsx",
+      "sha256": "fc04b611bfbf74d9655ea78db1508f9d46d9ac35406b4b721c203ca7233df599"
+    },
+    {
+      "path": "app/(tabs)/index.tsx",
+      "sha256": "352e7c950cb7a5c59f2645a9f258d3a73a50ca60be06f738825624118a918c92"
+    },
+    {
+      "path": "app/_layout.tsx",
+      "sha256": "5503b10a91be79b36b16dd0a76295645a56259c60c9e8300715c96b8be9fac30"
+    },
+    {
+      "path": "app/account/alerts.tsx",
+      "sha256": "8393673fe99678f78c593396ab7bfca1b3c7220f7987d07f468d972d62e597a7"
+    },
+    {
+      "path": "app/account/billing.tsx",
+      "sha256": "ca5bbca7220080736df2891fd712a16d5fb369b7e26657149ff54c6537e9a111"
+    },
+    {
+      "path": "app/account/domains.tsx",
+      "sha256": "28ceab24220d0f90a2cbb3d154aaac5ae82ebb064b7c357db415806aeb0ee220"
+    },
+    {
+      "path": "app/account/keys.tsx",
+      "sha256": "7bd8746678849b47f691cd8f22908bac71be4f73e37fe6c4b84543c6465f4720"
+    },
+    {
+      "path": "app/account/memory.tsx",
+      "sha256": "3a133e8dc3b11b0a3e96cf5b6ce9bb6ea294c6cb469432c7c4329e31ec5b8fb9"
+    },
+    {
+      "path": "app/account/preferences.tsx",
+      "sha256": "7bcd49d53f342a0e747d0be3eb28d5911a55ad87819390019b25cf0706bbff2f"
+    },
+    {
+      "path": "app/account/profile.tsx",
+      "sha256": "788eafd48879261a400aa353d8c36744fc09af84f0a4524f1aa4624498cb89b2"
+    },
+    {
+      "path": "app/account/usage-details.tsx",
+      "sha256": "cccd399a1b6065345213a1d6a48d948d9b7b319143f028f6fc0b882dad1c3469"
+    },
+    {
+      "path": "app/account/usage.tsx",
+      "sha256": "a950a0200a6036bba9d0b9d350c9ece01288017a72de3eff7ed0d1f3134e4cc7"
+    },
+    {
+      "path": "app/anonymous.tsx",
+      "sha256": "d38d898b7f061c4f7a86fc9f88253dd852adcdda925b0ddb45e89258cef37de4"
+    },
+    {
+      "path": "app/app/[id].tsx",
+      "sha256": "c8db6115f238990f693c5f67641f62783dc7eb38a6f51ce88325193440d0a578"
+    },
+    {
+      "path": "app/complete-profile.tsx",
+      "sha256": "c21c4bd32e380fffddc0a2b0fb87f69d48f0b426234ab051d29faa9ee3ccc11e"
+    },
+    {
+      "path": "app/conversation/[id]/files.tsx",
+      "sha256": "982734544806180eb404c516a4cf99c24b1772ae09ebf7a276f23034fa5c8453"
+    },
+    {
+      "path": "app/conversation/[id]/media.tsx",
+      "sha256": "a5f15d85cd6d4dd37bca89fcb52047af1fde7b6c2dc60e3a2fb7a97e49798f50"
+    },
+    {
+      "path": "app/conversation/[id].tsx",
+      "sha256": "e6b0945688bc0de0f68ddfa7efcf800ea583ff1bd905a94874e6246ffe28a257"
+    },
+    {
+      "path": "app/group/[id].tsx",
+      "sha256": "c1e390d72bacf535bc23da98ec2e922f54ec5c2943c0c467a23ee7a9e3c1ce25"
+    },
+    {
+      "path": "app/groups.tsx",
+      "sha256": "1cb6ee9c478a211c6faea43e904d31e9f723502e06b20716962fddca24e82033"
+    },
+    {
+      "path": "app/index.tsx",
+      "sha256": "53a73b291f51763024db3a8ee44ba6c5892f6216752415610d97a5b746b1fd40"
+    },
+    {
+      "path": "app/installation/[id].tsx",
+      "sha256": "f1da420e641187810d25d10b8b0baf1abc4cc357d8588700ca08fd9cf3a84d5b"
+    },
+    {
+      "path": "app/job/[id].tsx",
+      "sha256": "79ee592196af7d91dc6299e1b40616686c8f8d2b736dfd0f14a4d73e974e752f"
+    },
+    {
+      "path": "app/language.tsx",
+      "sha256": "1e007471363d3966dfb7ce0ac8445fd6c164d85a8c35e5c7a707a989282192ae"
+    },
+    {
+      "path": "app/legal.tsx",
+      "sha256": "e6e7638b25a7331af5b2ad48196f219c5955e9b3568b490fc0b7b4beb867eaf3"
+    },
+    {
+      "path": "app/login.tsx",
+      "sha256": "fbd3403210dabb5603d117616b3be9b6ea47e3cd1e588c83a60cc0774615b5c8"
+    },
+    {
+      "path": "app/media/[kind]/[id].tsx",
+      "sha256": "6970c84533f4a0ec8542199c52684453976316f9995f2b5532d37b5b0c8a3c5f"
+    },
+    {
+      "path": "app/recover.tsx",
+      "sha256": "70557ba85227bb24c41b1375769e384bc1a2a823d2dfe2a6136572cb4f782310"
+    },
+    {
+      "path": "app/register.tsx",
+      "sha256": "a7c9bb96898744eb7a7e2ac1433b0a9e83463f4f5afd6d5e9d691e4c98ba5259"
+    },
+    {
+      "path": "app/reset-password.tsx",
+      "sha256": "12f6a405c09f6f645195561e9313fde9e38366c71d9ea7675ccb73682b0192d8"
+    },
+    {
+      "path": "app.config.ts",
+      "sha256": "2fdc9b38ba013b44a0f2ce97bc35170ca9ec68b3ef831d3f949e8923e5d670c5"
+    },
+    {
+      "path": "assets/hummingbird.png",
+      "sha256": "8e4407f45bdb96b2a13876e118006ca12aad1dbb4dbe8806fc19aded10be35f3"
+    },
+    {
+      "path": "assets/hummingbird.svg",
+      "sha256": "9461adc4d857b729b67920d6998a6111ece6e68021d53c70e764f24b28ab62d3"
+    },
+    {
+      "path": "assets/icon.png",
+      "sha256": "128a17c8437cf1a2c67fc47cf71ff860d629ef2102e0c4622a277be5133551f3"
+    },
+    {
+      "path": "assets/legal/acceptable_use_policy.md",
+      "sha256": "c38c87ba57eaeeb93807b1816022a532b226076c4ef5d78a4456f917c81ac93d"
+    },
+    {
+      "path": "assets/legal/ai_transparency.md",
+      "sha256": "e7194905ce79cc180ebb528c50223bc27f02ef3a27f6388820bdc72b75e80fbf"
+    },
+    {
+      "path": "assets/legal/cookie_policy.md",
+      "sha256": "105228e4edf8d9ace4050bc7af285d275bc254d2a6748f119e4343b105210b71"
+    },
+    {
+      "path": "assets/legal/copyright_policy.md",
+      "sha256": "55723db766dd49f7e4794bd783ab4a64cffd61af0e8141099bf1830a845aee5d"
+    },
+    {
+      "path": "assets/legal/data_processing_addendum.md",
+      "sha256": "6cc9e914f48d6db12e07443c09cac4f7e2f7e769201e546f09e2679feafb1ed8"
+    },
+    {
+      "path": "assets/legal/privacy_policy.md",
+      "sha256": "0ed9753fcb580e9c89cb591dca77380202e686b44fedf3f7b15acbbcd6d60c52"
+    },
+    {
+      "path": "assets/legal/security_policy.md",
+      "sha256": "95224e9e11a14a34f209179312cc82748fd14af51d6e49530753dbfd22ff0bf7"
+    },
+    {
+      "path": "assets/legal/subprocessors.md",
+      "sha256": "be410ecf6abb44f4217ba99806f23a691ca34baf1788c2fc561805b39c005121"
+    },
+    {
+      "path": "assets/legal/terms_of_service.md",
+      "sha256": "fa17c95871aa2219851dd198ae1081129819a503c11b4a7bfcccacd6ccfe2e43"
+    },
+    {
+      "path": "assets/licenses/KaTeX.txt",
+      "sha256": "766ccc1f306c885aa45542a9846bbd0a505b27a0374f146778171c2254ce18e3"
+    },
+    {
+      "path": "assets/locales/approved-web-copy.json",
+      "sha256": "7b8c2bdea9d3b854ce003687b799eb6d2e7fb467c33d48074b863f665307667d"
+    },
+    {
+      "path": "assets/locales/native-copy.json",
+      "sha256": "9f327d8f6603c0fdf81ef318f4de58a3c85720cf2d758fdb4dd7e8b83e485d75"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "0b93881ca4af2b04e664aa6572df447dd293a3279ae24932588d069b23c7c0e8"
+    },
+    {
+      "path": "package.json",
+      "sha256": "da16a52c4570ec1803694442c6e9b74819e096a87eaaf1c2672ded0200b14bda"
+    },
+    {
+      "path": "scripts/android-autolinking.cjs",
+      "sha256": "58828f7cc411d645d88b3ba7a869297bd90e59862db5d6158e9a9f17c440c232"
+    },
+    {
+      "path": "scripts/android-build-local.ps1",
+      "sha256": "66f4c639fe836ad9f5ecc744f4cc978ed29ff92655dbc846a35fde2f44084282"
+    },
+    {
+      "path": "scripts/android-local.init.gradle",
+      "sha256": "ee9374a8b7ed72abe010896f3121afb6b12b492a08f454f5dc8bf59b968e73a3"
+    },
+    {
+      "path": "scripts/assets.mjs",
+      "sha256": "6fd805f31d2c7cc52b051d6434d6a622b71e7a17973a5c5c7c00cf4dbf561ffb"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/hash_key.txt",
+      "sha256": "c84bc004ca6b367e0f36ac988ba52014558635bfda75fcabc251a19ab30a03d1"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/fbjni/fbjniConfig.cmake",
+      "sha256": "a5b25a4be7d9bd2f958119bcb6897c81cf859a92bcda26378198cc091503b3de"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/fbjni/fbjniConfigVersion.cmake",
+      "sha256": "9e571ddb6042315379cd6ef6d278989dcdca17b3cb0b3fcd6f67806710a566f2"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/hermes-engine/hermes-engineConfig.cmake",
+      "sha256": "91e692e6f58cff5288a1c46e374b01fea41c2bf5d0b9dbc37da2a05fb7cf89d8"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/hermes-engine/hermes-engineConfigVersion.cmake",
+      "sha256": "f16d4abec79502447f86ff49fa209ec3dab7e71377b475ef83cae1ff4f6f6491"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/react-native-reanimated/react-native-reanimatedConfig.cmake",
+      "sha256": "4d5f356c0fd67961235b1d79bcb629f82acaa4bacbd46d3907ad827e17454c52"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/react-native-reanimated/react-native-reanimatedConfigVersion.cmake",
+      "sha256": "5003daa63dea54fcfb6f38d33722a9706152b92a575d51eab934ce2e8ab70311"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/react-native-worklets/react-native-workletsConfig.cmake",
+      "sha256": "ead05dfc4417530ec421fef0d88342cfc9a44b52b86a54bd4eabf00fcdfab7dd"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/react-native-worklets/react-native-workletsConfigVersion.cmake",
+      "sha256": "28e2a01654f0dee88ac9d2ca654e49aac8ee0aec5af8fbb6f4db8fbba1140656"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/ReactAndroid/ReactAndroidConfig.cmake",
+      "sha256": "62d4c7387a6c4b867586521f3250c81bb4fb5c34257bd20e8ea3f2c42ccdae71"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/prefab/x86_64/prefab/lib/x86_64-linux-android/cmake/ReactAndroid/ReactAndroidConfigVersion.cmake",
+      "sha256": "956ede09f37a6191fd10cfabce0f80cc2e1b9f58e8b5f9f2b81ca6b9039e065f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/query/client-agp/cache-v2",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/query/client-agp/cmakeFiles-v1",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/query/client-agp/codemodel-v2",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/cache-v2-9d957c4a414df3b56f80.json",
+      "sha256": "8777ca86f99be51d44e52389e1abdf75e6985f17b3e9ab54190d674be0b48ac6"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/cmakeFiles-v1-0c8a04b302ae13a79a82.json",
+      "sha256": "f4e70c2d2f2292333eab9d96e287e2dd52ac8c59c3cd9714d8065a9f32bd31e2"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/codemodel-v2-9c8f1fee6badf0bba943.json",
+      "sha256": "0ff1b8111f57f3331d7ca36b96042cfeabaf71c6ae6cfb0f2901a4b3f8719361"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-.-Debug-d0094a50bb2071803777.json",
+      "sha256": "7934b0ebd3c2643b221b784bf8c5ad209d92cde7491e640a65ffe2138a34e8f2"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-rnasyncstorage_autolinked_build-Debug-0c96013634ac4d4c11a1.json",
+      "sha256": "fd22908ec265bb3fd522a66aec102e4f13fd21b4a56f4e5f52466f7ac8436900"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-rngesturehandler_codegen_autolinked_build-Debug-03cb96709597a35796e7.json",
+      "sha256": "30889d4975022a9683bf6ec676b06f9e13e889391710e3f3729e08fd1bcb729a"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-rnreanimated_autolinked_build-Debug-fefa23aab7b914c25dc4.json",
+      "sha256": "8aea758773519223a36dfc4a2b9d8bd16921f96305fdaf199b93ac853cec40bf"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-rnscreens_autolinked_build-Debug-dee836b8c8f0032a5d13.json",
+      "sha256": "cfb27f66c9cbc85d3ecc08799dae8c5455fb260b2166cbf6cdb1e399f63b731f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-rnworklets_autolinked_build-Debug-8cfaa3a346efebc073b0.json",
+      "sha256": "2f4730fb2fb4a694017e4723f424bb8e62129e2f27721f638dfa6deaede5c8af"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/directory-safeareacontext_autolinked_build-Debug-8e376236bf5defbd81f8.json",
+      "sha256": "a2af8010b5d689207a1403801f3e476bb8510dd031c7df89fcc586bec5a343e9"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/index-2026-10-08T18-13-01-0528.json",
+      "sha256": "b2428433226dfd9b773ba960bbcc0d300a97cd1080f612ead315285443b9a1c3"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-appmodules-Debug-92c2688afe9da10c404f.json",
+      "sha256": "2231575c9b109207bc87825dee445aac7bee59d736528021f477d1272147f393"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_rnasyncstorage-Debug-b6bcfb9098f506a59fff.json",
+      "sha256": "1fc1c9230bae2da05dfdda5b39670fde3e6a6c05977341eb158bf98044e4fff4"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_rngesturehandler_codegen-Debug-9aada2323f48ce6839a0.json",
+      "sha256": "fcc19fe32d64f040e4a50c9386f1a9c0d4f330c92b2ac209ef0fb0719cb4bdc9"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_rnreanimated-Debug-4354c3b21bf342bb4d14.json",
+      "sha256": "6194efa0aa31dfe9b80d14918f60a6c972080f7ec20ff0a34f1769e9565a30c2"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_rnscreens-Debug-fcf78634cf4c45fd3026.json",
+      "sha256": "5c5c6ad2fa5e1e5778cff4849250a411e812f1ca3ab019c0509462c5e290d054"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_rnworklets-Debug-8d837a06d64093f251d9.json",
+      "sha256": "482775d306804162060211f68475a6ad40640955ccafb835aa4cda96188def33"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.cmake/api/v1/reply/target-react_codegen_safeareacontext-Debug-682a5f0a7f48ab7b0854.json",
+      "sha256": "4bf200b103021d89cf16f9f3595178282f4263edb896b7cdfb10c6f5b69af94f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/.ninja_log",
+      "sha256": "e29c20838a747c8b71d7b200b78d893056d5e6647847f199356b79dcba0f1ebc"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/additional_project_files.txt",
+      "sha256": "d2a91aa47cbe72b16fbe53a459e9e4a5904fdfeadf3d50b7e415e110bd01d871"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/android_gradle_build.json",
+      "sha256": "c48d669d4a11cc49b9b6c9ea037980d19e2b69fcf52f9e844aeb9e8f40c8a45b"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/android_gradle_build_mini.json",
+      "sha256": "ad55a0de0bc6ce7dfa46cf7e97002bcb8c927073f847209f0b90811859e731e3"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/build.ninja",
+      "sha256": "af16822500a6b1b4f2c2e34cf6463df989ecfdfbc958db23d9be7922f0cf1c6c"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/build_file_index.txt",
+      "sha256": "8812f8040459b2d5d1655cd1b7cd29676172d9d8317fc3a6622731e9ca51c69e"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/cmake_install.cmake",
+      "sha256": "a893aefcd30a2ee90f904f8b51b71edba85c5f1ff1875c895ef0b0b9779a3fea"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeCache.txt",
+      "sha256": "7a3e06a29cc27de62c1a4fe716d2134176a80fdfbde006ae5129705dfe2578c8"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCCompiler.cmake",
+      "sha256": "13ebbd3e85809565536dca364a12ebee746fd753de23bfe87005e2fa11ad6d9b"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeCXXCompiler.cmake",
+      "sha256": "177369ccf00e858e415d1cc73f5ff074f804ad11587117f9113714a1fc9093ed"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_C.bin",
+      "sha256": "967125436eea9e693f5ec9b070eb169dc558c274ccb7d89dc10d3e1c784d868d"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeDetermineCompilerABI_CXX.bin",
+      "sha256": "69a66a14ec9e89da4cbb7ab974bd105bc8197722e2c299e0d558b4848ce813f8"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CMakeSystem.cmake",
+      "sha256": "05497441e807dd7af296a2811ea0b8450dd93781fd26fcb4e4bc103cb970c505"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.c",
+      "sha256": "a5bc5d659352bb93e28ce0ec49b3b97490ecc65afce5456f43d04795d0ad627f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdC/CMakeCCompilerId.o",
+      "sha256": "d78a9627b0652581ce5f8e64b0553e58ab511ff4a0e82dfa8b000880a16779c4"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+      "sha256": "6ee4286c9b42405ee114ccf00a8ae3093b7c2ff079cae1a946af11d96a5898ab"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/3.22.1-g37088a8-dirty/CompilerIdCXX/CMakeCXXCompilerId.o",
+      "sha256": "13cfae8d2ebbcc1c923e5555c626fecc367f327891025be39eecc5be8cccdf25"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/.ninja_deps",
+      "sha256": "a32e7aadb26d0d63a9f250b41cb51fb7c2668f94302155f09808c5338a2bb60d"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/.ninja_log",
+      "sha256": "cb1405a4594d4d665c5f2265ce15fd6b41228ff324cf0e086dd1d192d49dbcf3"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/build.ninja",
+      "sha256": "e5be59e378073297bb4bd705da68b79891601304cfc6d26b4fc9e7c8e42f425d"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/cmake_install.cmake",
+      "sha256": "9934d22e8ef5b7ccfbc9f4f03985fa3516a4e309e44858291ae7a84a907033b5"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeCache.txt",
+      "sha256": "98c6be224cb195fb8824c5926f11b5af7e3f1c290ac9412c48b05726d8d4acc9"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir/main.cpp.o",
+      "sha256": "467c80fd01108291c91548da4993e83a027bf887cfc65d2f9fe1d0f777e3ecf1"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/cmake.check_cache",
+      "sha256": "95079b44bcef481d601432c2fd3c654d7fe85b9c8386c355f2874502b47441d7"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir/foo.cpp.o",
+      "sha256": "e39287cde5700ed07c7a785dcfcd22c3a865c33c82959edba53f205b289ee4f8"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/rules.ninja",
+      "sha256": "a683176fc20608ff6dc14c9bb358a5cfabe478a16d71252648f1ea1380b09a7a"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/TargetDirectories.txt",
+      "sha256": "e206b318b11d7c157b92c3fe73bf8aa0fd8aa3fed98542eb529d4a7d305714e4"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/bin/libfoo.a",
+      "sha256": "39228337a8e1f3de4d54d1ce5c1cd84111ea35220f28746067f3455b927c0a67"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/src/CMakeLists.txt",
+      "sha256": "b3d81ebbc51f0e4347584e5259ec715c089a1703318b6b1186ac21a3fd28bce3"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/src/foo.cpp",
+      "sha256": "c8cdf453146d28acee1e4f2172edd9fc0547facd97ba1b9f3c51793543ab2d0f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/_CMakeLTOTest-CXX/src/main.cpp",
+      "sha256": "592bfcd6b6d767218b1d9f0197a0571047c3060ccaf7d45f25191ccd303277b3"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/cmake.check_cache",
+      "sha256": "95079b44bcef481d601432c2fd3c654d7fe85b9c8386c355f2874502b47441d7"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/cmake.verify_globs",
+      "sha256": "2fff056693febfc278b6e2b09770406ec8a2fb6efaef84b573dbb47f573e4e7f"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/CMakeError.log",
+      "sha256": "4e800c0058b910f33895a2a4eb6fdc5f2d0912e6523d127619cc42c2647475cf"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/CMakeOutput.log",
+      "sha256": "4ce5a7179b7d189f94bf6612f6cbe0d624d737215d605d176ab1d85f9c365bc4"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/rules.ninja",
+      "sha256": "051e3fa6e501e3db456a688b5bd061c0da603e8b5a44411565f086e0d9b4be53"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/TargetDirectories.txt",
+      "sha256": "cee0d1129164e7f928ab0b736d0dffe08a414531dbb365ccf3ac79174534b224"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/CMakeFiles/VerifyGlobs.cmake",
+      "sha256": "217180c089880a37dc9465b0597e8df20de8a28bacf7e389125957448c1fcb13"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/compile_commands.json",
+      "sha256": "4a397bd68cf07302eaa2e6cb9402733c2d02dae44fc1ea6444b663ad8b05d3b9"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/compile_commands.json.bin",
+      "sha256": "3cbd41ee0525fb148264690efc11ea6007bc4a8dc841a6b83194b4de132bc6a5"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/configure_fingerprint.bin",
+      "sha256": "08414239e11e002492172f1b47f3934f25dd082a6d843b0adbfff2ac2c8623a0"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/metadata_generation_command.txt",
+      "sha256": "bbaa4e4e1d4279c88b8c20a8fe70d44a4f62eb6eebecce6ccf2f7efd5f56cb78"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/prefab_config.json",
+      "sha256": "9a2e233b8cb8471fad53888b4ca2e0b1801ac955e67393e976c2a611e275883d"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/rnasyncstorage_autolinked_build/cmake_install.cmake",
+      "sha256": "34794e6ad7ab1eb2bc84d6c13661b241b32622be5b6864cbb3aeb995a34fc859"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/rngesturehandler_codegen_autolinked_build/cmake_install.cmake",
+      "sha256": "de4923d37ecb3c55ee4f4609eb566c7fbef555bad3fe21a0f8f38b7d10ce71ec"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/rnreanimated_autolinked_build/cmake_install.cmake",
+      "sha256": "5d305f394906f56d94452574290447a82ee7fcb771d8d1f68ca54ef0951db027"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/rnscreens_autolinked_build/cmake_install.cmake",
+      "sha256": "f723e34ad18efb1b8796d480d618bc8582e466089f72c4a0ecc134f5f6635203"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/rnworklets_autolinked_build/cmake_install.cmake",
+      "sha256": "69efc2acaaa69f51f01473c10bcd47d7a443555937e037a6284880b9070a6a81"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/safeareacontext_autolinked_build/cmake_install.cmake",
+      "sha256": "f6e47eadfa6ad7597e733535ae704d746e992009cbe6f98a4dc5c4c02a0700de"
+    },
+    {
+      "path": "scripts/build/cxx-local/Debug/1h61fr1m/x86_64/symbol_folder_index.txt",
+      "sha256": "18fc9b75e929a607e7f55fc3fdb7578a28e04ef2e8ea10b2e5783e42a7034a89"
+    },
+    {
+      "path": "scripts/build/cxx-local/tools/debug/x86_64/compile_commands.json",
+      "sha256": "4a397bd68cf07302eaa2e6cb9402733c2d02dae44fc1ea6444b663ad8b05d3b9"
+    },
+    {
+      "path": "scripts/contract-check.mjs",
+      "sha256": "822a93bec485294dcb79ca0e4b45f6072e965a5c830a5037db1f1dda7428d623"
+    },
+    {
+      "path": "scripts/instructions.mjs",
+      "sha256": "4ff422ff02e7e8a1cd213a431c0525e473ac2555b5ec4b73746b0896b2df95ae"
+    },
+    {
+      "path": "scripts/inventory-web.mjs",
+      "sha256": "94b2111a2854b09d02656d5e5fc3c51604b48a26861db0b1485369e3586bb659"
+    },
+    {
+      "path": "scripts/legal.mjs",
+      "sha256": "0751f4523edaad7f851cc2c58d5e86d73bee406e129b5c5e144954e98c07b99e"
+    },
+    {
+      "path": "scripts/locales.mjs",
+      "sha256": "0fb1396e50ce3a509af26ea3d765d7349c06081a3e79a91de9c46b9990a69547"
+    },
+    {
+      "path": "scripts/math-assets.mjs",
+      "sha256": "1e3df4c321cf711311ba7e2d4aada8eaf8563c1065662fb4be26006c0cf98a57"
+    },
+    {
+      "path": "scripts/routes.mjs",
+      "sha256": "1729a38494f0c74b6d69a98f1a1beb5959dc12d75e05b261445c7f08bfd7ff2b"
+    },
+    {
+      "path": "scripts/with-fixture-network.cjs",
+      "sha256": "e0987890f731107d196ce3e2f47366d5d07e2589ddf82eef9cbc914c3f3f318e"
+    },
+    {
+      "path": "src/api/client.ts",
+      "sha256": "2159d296d5ebdab7537198170840b00780faa32c240f55f3b1ac50102050a936"
+    },
+    {
+      "path": "src/api/credentialStore.ts",
+      "sha256": "878ec661b8b7accf264daebcb01e734ac58424339b00da40282adb1da657ef40"
+    },
+    {
+      "path": "src/api/openapi-v1.json",
+      "sha256": "a242dabec34daa79d7699cc29cf50a770ffcdfd62228e9371c018f38fcc70c30"
+    },
+    {
+      "path": "src/api/session.ts",
+      "sha256": "9335e950a8be98f3c8a137a1b17f6bcb54dc395d77b5c42ac501b565e9fd25b4"
+    },
+    {
+      "path": "src/api/sse.ts",
+      "sha256": "4460b0921a6b08061886f7c74558cc477cac82d45571a36213a91164ed671598"
+    },
+    {
+      "path": "src/api/types.ts",
+      "sha256": "d53818452c87816bd5be06ed4cda080db6e4d06c2f9aa1704d826ccc7fd4f39b"
+    },
+    {
+      "path": "src/features/account/AccountScreen.tsx",
+      "sha256": "1970855b4df7bf45226886fc69b33f529771f7f809ede235ed089bce467ff00d"
+    },
+    {
+      "path": "src/features/account/AlertsScreen.tsx",
+      "sha256": "536340c1562aed6ec72f7aeab92c3f1d6f8535b384f70887d2ae574a6e5259c1"
+    },
+    {
+      "path": "src/features/account/billingModel.ts",
+      "sha256": "aae956e2e6f93e9419b3fdb08d25134520d9f1e35644ab7d3ede2210a7bc0c17"
+    },
+    {
+      "path": "src/features/account/BillingScreen.tsx",
+      "sha256": "f48e35074862bfa32f6d796883e684cfcabad05943154296d2392863ce206be1"
+    },
+    {
+      "path": "src/features/account/domainModel.ts",
+      "sha256": "f27602a2ecc7aa36f5f117fc55224046e5fa8ff75a99eef906f197bbd60ce676"
+    },
+    {
+      "path": "src/features/account/DomainsScreen.tsx",
+      "sha256": "7315f6fe81147b33d35c921baf15b44621ce8b6ad66ab6f9782d1073ecb519fa"
+    },
+    {
+      "path": "src/features/account/KeyEditor.tsx",
+      "sha256": "49f853f9327cbef2f53f2b226723d557a3f2c9bf7734dbbf8f2d7895d3787294"
+    },
+    {
+      "path": "src/features/account/keyModel.ts",
+      "sha256": "320a60b9f10782c5389a43216d0cebcb5a7b1433ce6f008adb0d2a41768f648e"
+    },
+    {
+      "path": "src/features/account/KeysScreen.tsx",
+      "sha256": "561ff5437b1c5a34224bd41ded99c0b2aae3bba850af2b9921ae4e440ecdbd75"
+    },
+    {
+      "path": "src/features/account/LanguageScreen.tsx",
+      "sha256": "2bc73c97eee1709d508182701cb4ad95d574b55d626492a06b123b6908cc73fe"
+    },
+    {
+      "path": "src/features/account/legalDocuments.ts",
+      "sha256": "190a62ef42b70a8b22d8490f8a4d98882beacba8eb681c4a1ce8bb1f6072e9fc"
+    },
+    {
+      "path": "src/features/account/LegalScreen.tsx",
+      "sha256": "518b356e8aa9be43c84aac411ae659d8d6fca8ca57adcd06b8455672f913e439"
+    },
+    {
+      "path": "src/features/account/memoryModel.ts",
+      "sha256": "8d3be81da712f9febde5969186490ca1c6b3dbee9a0ec1d0e2f57ac68fe489da"
+    },
+    {
+      "path": "src/features/account/MemoryScreen.tsx",
+      "sha256": "7a878f136fe7d7b87bb360facc65fe45bb6ccf138a0417c252c8e9fe12a0063d"
+    },
+    {
+      "path": "src/features/account/PlanChoices.tsx",
+      "sha256": "934681fcc7215988a3af9a91f0f34a1b8119032420dc50944fd89e443677bde5"
+    },
+    {
+      "path": "src/features/account/planModel.ts",
+      "sha256": "42681a918f1fc3f318b81adcc56c1f1201ac5d2654df759ffe1981c98c0e7951"
+    },
+    {
+      "path": "src/features/account/preferenceModel.ts",
+      "sha256": "fcbca3d19095c915cc42b90b5d253dcd248aea06197546b5b05dc1c6fe180f4e"
+    },
+    {
+      "path": "src/features/account/PreferencesScreen.tsx",
+      "sha256": "c4d06a3d23df0c3ec7258227bcdaaab2801dea354b489346886c5366475b2a12"
+    },
+    {
+      "path": "src/features/account/ProfileScreen.tsx",
+      "sha256": "158f2893882c81eb36ec867f6e5a9d45dbd802c6a55fdcbed609095c7755bf4c"
+    },
+    {
+      "path": "src/features/account/securityModel.ts",
+      "sha256": "f7f47785f8d94811883b83b1dd525e06cfe81af7850761ed755c2f817fadd9ef"
+    },
+    {
+      "path": "src/features/account/SensitiveAction.tsx",
+      "sha256": "c8d40fb7b6e40bbf750ecd968fc6e00292b3ddf18b81aea10ed5f13cfe89c0ee"
+    },
+    {
+      "path": "src/features/account/TwoFactorSettings.tsx",
+      "sha256": "9333bae11e6c3ab82f91f95893977ad2a40d02501445c359097c3014ffbaa079"
+    },
+    {
+      "path": "src/features/account/usageDetailsModel.ts",
+      "sha256": "366c6c189b3b10fff25392c5409518a793dd2c1d992730fee9702bb97f9e0f96"
+    },
+    {
+      "path": "src/features/account/UsageDetailsScreen.tsx",
+      "sha256": "b132094c0616f439f92e353d66b0daab7ff4199e53a1557acfcc4925f3c3ccf8"
+    },
+    {
+      "path": "src/features/account/usageModel.ts",
+      "sha256": "bc89d5e8dd7c67e3396424f383d5e4406d306b338cf17480d5e64d0d1505c6e2"
+    },
+    {
+      "path": "src/features/account/UsageScreen.tsx",
+      "sha256": "878ac458bcb91c280853419cf588908aa92015f91744456e72987d0e0701cf1c"
+    },
+    {
+      "path": "src/features/account/VerificationPanel.tsx",
+      "sha256": "639f63419d6a6691aa64b67c0a42f79840ce571efe767e0e1f77f4e229283ebd"
+    },
+    {
+      "path": "src/features/anonymous/AnonymousScreen.tsx",
+      "sha256": "beb4b2a34009297fa2efa6c012a6300a34639a1b711eb8bf951bc47fd9b04718"
+    },
+    {
+      "path": "src/features/apps/appModel.ts",
+      "sha256": "d462dc971fd6c4f9ef616ac66eca6ab06759cd1a9f3c7c0fe9f4399c32eda196"
+    },
+    {
+      "path": "src/features/apps/AppScreen.tsx",
+      "sha256": "ad6a325e5ac727fe479aceb3b0ce908f8559ac3003fdf46cffc41706d8189f95"
+    },
+    {
+      "path": "src/features/apps/AppsScreen.tsx",
+      "sha256": "8398d83078d0cc0ec8334b76641e53a4601f03fb43911da9ead3f8db31a31e57"
+    },
+    {
+      "path": "src/features/apps/ConfigFields.tsx",
+      "sha256": "d097660631c16bb307095aa641236749af40564e33b3786e23030d32f3e8873c"
+    },
+    {
+      "path": "src/features/apps/InstallationScreen.tsx",
+      "sha256": "007949159137ef94c56059e5df0bafe0d05ab6573d0349c7419897198c7e41b6"
+    },
+    {
+      "path": "src/features/apps/ObsidianPanel.tsx",
+      "sha256": "ee8daad6957e59eb7e6deb6b02536050811589589f6e4009938e69ffe7b29412"
+    },
+    {
+      "path": "src/features/auth/AccountAccessScreen.tsx",
+      "sha256": "1b19671e15f900e4f7342d946f9cf9dfede169b4937a7451464312795edb37a3"
+    },
+    {
+      "path": "src/features/auth/AuthProvider.tsx",
+      "sha256": "2f55aeb86dc137db5f8d12aaa75a02252df9039ba9849906fe796acf2874d251"
+    },
+    {
+      "path": "src/features/auth/CompleteProfileScreen.tsx",
+      "sha256": "c4ef1aeaf0f5ee5c52daec69f2444357e2118ee8f315c7e3fec985891a2ee9aa"
+    },
+    {
+      "path": "src/features/auth/LoginScreen.tsx",
+      "sha256": "a5fe0b442f2e93abf4cfa67d808d445146b42ce1b6397e0dc30953862d3f3d29"
+    },
+    {
+      "path": "src/features/auth/NotificationLinks.tsx",
+      "sha256": "60a8bb58198b41b6d293f9e3245c2e64fabeb4faf6fd6c4de2a21b816aec4715"
+    },
+    {
+      "path": "src/features/auth/resetModel.ts",
+      "sha256": "17f8cd57a3d11af376d4df5c4374e08f23de64b71dc572967ac16f5a82db8066"
+    },
+    {
+      "path": "src/features/auth/ResetPasswordScreen.tsx",
+      "sha256": "52c5c49c0946d31d940978fdb7cf53ef9c4ac84e5fe3ff2d54c8d523d98f53c4"
+    },
+    {
+      "path": "src/features/conversations/ConversationActions.tsx",
+      "sha256": "d5a5846243732fa2478c40cfcb7bd2b74f82d8bbf939043ebee207750b85c194"
+    },
+    {
+      "path": "src/features/conversations/conversationData.ts",
+      "sha256": "ec838d8aae85c8e705af83fe1c724aa5c817873098eadeb4cead7cce4a3de643"
+    },
+    {
+      "path": "src/features/conversations/ConversationScreen.tsx",
+      "sha256": "b92372b132c01744e8d37b2516ffaab487447754cd7d66a6aec5ebe7f86e41c0"
+    },
+    {
+      "path": "src/features/conversations/GroupsScreen.tsx",
+      "sha256": "854fc4caee1c9075d9211b113c9793997c0b402d85de59cfbd9cc7f06827856f"
+    },
+    {
+      "path": "src/features/conversations/HistoryScreen.tsx",
+      "sha256": "8117c905287705e850dc2c617c3bdc9acc3b3a08604bb36d3d770650deabb015"
+    },
+    {
+      "path": "src/features/conversations/JobScreen.tsx",
+      "sha256": "a431dc287a6c131aea3c7038bbda69f86bfde7f5cbf531570401d42110512678"
+    },
+    {
+      "path": "src/features/conversations/ModelOptions.tsx",
+      "sha256": "cf0433484ce6ce6748bd359d646b48f685db234ab06d722090d515174aa4db34"
+    },
+    {
+      "path": "src/features/conversations/replayState.ts",
+      "sha256": "0e62e632116223a5bdc045a0c185c20675ced675e2ae2f5468347dc7769a7efb"
+    },
+    {
+      "path": "src/features/conversations/useResponseConnection.ts",
+      "sha256": "65e2db1845319eee95b21e6e2cb4ca6cd12de63084d83a61219117890014f571"
+    },
+    {
+      "path": "src/features/files/fileModel.ts",
+      "sha256": "5c44f916572cb7a0074fe7b8123e8835b87808d696e740ee89e1a6e7cbd1b5e5"
+    },
+    {
+      "path": "src/features/files/FilesScreen.tsx",
+      "sha256": "b852890de0074f7b3c25aa0e1ec8b39bed9db5a0bc99a636cc6952eb46106751"
+    },
+    {
+      "path": "src/features/media/mediaHistory.ts",
+      "sha256": "996618c7a231f5583ccd4bf780a0c6470a0c2aea60811abe5ef1060aa123c904"
+    },
+    {
+      "path": "src/features/media/mediaModel.ts",
+      "sha256": "56db5da39ebaebfc45ad7b903bca256202d483bba40b187eadb690288107a883"
+    },
+    {
+      "path": "src/features/media/MediaResultScreen.tsx",
+      "sha256": "b6afed76502e9be0011ab1a174fb097890d2735a478ba4215492cacc76a82cf4"
+    },
+    {
+      "path": "src/features/media/MediaScreen.tsx",
+      "sha256": "8366c3139b2996f9ee5a5aeb5dca18e780fb4bfc3629014a5634db796dc2b231"
+    },
+    {
+      "path": "src/platform/archives.ts",
+      "sha256": "21aec329bb81a07add1f75b8080c569ebd4148e6b8e279e5f17101c1eea05635"
+    },
+    {
+      "path": "src/platform/attachments.ts",
+      "sha256": "fe44e74bf895848f012a6c813830f9094ddea62898432d807197329969c7cdde"
+    },
+    {
+      "path": "src/platform/checkout.ts",
+      "sha256": "e40dce098ee2108b8765379f0515ed4bd9bd82359c3ecd4dbe434b4928fab8c3"
+    },
+    {
+      "path": "src/platform/drafts.ts",
+      "sha256": "f8fbf2cb8b6925604a7a15ae603edf90b341fcbadece9c20c75ec880627ad5b3"
+    },
+    {
+      "path": "src/platform/exports.ts",
+      "sha256": "adfe2946033340fa3c3c423e8082b2ac2e54b7731b9a6f3abfc35118dd1c3dc2"
+    },
+    {
+      "path": "src/platform/Formula.tsx",
+      "sha256": "dc4a6304bdbe42c66982ab93a1af4dd304a2601765363f9a0b32d853fb38b06f"
+    },
+    {
+      "path": "src/platform/Formula.web.tsx",
+      "sha256": "91d52647c55816d7bfdc890a150f678583ce0e62583ad734c9cb777264a595ef"
+    },
+    {
+      "path": "src/platform/language.ts",
+      "sha256": "9fb61f72d8939010658a61dca7ca6aecfdfefe5a3931bd4d59d8da516ad2f3bd"
+    },
+    {
+      "path": "src/platform/math-style.json",
+      "sha256": "77e517aba6339a60bf7874ed719b6760db0a5517809b1a0400441e65ffa215f9"
+    },
+    {
+      "path": "src/platform/MediaPlayer.tsx",
+      "sha256": "cabbb6aebfc8b43e2cca45ba693e6d07fc383a54742def28fda2286a060c76b3"
+    },
+    {
+      "path": "src/platform/notificationModel.ts",
+      "sha256": "c90d340eba514bcecd327728a16223a2d851a6820e3e9d61df402e85e48494fb"
+    },
+    {
+      "path": "src/platform/notifications.ts",
+      "sha256": "8660f45131904e78f68bda2cd9662871689de73b4bf5e16a5b64ce9d1f39dca1"
+    },
+    {
+      "path": "src/platform/runtime.ts",
+      "sha256": "2d020e12cdae94405c654ecede51fc627962611c5450109540167873a03d65b7"
+    },
+    {
+      "path": "src/ui/controls.tsx",
+      "sha256": "47b14b3ff97bc6416db9557bb8b6643d1e799d568b36e46813c0d4b6639db20e"
+    },
+    {
+      "path": "src/ui/languageModel.ts",
+      "sha256": "f7bc9b551be302daa86a8547effad2ec5dff8055916c76265d2a1075a8e427ff"
+    },
+    {
+      "path": "src/ui/markdownModel.ts",
+      "sha256": "c54199cb694d5353bcdcc848da30eb63ca4fbe43fd423de2e40859db5868fd06"
+    },
+    {
+      "path": "src/ui/mathModel.ts",
+      "sha256": "f866e1e4910837c893a501d6721de1dd01881d6ac6fc8fd426fba29c0449ea39"
+    },
+    {
+      "path": "src/ui/RichText.tsx",
+      "sha256": "8c533ccdf4ddab90fc125f8764860ec10c62eb0c71eeb707be11db937d97de59"
+    },
+    {
+      "path": "src/ui/theme.ts",
+      "sha256": "790c7d9bedd42593ba9f4540edbbe27097fb42300f540ce6e1151f16c7004dd8"
+    },
+    {
+      "path": "src/ui/useFeatureTask.ts",
+      "sha256": "1b628571b24edbc298421c7e22977f5011edc1d290f7663d96fdc93675649070"
+    }
+  ],
+  "purpose": "Fictional native media/anonymous/files/math/model controls/language and lifecycle verification; release policy restrictions retained",
+  "status": "Build pending; not an installed result"
+}

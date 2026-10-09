@@ -1,0 +1,55 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-r5-sign-in.yaml
+- scrollUntilVisible:
+    element: "Response jobs"
+    direction: UP
+- tapOn: "Response jobs"
+- tapOn: "fixture-chat"
+- tapOn:
+    text: "Job prompt"
+    index: 1
+- inputText: "Fictional asynchronous response"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Create response job"
+    direction: DOWN
+- tapOn: "Create response job"
+- scrollUntilVisible:
+    element: "Open created response job"
+    direction: DOWN
+- tapOn: "Open created response job"
+- assertVisible: "running"
+- tapOn: "Follow response job"
+- assertVisible: "completed"
+- assertVisible: "Fictional job result."
+- takeScreenshot: fixture-response-job-completed
+- back
+- back
+- scrollUntilVisible:
+    element: "Embeddings"
+    direction: UP
+- tapOn: "Embeddings"
+- tapOn: "fixture-embeddings"
+- scrollUntilVisible:
+    element: "Embedding text"
+    direction: DOWN
+- tapOn:
+    text: "Embedding text"
+    index: 1
+- inputText: "Fictional embedding content"
+- assertVisible: "Fictional embedding content"
+- takeScreenshot: fixture-embeddings-keyboard
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Create embeddings"
+    direction: DOWN
+- tapOn: "Create embeddings"
+- scrollUntilVisible:
+    element: "Save or share embeddings"
+    direction: DOWN
+- takeScreenshot: fixture-embeddings-result
+- tapOn: "Save or share embeddings"
+- assertVisible: "Sharing 1 file"
+- takeScreenshot: fixture-embeddings-share
+- back

@@ -1,0 +1,70 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-sign-in.yaml
+- tapOn: "Apps"
+- tapOn: "Fictional notes connector"
+- tapOn:
+    text: "Vault name"
+    index: 1
+- inputText: "Fictional device vault"
+- hideKeyboard
+- tapOn: "Install Fictional notes connector"
+- assertVisible: "Installation confirmed by OpenJM."
+- assertVisible: "fictional-installation-one-time"
+- takeScreenshot: fixture-installed-app
+- tapOn: "Dismiss installation token"
+- tapOn: "Open installed app"
+- scrollUntilVisible:
+    element: "Save installation changes"
+    direction: DOWN
+- tapOn: "Save installation changes"
+- scrollUntilVisible:
+    element: "Installation update confirmed by OpenJM."
+    direction: DOWN
+- scrollUntilVisible:
+    element: "Rotate installation token"
+    direction: DOWN
+- tapOn: "Rotate installation token"
+- tapOn: "Continue to verification"
+- scrollUntilVisible:
+    element: "Verify and rotate installation token"
+    direction: DOWN
+- tapOn: "Verify and rotate installation token"
+- scrollUntilVisible:
+    element:
+      text: "Verification code"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Verification code"
+    index: 1
+- inputText: "123456"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Verify and rotate installation token"
+    direction: DOWN
+- tapOn: "Verify and rotate installation token"
+- scrollUntilVisible:
+    element: "fictional-rotated-token"
+    direction: UP
+- assertVisible: "fictional-rotated-token"
+- takeScreenshot: fixture-rotated-token
+- tapOn: "Dismiss rotated token"
+- back
+- scrollUntilVisible:
+    element: "obsidian"
+    direction: DOWN
+- tapOn: "obsidian"
+- scrollUntilVisible:
+    element:
+      text: "Obsidian installation token"
+      index: 1
+    direction: DOWN
+- tapOn:
+    text: "Obsidian installation token"
+    index: 1
+- inputText: "fictional-bridge-token"
+- hideKeyboard
+- tapOn: "Check Obsidian bridge"
+- assertVisible: "connected · Fictional vault"
+- takeScreenshot: fixture-obsidian-status

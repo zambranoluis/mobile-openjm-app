@@ -1,0 +1,5 @@
+appId: com.openjm.mobile.fixture
+---
+# Host harness backgrounds and restores the same Android task through Recents.
+- assertVisible: "Play music"
+- takeScreenshot: fixture-music-paused-on-reopen

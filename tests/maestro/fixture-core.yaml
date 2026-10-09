@@ -1,0 +1,57 @@
+appId: com.openjm.mobile
+---
+- launchApp:
+    clearState: true
+- openLink: ${DEVELOPMENT_URL}
+- extendedWaitUntil:
+    visible: "Welcome to OpenJM|http://.*:8095"
+    timeout: 60000
+- runFlow:
+    when:
+      visible: "http://.*:8095"
+    commands:
+      - tapOn: "http://.*:8095"
+- extendedWaitUntil:
+    visible: "Welcome to OpenJM"
+    timeout: 60000
+- assertVisible: "Welcome to OpenJM"
+- tapOn: "Email"
+- inputText: "avery@example.test"
+- tapOn: "Password"
+- inputText: "fictional-password"
+- hideKeyboard
+- tapOn: "Sign in"
+- assertVisible: "Verification code"
+- takeScreenshot: fixture-mfa
+- tapOn: "Verification code"
+- inputText: "123456"
+- hideKeyboard
+- tapOn: "Verify and sign in"
+- assertVisible: "Fixture conversation"
+- takeScreenshot: fixture-history
+- tapOn: "Fixture conversation"
+- assertVisible: "This is fictional test content."
+- tapOn: "Message"
+- inputText: "A fictional device test"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Send message"
+    direction: DOWN
+- tapOn: "Send message"
+- assertVisible: "Fixture response received."
+- takeScreenshot: fixture-conversation
+- back
+- tapOn: "Apps"
+- assertVisible: "Fictional notes connector"
+- takeScreenshot: fixture-apps
+- tapOn: "Account"
+- assertVisible: "Avery Sample"
+- tapOn: "Credits and plan"
+- assertVisible: "Fictional test plan"
+- takeScreenshot: fixture-billing
+- back
+- scrollUntilVisible:
+    element: "Sign out"
+    direction: DOWN
+- tapOn: "Sign out"
+- assertVisible: "Welcome to OpenJM"

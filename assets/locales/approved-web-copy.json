@@ -1,0 +1,1386 @@
+{
+  "Maximum for free generation: 60 seconds (1 minute). Automatic adjusts the duration to the available limit.": {
+    "en": "Maximum for free generation: 60 seconds (1 minute). Automatic adjusts the duration to the available limit.",
+    "es": "Máximo para generación gratuita: 60 segundos (1 minuto). Automático ajusta la duración al límite disponible.",
+    "pt": "Máximo para geração gratuita: 60 segundos (1 minuto). Automático ajusta a duração ao limite disponível.",
+    "hi": "निःशुल्क निर्माण के लिए अधिकतम: 60 सेकंड (1 मिनट)। स्वचालित अवधि उपलब्ध सीमा के अनुसार समायोजित होती है।",
+    "zh": "免费生成最长为 60 秒（1 分钟）。选择自动时，时长会根据可用上限调整。",
+    "ru": "Максимум для бесплатной генерации: 60 секунд (1 минута). Автоматическая длительность подстраивается под доступный лимит."
+  },
+  "Music": {
+    "en": "Music",
+    "es": "Música",
+    "pt": "Música",
+    "hi": "संगीत",
+    "zh": "音乐",
+    "ru": "Музыка"
+  },
+  "Music generation": {
+    "en": "Music generation",
+    "es": "Generación de música",
+    "pt": "Geração de música",
+    "hi": "संगीत बनाएँ",
+    "zh": "生成音乐",
+    "ru": "Создание музыки"
+  },
+  "Configure how your song should be generated.": {
+    "en": "Configure how your song should be generated.",
+    "es": "Configura cómo se generará tu canción.",
+    "pt": "Configure como sua música será gerada.",
+    "hi": "तय करें कि आपका गाना कैसे बनाया जाए।",
+    "zh": "设置歌曲的生成方式。",
+    "ru": "Настройте, как будет создана песня."
+  },
+  "Active": {
+    "en": "Active",
+    "es": "Activa",
+    "pt": "Ativa",
+    "hi": "सक्रिय",
+    "zh": "已启用",
+    "ru": "Активна"
+  },
+  "Register my voice": {
+    "en": "Register my voice",
+    "es": "Registrar mi voz",
+    "pt": "Registrar minha voz",
+    "hi": "मेरी आवाज़ पंजीकृत करें",
+    "zh": "注册我的声音",
+    "ru": "Зарегистрировать мой голос"
+  },
+  "Leaving My voice or closing this panel stops and discards the local recording. Registered voices are kept.": {
+    "en": "Leaving My voice or closing this panel stops and discards the local recording. Registered voices are kept.",
+    "es": "Salir de Mi voz o cerrar este panel detiene y descarta la grabación local. Las voces registradas se conservan.",
+    "pt": "Sair de Minha voz ou fechar este painel interrompe e descarta a gravação local. As vozes registradas são mantidas.",
+    "hi": "मेरी आवाज़ से बाहर जाने या यह पैनल बंद करने पर स्थानीय रिकॉर्डिंग रुक जाती है और हटा दी जाती है। पंजीकृत आवाज़ें बनी रहती हैं।",
+    "zh": "离开“我的声音”或关闭此面板会停止并丢弃本地录音。已注册的声音会保留。",
+    "ru": "Выход из раздела «Мой голос» или закрытие панели останавливает и удаляет локальную запись. Зарегистрированные голоса сохраняются."
+  },
+  "Recording": {
+    "en": "Recording",
+    "es": "Grabando",
+    "pt": "Gravando",
+    "hi": "रिकॉर्डिंग जारी है",
+    "zh": "正在录音",
+    "ru": "Идёт запись"
+  },
+  "Recording ready to preview": {
+    "en": "Recording ready to preview",
+    "es": "Grabación lista para escuchar",
+    "pt": "Gravação pronta para ouvir",
+    "hi": "रिकॉर्डिंग सुनने के लिए तैयार है",
+    "zh": "录音已就绪，可试听",
+    "ru": "Запись готова к прослушиванию"
+  },
+  "Ready to record": {
+    "en": "Ready to record",
+    "es": "Listo para grabar",
+    "pt": "Pronto para gravar",
+    "hi": "रिकॉर्ड करने के लिए तैयार",
+    "zh": "准备录音",
+    "ru": "Готово к записи"
+  },
+  "Music options": {
+    "en": "Music options",
+    "es": "Opciones de música",
+    "pt": "Opções de música",
+    "hi": "संगीत विकल्प",
+    "zh": "音乐选项",
+    "ru": "Настройки музыки"
+  },
+  "Model": {
+    "en": "Model",
+    "es": "Modelo",
+    "pt": "Modelo",
+    "hi": "मॉडल",
+    "zh": "模型",
+    "ru": "Модель"
+  },
+  "Lyrics mode": {
+    "en": "Lyrics mode",
+    "es": "Modo de letra",
+    "pt": "Modo da letra",
+    "hi": "गीत के बोल का मोड",
+    "zh": "歌词模式",
+    "ru": "Режим текста"
+  },
+  "Automatic": {
+    "en": "Automatic",
+    "es": "Automático",
+    "pt": "Automático",
+    "hi": "स्वचालित",
+    "zh": "自动",
+    "ru": "Автоматически"
+  },
+  "Instrumental": {
+    "en": "Instrumental",
+    "es": "Instrumental",
+    "pt": "Instrumental",
+    "hi": "वाद्य संगीत",
+    "zh": "纯音乐",
+    "ru": "Без вокала"
+  },
+  "My lyrics": {
+    "en": "My lyrics",
+    "es": "Mi letra",
+    "pt": "Minha letra",
+    "hi": "मेरे बोल",
+    "zh": "我的歌词",
+    "ru": "Мой текст"
+  },
+  "Lyrics": {
+    "en": "Lyrics",
+    "es": "Letra",
+    "pt": "Letra",
+    "hi": "गीत के बोल",
+    "zh": "歌词",
+    "ru": "Текст песни"
+  },
+  "Duration (seconds)": {
+    "en": "Duration (seconds)",
+    "es": "Duración (segundos)",
+    "pt": "Duração (segundos)",
+    "hi": "अवधि (सेकंड)",
+    "zh": "时长（秒）",
+    "ru": "Длительность (секунды)"
+  },
+  "Vocal language": {
+    "en": "Vocal language",
+    "es": "Idioma vocal",
+    "pt": "Idioma vocal",
+    "hi": "गायन की भाषा",
+    "zh": "演唱语言",
+    "ru": "Язык вокала"
+  },
+  "Advanced options": {
+    "en": "Advanced options",
+    "es": "Opciones avanzadas",
+    "pt": "Opções avançadas",
+    "hi": "उन्नत विकल्प",
+    "zh": "高级选项",
+    "ru": "Дополнительные настройки"
+  },
+  "Generation steps": {
+    "en": "Generation steps",
+    "es": "Pasos de generación",
+    "pt": "Etapas de geração",
+    "hi": "निर्माण चरण",
+    "zh": "生成步数",
+    "ru": "Шаги генерации"
+  },
+  "Seed": {
+    "en": "Seed",
+    "es": "Semilla",
+    "pt": "Semente",
+    "hi": "सीड",
+    "zh": "种子",
+    "ru": "Начальное число"
+  },
+  "Generating a new song may use credits or your free allowance.": {
+    "en": "Generating a new song may use credits or your free allowance.",
+    "es": "Generar otra canción puede consumir créditos o cuota gratuita.",
+    "pt": "Gerar outra música pode consumir créditos ou a cota gratuita.",
+    "hi": "नया गीत बनाने पर क्रेडिट या निःशुल्क सीमा का उपयोग हो सकता है।",
+    "zh": "生成新歌曲可能消耗积分或免费额度。",
+    "ru": "Создание новой песни может расходовать кредиты или бесплатную квоту."
+  },
+  "OpenJM determines availability and the final quote.": {
+    "en": "OpenJM determines availability and the final quote.",
+    "es": "OpenJM determina la disponibilidad y la cotización final.",
+    "pt": "A OpenJM determina a disponibilidade e o orçamento final.",
+    "hi": "उपलब्धता और अंतिम अनुमान OpenJM तय करता है।",
+    "zh": "OpenJM 决定可用性和最终报价。",
+    "ru": "OpenJM определяет доступность и окончательную оценку стоимости."
+  },
+  "Set up the core details for your song.": {
+    "en": "Set up the core details for your song.",
+    "es": "Define los detalles principales de tu canción.",
+    "pt": "Defina os detalhes principais da sua música.",
+    "hi": "अपने गाने का मुख्य विवरण सेट करें।",
+    "zh": "设置歌曲的核心信息。",
+    "ru": "Задайте основные параметры песни."
+  },
+  "Fine-tune your generation with advanced settings.": {
+    "en": "Fine-tune your generation with advanced settings.",
+    "es": "Ajusta la generación con opciones avanzadas.",
+    "pt": "Ajuste a geração com configurações avançadas.",
+    "hi": "उन्नत सेटिंग्स से निर्माण को बारीकी से समायोजित करें।",
+    "zh": "通过高级设置微调生成效果。",
+    "ru": "Точная настройка генерации с помощью дополнительных параметров."
+  },
+  "Model to use for generation.": {
+    "en": "Model to use for generation.",
+    "es": "Modelo que se usará para la generación.",
+    "pt": "Modelo usado para a geração.",
+    "hi": "निर्माण के लिए उपयोग होने वाला मॉडल।",
+    "zh": "用于生成的模型。",
+    "ru": "Модель, используемая для генерации."
+  },
+  "Choose how lyrics should be handled.": {
+    "en": "Choose how lyrics should be handled.",
+    "es": "Elige cómo se tratará la letra.",
+    "pt": "Escolha como a letra será tratada.",
+    "hi": "चुनें कि गीत के बोल कैसे संभाले जाएँ।",
+    "zh": "选择歌词的处理方式。",
+    "ru": "Выберите, как обрабатывать текст песни."
+  },
+  "Length of the generated song (in seconds).": {
+    "en": "Length of the generated song (in seconds).",
+    "es": "Duración de la canción generada (en segundos).",
+    "pt": "Duração da música gerada (em segundos).",
+    "hi": "बनाए गए गाने की लंबाई (सेकंड में)।",
+    "zh": "生成歌曲的时长（秒）。",
+    "ru": "Длительность создаваемой песни (в секундах)."
+  },
+  "Language for vocals and lyrics.": {
+    "en": "Language for vocals and lyrics.",
+    "es": "Idioma de la voz y la letra.",
+    "pt": "Idioma dos vocais e da letra.",
+    "hi": "गायन और बोल की भाषा।",
+    "zh": "演唱和歌词使用的语言。",
+    "ru": "Язык вокала и текста."
+  },
+  "Enter your lyrics here…": {
+    "en": "Enter your lyrics here…",
+    "es": "Escribe tu letra aquí…",
+    "pt": "Digite sua letra aqui…",
+    "hi": "अपने बोल यहाँ लिखें…",
+    "zh": "在此输入歌词…",
+    "ru": "Введите текст песни…"
+  },
+  "Provide the lyrics for your song. You can write verses, chorus, or a full song.": {
+    "en": "Provide the lyrics for your song. You can write verses, chorus, or a full song.",
+    "es": "Escribe la letra de tu canción. Puedes incluir estrofas, estribillo o la canción completa.",
+    "pt": "Informe a letra da sua música. Você pode escrever estrofes, refrão ou a música completa.",
+    "hi": "अपने गाने के बोल दें। आप अंतरे, मुखड़ा या पूरा गाना लिख सकते हैं।",
+    "zh": "提供歌曲歌词。可以写主歌、副歌或整首歌。",
+    "ru": "Добавьте текст песни. Можно написать куплеты, припев или всю песню."
+  },
+  "More steps can improve quality (higher cost).": {
+    "en": "More steps can improve quality (higher cost).",
+    "es": "Más pasos pueden mejorar la calidad (mayor costo).",
+    "pt": "Mais etapas podem melhorar a qualidade (custo maior).",
+    "hi": "अधिक चरण गुणवत्ता सुधार सकते हैं (अधिक लागत)।",
+    "zh": "步数越多，质量可能越好（费用更高）。",
+    "ru": "Больше шагов может повысить качество (выше стоимость)."
+  },
+  "Set a numeric seed for reproducible results.": {
+    "en": "Set a numeric seed for reproducible results.",
+    "es": "Define una semilla numérica para obtener resultados reproducibles.",
+    "pt": "Defina uma semente numérica para resultados reproduzíveis.",
+    "hi": "दोहराए जा सकने वाले परिणामों के लिए संख्यात्मक सीड सेट करें।",
+    "zh": "设置数字种子以获得可复现的结果。",
+    "ru": "Задайте числовое начальное значение для воспроизводимых результатов."
+  },
+  "Random": {
+    "en": "Random",
+    "es": "Aleatoria",
+    "pt": "Aleatória",
+    "hi": "यादृच्छिक",
+    "zh": "随机",
+    "ru": "Случайно"
+  },
+  "Generated music": {
+    "en": "Generated music",
+    "es": "Música generada",
+    "pt": "Música gerada",
+    "hi": "बनाया गया संगीत",
+    "zh": "生成的音乐",
+    "ru": "Созданная музыка"
+  },
+  "With lyrics": {
+    "en": "With lyrics",
+    "es": "Con letra",
+    "pt": "Com letra",
+    "hi": "बोल सहित",
+    "zh": "含歌词",
+    "ru": "С текстом"
+  },
+  "Quote: {{cents}} cents. This is not confirmation of a charge.": {
+    "en": "Quote: {{cents}} cents. This is not confirmation of a charge.",
+    "es": "Cotización: {{cents}} centavos. Esto no confirma un cobro.",
+    "pt": "Orçamento: {{cents}} centavos. Isso não confirma uma cobrança.",
+    "hi": "अनुमान: {{cents}} सेंट। यह शुल्क की पुष्टि नहीं है।",
+    "zh": "报价：{{cents}} 美分。这不代表已收费。",
+    "ru": "Оценка: {{cents}} центов. Это не подтверждение списания."
+  },
+  "The submission could not be confirmed. A song may still have been created. Refresh the existing request before generating another song.": {
+    "en": "The submission could not be confirmed. A song may still have been created. Refresh the existing request before generating another song.",
+    "es": "No se pudo confirmar el envío. La canción podría haberse creado. Consulta la solicitud existente antes de generar otra.",
+    "pt": "Não foi possível confirmar o envio. Uma música pode ter sido criada. Consulte a solicitação existente, se disponível, antes de gerar outra.",
+    "hi": "अनुरोध की पुष्टि नहीं हो सकी। गीत बन चुका हो सकता है। दूसरा गीत बनाने से पहले मौजूदा अनुरोध उपलब्ध हो तो उसकी स्थिति देखें।",
+    "zh": "无法确认请求是否已提交。歌曲可能已创建。生成另一首之前，请在可用时查询现有请求。",
+    "ru": "Отправку подтвердить не удалось. Песня могла быть создана. Прежде чем создавать другую, проверьте существующий запрос, если он доступен."
+  },
+  "The audio operation could not be completed.": {
+    "en": "The audio operation could not be completed.",
+    "es": "No se pudo completar la operación de audio.",
+    "pt": "Não foi possível concluir a operação de áudio.",
+    "hi": "ऑडियो प्रक्रिया पूरी नहीं हो सकी।",
+    "zh": "无法完成音频操作。",
+    "ru": "Не удалось выполнить операцию с аудио."
+  },
+  "Refresh existing request": {
+    "en": "Refresh existing request",
+    "es": "Consultar solicitud existente",
+    "pt": "Consultar solicitação existente",
+    "hi": "मौजूदा अनुरोध की स्थिति देखें",
+    "zh": "查询现有请求",
+    "ru": "Проверить существующий запрос"
+  },
+  "Loading…": {
+    "en": "Loading…",
+    "es": "Cargando…",
+    "pt": "Carregando…",
+    "hi": "लोड हो रहा है…",
+    "zh": "加载中…",
+    "ru": "Загрузка…"
+  },
+  "Load or retry audio": {
+    "en": "Load or retry audio",
+    "es": "Cargar o reintentar audio",
+    "pt": "Carregar ou tentar o áudio novamente",
+    "hi": "ऑडियो लोड करें या पुनः प्रयास करें",
+    "zh": "加载或重试音频",
+    "ru": "Загрузить аудио или повторить загрузку"
+  },
+  "Download song": {
+    "en": "Download song",
+    "es": "Descargar canción",
+    "pt": "Baixar música",
+    "hi": "गीत डाउनलोड करें",
+    "zh": "下载歌曲",
+    "ru": "Скачать песню"
+  },
+  "Audio could not be played or is no longer available. Try loading it again, or download the FLAC.": {
+    "en": "Audio could not be played or is no longer available. Try loading it again, or download the FLAC.",
+    "es": "No se pudo reproducir el audio o ya no está disponible. Intenta cargarlo otra vez o descarga el FLAC.",
+    "pt": "O áudio não pôde ser reproduzido ou não está mais disponível. Carregue novamente ou baixe o FLAC.",
+    "hi": "ऑडियो चल नहीं सका या अब उपलब्ध नहीं है। दोबारा लोड करें या FLAC डाउनलोड करें।",
+    "zh": "音频无法播放或已不可用。请重新加载或下载 FLAC。",
+    "ru": "Аудио не воспроизводится или больше недоступно. Загрузите его снова или скачайте FLAC."
+  },
+  "Music uses the description, lyrics and optional enrolled voice. Remove file attachments before sending.": {
+    "en": "Music uses the description, lyrics and optional enrolled voice. Remove file attachments before sending.",
+    "es": "La música utiliza la descripción, la letra y una voz registrada opcional. Retira los archivos adjuntos antes de enviar.",
+    "pt": "A música usa a descrição, a letra e uma voz cadastrada opcional. Remova os anexos antes de enviar.",
+    "hi": "संगीत विवरण, बोल और वैकल्पिक पंजीकृत आवाज़ का उपयोग करता है। भेजने से पहले संलग्न फ़ाइलें हटाएँ।",
+    "zh": "音乐使用描述、歌词和可选的已注册声音。请在发送前移除附件。",
+    "ru": "Для музыки используются описание, текст и при желании зарегистрированный голос. Удалите вложения перед отправкой."
+  },
+  "Review the music description and options before sending.": {
+    "en": "Review the music description and options before sending.",
+    "es": "Revisa la descripción y las opciones musicales antes de enviar.",
+    "pt": "Revise a descrição e as opções antes de enviar.",
+    "hi": "भेजने से पहले संगीत का विवरण और विकल्प जाँचें।",
+    "zh": "发送前请检查音乐描述和选项。",
+    "ru": "Проверьте описание и настройки музыки перед отправкой."
+  },
+  "Queued": {
+    "en": "Queued",
+    "es": "En cola",
+    "pt": "Na fila",
+    "hi": "कतार में",
+    "zh": "排队中",
+    "ru": "В очереди"
+  },
+  "Planning lyrics": {
+    "en": "Planning lyrics",
+    "es": "Preparando la letra",
+    "pt": "Preparando a letra",
+    "hi": "बोल तैयार हो रहे हैं",
+    "zh": "准备歌词",
+    "ru": "Подготовка текста"
+  },
+  "Waiting for capacity": {
+    "en": "Waiting for capacity",
+    "es": "Esperando capacidad",
+    "pt": "Aguardando capacidade",
+    "hi": "क्षमता की प्रतीक्षा",
+    "zh": "等待可用容量",
+    "ru": "Ожидание ресурсов"
+  },
+  "Generating music": {
+    "en": "Generating music",
+    "es": "Generando música",
+    "pt": "Gerando música",
+    "hi": "संगीत बन रहा है",
+    "zh": "生成音乐中",
+    "ru": "Создание музыки"
+  },
+  "Completed": {
+    "en": "Completed",
+    "es": "Completada",
+    "pt": "Concluída",
+    "hi": "पूर्ण",
+    "zh": "已完成",
+    "ru": "Готово"
+  },
+  "Generation failed": {
+    "en": "Generation failed",
+    "es": "La generación falló",
+    "pt": "Falha na geração",
+    "hi": "निर्माण विफल",
+    "zh": "生成失败",
+    "ru": "Ошибка генерации"
+  },
+  "Submitting request": {
+    "en": "Submitting request",
+    "es": "Enviando solicitud",
+    "pt": "Enviando solicitação",
+    "hi": "अनुरोध भेजा जा रहा है",
+    "zh": "提交请求中",
+    "ru": "Отправка запроса"
+  },
+  "Accepted": {
+    "en": "Accepted",
+    "es": "Aceptada",
+    "pt": "Aceita",
+    "hi": "स्वीकृत",
+    "zh": "已接受",
+    "ru": "Принят"
+  },
+  "Submission uncertain": {
+    "en": "Submission uncertain",
+    "es": "Envío sin confirmar",
+    "pt": "Envio não confirmado",
+    "hi": "अनुरोध अपुष्ट",
+    "zh": "提交未确认",
+    "ru": "Отправка не подтверждена"
+  },
+  "Request rejected": {
+    "en": "Request rejected",
+    "es": "Solicitud rechazada",
+    "pt": "Solicitação rejeitada",
+    "hi": "अनुरोध अस्वीकृत",
+    "zh": "请求被拒绝",
+    "ru": "Запрос отклонён"
+  },
+  "Updates paused. Refresh the existing request to continue.": {
+    "en": "Updates paused. Refresh the existing request to continue.",
+    "es": "Las actualizaciones se pausaron. Consulta la solicitud existente para continuar.",
+    "pt": "Atualizações pausadas. Consulte a solicitação existente para continuar.",
+    "hi": "अपडेट रुके हैं। जारी रखने के लिए मौजूदा अनुरोध की स्थिति देखें।",
+    "zh": "更新已暂停。查询现有请求以继续。",
+    "ru": "Обновления приостановлены. Проверьте существующий запрос, чтобы продолжить."
+  },
+  "The requested duration exceeds the 60 seconds allowed for free generation. Reduce the duration or choose Automatic.": {
+    "en": "The requested duration exceeds the 60 seconds allowed for free generation. Reduce the duration or choose Automatic.",
+    "es": "La duración solicitada supera los 60 segundos permitidos para generación gratuita. Reduce la duración o selecciona Automático.",
+    "pt": "A duração solicitada excede os 60 segundos permitidos para geração gratuita. Reduza a duração ou selecione Automático.",
+    "hi": "अनुरोधित अवधि निःशुल्क निर्माण के लिए अनुमत 60 सेकंड से अधिक है। अवधि घटाएँ या स्वचालित चुनें।",
+    "zh": "请求的时长超过免费生成允许的 60 秒。请缩短时长或选择自动。",
+    "ru": "Запрошенная длительность превышает допустимые для бесплатной генерации 60 секунд. Сократите длительность или выберите автоматическую."
+  },
+  "Insufficient credits.": {
+    "en": "Insufficient credits.",
+    "es": "Créditos insuficientes.",
+    "pt": "Créditos insuficientes.",
+    "hi": "पर्याप्त क्रेडिट नहीं हैं।",
+    "zh": "积分不足。",
+    "ru": "Недостаточно кредитов."
+  },
+  "Your free daily allowance has been reached.": {
+    "en": "Your free daily allowance has been reached.",
+    "es": "Se alcanzó la cuota diaria gratuita.",
+    "pt": "A cota diária gratuita foi atingida.",
+    "hi": "दैनिक निःशुल्क सीमा पूरी हो गई है।",
+    "zh": "已达到每日免费额度。",
+    "ru": "Дневная бесплатная квота исчерпана."
+  },
+  "The selected voice is unavailable. Select an active voice or generate without it.": {
+    "en": "The selected voice is unavailable. Select an active voice or generate without it.",
+    "es": "La voz seleccionada no está disponible. Elige una voz activa o genera sin ella.",
+    "pt": "A voz selecionada está indisponível. Escolha uma voz ativa ou gere sem ela.",
+    "hi": "चुनी हुई आवाज़ उपलब्ध नहीं है। सक्रिय आवाज़ चुनें या उसके बिना गीत बनाएँ।",
+    "zh": "所选声音不可用。请选择可用声音或不使用该声音生成。",
+    "ru": "Выбранный голос недоступен. Выберите активный голос или создайте песню без него."
+  },
+  "Generation with enrolled voices is unavailable.": {
+    "en": "Generation with enrolled voices is unavailable.",
+    "es": "La generación con voces registradas no está disponible.",
+    "pt": "A geração com vozes cadastradas está indisponível.",
+    "hi": "पंजीकृत आवाज़ के साथ निर्माण उपलब्ध नहीं है।",
+    "zh": "暂不支持使用已注册声音生成。",
+    "ru": "Генерация с зарегистрированными голосами недоступна."
+  },
+  "Music generation is unavailable.": {
+    "en": "Music generation is unavailable.",
+    "es": "La generación musical no está disponible.",
+    "pt": "A geração de música está indisponível.",
+    "hi": "संगीत निर्माण उपलब्ध नहीं है।",
+    "zh": "音乐生成不可用。",
+    "ru": "Генерация музыки недоступна."
+  },
+  "The submission outcome is uncertain. Do not automatically submit it again.": {
+    "en": "The submission outcome is uncertain. Do not automatically submit it again.",
+    "es": "El resultado del envío es incierto. No lo envíes otra vez automáticamente.",
+    "pt": "O resultado do envio é incerto. Não envie novamente de forma automática.",
+    "hi": "अनुरोध का परिणाम अनिश्चित है। इसे स्वचालित रूप से दोबारा न भेजें।",
+    "zh": "提交结果不确定。请勿自动重新提交。",
+    "ru": "Результат отправки неизвестен. Не отправляйте запрос повторно автоматически."
+  },
+  "My voice": {
+    "en": "My voice",
+    "es": "Mi voz",
+    "pt": "Minha voz",
+    "hi": "मेरी आवाज़",
+    "zh": "我的声音",
+    "ru": "Мой голос"
+  },
+  "No enrolled voice": {
+    "en": "No enrolled voice",
+    "es": "Sin voz registrada",
+    "pt": "Sem voz cadastrada",
+    "hi": "कोई पंजीकृत आवाज़ नहीं",
+    "zh": "不使用已注册声音",
+    "ru": "Без зарегистрированного голоса"
+  },
+  "Load my voices": {
+    "en": "Load my voices",
+    "es": "Cargar mis voces",
+    "pt": "Carregar minhas vozes",
+    "hi": "मेरी आवाज़ें लोड करें",
+    "zh": "加载我的声音",
+    "ru": "Загрузить мои голоса"
+  },
+  "Voice name (optional)": {
+    "en": "Voice name (optional)",
+    "es": "Nombre de la voz (opcional)",
+    "pt": "Nome da voz (opcional)",
+    "hi": "आवाज़ का नाम (वैकल्पिक)",
+    "zh": "声音名称（可选）",
+    "ru": "Название голоса (необязательно)"
+  },
+  "I am recording my own voice and agree to its storage and use to generate songs. I can revoke it and request erasure.": {
+    "en": "I am recording my own voice and agree to its storage and use to generate songs. I can revoke it and request erasure.",
+    "es": "Estoy grabando mi propia voz y acepto su almacenamiento y uso para generar canciones. Puedo revocarla y solicitar su eliminación.",
+    "pt": "Estou gravando minha própria voz e concordo com seu armazenamento e uso para gerar músicas. Posso revogá-la e solicitar sua exclusão.",
+    "hi": "मैं अपनी आवाज़ रिकॉर्ड कर रहा/रही हूँ और उसे संग्रहित करने व गीत बनाने में उपयोग करने की सहमति देता/देती हूँ। मैं इसे रद्द करके हटाने का अनुरोध कर सकता/सकती हूँ।",
+    "zh": "我正在录制自己的声音，同意存储并用于生成歌曲。我可以撤销并请求删除。",
+    "ru": "Я записываю собственный голос и соглашаюсь на его хранение и использование для создания песен. Я могу отозвать его и запросить удаление."
+  },
+  "Read a fresh phrase to enroll your own voice. Enrollment is available to eligible paid accounts. A voice expires after 90 days; revocation erases its recording.": {
+    "en": "Read a fresh phrase to enroll your own voice. Enrollment is available to eligible paid accounts. A voice expires after 90 days; revocation erases its recording.",
+    "es": "Lee una frase nueva para registrar tu propia voz. El registro está disponible para cuentas pagadas elegibles. La voz caduca a los 90 días; revocarla elimina su grabación.",
+    "pt": "Leia uma frase nova para cadastrar sua própria voz. O cadastro está disponível para contas pagas elegíveis. A voz expira em 90 dias; revogá-la apaga a gravação.",
+    "hi": "अपनी आवाज़ पंजीकृत करने के लिए नया वाक्य पढ़ें। पंजीकरण पात्र सशुल्क खातों के लिए उपलब्ध है। आवाज़ 90 दिनों में समाप्त होती है; रद्द करने पर रिकॉर्डिंग मिट जाती है।",
+    "zh": "朗读新短语以注册自己的声音。符合条件的付费账户可注册。声音在 90 天后过期；撤销会删除录音。",
+    "ru": "Прочитайте новую фразу для регистрации своего голоса. Регистрация доступна подходящим платным аккаунтам. Голос действует 90 дней; отзыв удаляет запись."
+  },
+  "Get recording phrase": {
+    "en": "Get recording phrase",
+    "es": "Obtener frase para grabar",
+    "pt": "Obter frase para gravação",
+    "hi": "रिकॉर्डिंग का वाक्य प्राप्त करें",
+    "zh": "获取录音短语",
+    "ru": "Получить фразу для записи"
+  },
+  "Record phrase": {
+    "en": "Record phrase",
+    "es": "Grabar frase",
+    "pt": "Gravar frase",
+    "hi": "वाक्य रिकॉर्ड करें",
+    "zh": "录制短语",
+    "ru": "Записать фразу"
+  },
+  "Stop recording": {
+    "en": "Stop recording",
+    "es": "Detener grabación",
+    "pt": "Parar gravação",
+    "hi": "रिकॉर्डिंग रोकें",
+    "zh": "停止录音",
+    "ru": "Остановить запись"
+  },
+  "Discard recording": {
+    "en": "Discard recording",
+    "es": "Descartar grabación",
+    "pt": "Descartar gravação",
+    "hi": "रिकॉर्डिंग हटाएँ",
+    "zh": "丢弃录音",
+    "ru": "Удалить запись"
+  },
+  "Enroll this recording": {
+    "en": "Enroll this recording",
+    "es": "Registrar esta grabación",
+    "pt": "Cadastrar esta gravação",
+    "hi": "यह रिकॉर्डिंग पंजीकृत करें",
+    "zh": "注册此录音",
+    "ru": "Зарегистрировать эту запись"
+  },
+  "Revoke and erase voice": {
+    "en": "Revoke and erase voice",
+    "es": "Revocar y eliminar voz",
+    "pt": "Revogar e apagar voz",
+    "hi": "आवाज़ रद्द करें और मिटाएँ",
+    "zh": "撤销并删除声音",
+    "ru": "Отозвать и удалить голос"
+  },
+  "Phrase expires: {{time}}": {
+    "en": "Phrase expires: {{time}}",
+    "es": "La frase vence: {{time}}",
+    "pt": "A frase expira: {{time}}",
+    "hi": "वाक्य की समय सीमा: {{time}}",
+    "zh": "短语到期时间：{{time}}",
+    "ru": "Фраза действительна до: {{time}}"
+  },
+  "Refresh voices": {
+    "en": "Refresh voices",
+    "es": "Actualizar voces",
+    "pt": "Atualizar vozes",
+    "hi": "आवाज़ें अपडेट करें",
+    "zh": "刷新声音",
+    "ru": "Обновить голоса"
+  },
+  "Microphone recording is unavailable. Use a supported browser in a secure context.": {
+    "en": "Microphone recording is unavailable. Use a supported browser in a secure context.",
+    "es": "La grabación no está disponible. Usa un navegador compatible en un contexto seguro.",
+    "pt": "A gravação está indisponível. Use um navegador compatível em um contexto seguro.",
+    "hi": "माइक्रोफ़ोन रिकॉर्डिंग उपलब्ध नहीं है। सुरक्षित संदर्भ में समर्थित ब्राउज़र का उपयोग करें।",
+    "zh": "麦克风录音不可用。请在安全环境中使用受支持的浏览器。",
+    "ru": "Запись с микрофона недоступна. Используйте поддерживаемый браузер в безопасном контексте."
+  },
+  "The voice operation could not be completed. Review eligibility, permissions and the recording, then try again.": {
+    "en": "The voice operation could not be completed. Review eligibility, permissions and the recording, then try again.",
+    "es": "No se pudo completar la operación de voz. Revisa la elegibilidad, los permisos y la grabación antes de reintentar.",
+    "pt": "Não foi possível concluir a operação de voz. Revise a elegibilidade, as permissões e a gravação antes de tentar novamente.",
+    "hi": "आवाज़ की प्रक्रिया पूरी नहीं हो सकी। पात्रता, अनुमतियाँ और रिकॉर्डिंग जाँचकर पुनः प्रयास करें।",
+    "zh": "无法完成声音操作。请检查资格、权限和录音后重试。",
+    "ru": "Не удалось выполнить операцию с голосом. Проверьте доступность регистрации, разрешения и запись, затем повторите попытку."
+  },
+  "The phrase expired. Request a new phrase and record again.": {
+    "en": "The phrase expired. Request a new phrase and record again.",
+    "es": "La frase venció. Solicita otra y vuelve a grabar.",
+    "pt": "A frase expirou. Solicite outra e grave novamente.",
+    "hi": "वाक्य की समय सीमा समाप्त हो गई। नया वाक्य लें और दोबारा रिकॉर्ड करें।",
+    "zh": "短语已过期。请获取新短语并重新录音。",
+    "ru": "Срок действия фразы истёк. Получите новую фразу и запишите её заново."
+  },
+  "Preview voice recording": {
+    "en": "Preview voice recording",
+    "es": "Escuchar grabación de voz",
+    "pt": "Ouvir gravação de voz",
+    "hi": "आवाज़ की रिकॉर्डिंग सुनें",
+    "zh": "试听声音录音",
+    "ru": "Прослушать запись голоса"
+  },
+  "Record between {{min}} and {{max}} seconds.": {
+    "en": "Record between {{min}} and {{max}} seconds.",
+    "es": "Graba entre {{min}} y {{max}} segundos.",
+    "pt": "Grave entre {{min}} e {{max}} segundos.",
+    "hi": "{{min}} से {{max}} सेकंड तक रिकॉर्ड करें।",
+    "zh": "请录制 {{min}} 至 {{max}} 秒。",
+    "ru": "Запишите от {{min}} до {{max}} секунд."
+  },
+  "Pending": {
+    "en": "Pending",
+    "es": "Pendiente",
+    "pt": "Pendente",
+    "hi": "लंबित",
+    "zh": "待处理",
+    "ru": "Ожидание"
+  },
+  "Checking recording": {
+    "en": "Checking recording",
+    "es": "Comprobando grabación",
+    "pt": "Verificando gravação",
+    "hi": "रिकॉर्डिंग की जाँच",
+    "zh": "检查录音中",
+    "ru": "Проверка записи"
+  },
+  "Ready": {
+    "en": "Ready",
+    "es": "Lista",
+    "pt": "Pronta",
+    "hi": "तैयार",
+    "zh": "可用",
+    "ru": "Готов"
+  },
+  "Recording rejected": {
+    "en": "Recording rejected",
+    "es": "Grabación rechazada",
+    "pt": "Gravação rejeitada",
+    "hi": "रिकॉर्डिंग अस्वीकृत",
+    "zh": "录音被拒绝",
+    "ru": "Запись отклонена"
+  },
+  "Expired": {
+    "en": "Expired",
+    "es": "Caducada",
+    "pt": "Expirada",
+    "hi": "समय सीमा समाप्त",
+    "zh": "已过期",
+    "ru": "Истёк"
+  },
+  "Revoking": {
+    "en": "Revoking",
+    "es": "Revocando",
+    "pt": "Revogando",
+    "hi": "रद्द हो रही है",
+    "zh": "撤销中",
+    "ru": "Отзыв"
+  },
+  "Revoked": {
+    "en": "Revoked",
+    "es": "Revocada",
+    "pt": "Revogada",
+    "hi": "रद्द",
+    "zh": "已撤销",
+    "ru": "Отозван"
+  },
+  "New chat": {
+    "en": "New chat",
+    "es": "Nuevo chat",
+    "pt": "Novo chat",
+    "hi": "नई चैट",
+    "zh": "新建聊天",
+    "ru": "Новый чат"
+  },
+  "Sign in": {
+    "en": "Sign in",
+    "es": "Iniciar sesión",
+    "pt": "Entrar",
+    "hi": "साइन इन",
+    "zh": "登录",
+    "ru": "Войти"
+  },
+  "Select interface language": {
+    "en": "Select interface language",
+    "es": "Seleccionar idioma de la interfaz",
+    "pt": "Selecionar idioma da interface",
+    "hi": "इंटरफ़ेस भाषा चुनें",
+    "zh": "选择界面语言",
+    "ru": "Выберите язык интерфейса"
+  },
+  "Open handshake overlay": {
+    "en": "Open handshake overlay",
+    "es": "Abrir capa de saludo",
+    "pt": "Abrir camada de saudação",
+    "hi": "हैंडशेक परत खोलें",
+    "zh": "打开握手层",
+    "ru": "Открыть слой рукопожатия"
+  },
+  "Handshake overlay": {
+    "en": "Handshake overlay",
+    "es": "Capa de saludo",
+    "pt": "Camada de saudação",
+    "hi": "हैंडशेक परत",
+    "zh": "握手层",
+    "ru": "Слой рукопожатия"
+  },
+  "Close handshake overlay": {
+    "en": "Close handshake overlay",
+    "es": "Cerrar capa de saludo",
+    "pt": "Fechar camada de saudação",
+    "hi": "हैंडशेक परत बंद करें",
+    "zh": "关闭握手层",
+    "ru": "Закрыть слой рукопожатия"
+  },
+  "OpenJM public chat": {
+    "en": "OpenJM public chat",
+    "es": "Chat público de OpenJM",
+    "pt": "Chat público do OpenJM",
+    "hi": "OpenJM सार्वजनिक चैट",
+    "zh": "OpenJM 公共聊天",
+    "ru": "Публичный чат OpenJM"
+  },
+  "Intelligence That Stays With You": {
+    "en": "Intelligence That Stays With You",
+    "es": "Inteligencia que permanece contigo",
+    "pt": "Inteligência que permanece com você",
+    "hi": "आपके साथ रहने वाली बुद्धिमत्ता",
+    "zh": "与你相伴的智能",
+    "ru": "Интеллект, который всегда с вами"
+  },
+  "Born in the Caribbean. Built to remember your world, think alongside you, and turn every idea into forward motion.": {
+    "en": "Born in the Caribbean. Built to remember your world, think alongside you, and turn every idea into forward motion.",
+    "es": "Nacida en el Caribe. Creada para recordar tu mundo, pensar contigo y convertir cada idea en impulso para avanzar.",
+    "pt": "Nascida no Caribe. Construída para lembrar do seu mundo, pensar ao seu lado e transformar cada ideia em impulso para seguir em frente.",
+    "hi": "कैरेबियन में जन्मी। आपके संसार को याद रखने, आपके साथ सोचने और हर विचार को आगे बढ़ने की गति में बदलने के लिए निर्मित।",
+    "zh": "诞生于加勒比。专为记住你的世界、与你并肩思考，并将每个想法化为前进的动力而打造。",
+    "ru": "Рождённый в Карибском регионе. Создан, чтобы помнить ваш мир, мыслить вместе с вами и превращать каждую идею в движение вперёд."
+  },
+  "Add file": {
+    "en": "Add file",
+    "es": "Agregar archivo",
+    "pt": "Adicionar arquivo",
+    "hi": "फ़ाइल जोड़ें",
+    "zh": "添加文件",
+    "ru": "Добавить файл"
+  },
+  "Actions": {
+    "en": "Actions",
+    "es": "Acciones",
+    "pt": "Ações",
+    "hi": "कार्रवाइयां",
+    "zh": "操作",
+    "ru": "Действия"
+  },
+  "Open actions": {
+    "en": "Open actions",
+    "es": "Abrir acciones",
+    "pt": "Abrir ações",
+    "hi": "कार्रवाइयां खोलें",
+    "zh": "打开操作",
+    "ru": "Открыть действия"
+  },
+  "Upload Files": {
+    "en": "Upload Files",
+    "es": "Subir archivos",
+    "pt": "Enviar arquivos",
+    "hi": "फ़ाइलें अपलोड करें",
+    "zh": "上传文件",
+    "ru": "Загрузить файлы"
+  },
+  "Take a photo": {
+    "en": "Take a photo",
+    "es": "Tomar una foto",
+    "pt": "Tirar uma foto",
+    "hi": "फ़ोटो लें",
+    "zh": "拍照",
+    "ru": "Сделать фото"
+  },
+  "Center what you want to attach, then take the photo.": {
+    "en": "Center what you want to attach, then take the photo.",
+    "es": "Centre lo que desea adjuntar y luego tome la foto.",
+    "pt": "Centralize o que deseja anexar e tire a foto.",
+    "hi": "जिसे संलग्न करना है उसे बीच में रखें, फिर फ़ोटो लें।",
+    "zh": "将要附加的内容放在画面中央，然后拍照。",
+    "ru": "Поместите в центр то, что хотите прикрепить, затем сделайте фото."
+  },
+  "Take photo": {
+    "en": "Take photo",
+    "es": "Tomar foto",
+    "pt": "Tirar foto",
+    "hi": "फ़ोटो लें",
+    "zh": "拍照",
+    "ru": "Сделать фото"
+  },
+  "Retake": {
+    "en": "Retake",
+    "es": "Volver a tomar",
+    "pt": "Tirar outra",
+    "hi": "फिर से लें",
+    "zh": "重拍",
+    "ru": "Переснять"
+  },
+  "Use photo": {
+    "en": "Use photo",
+    "es": "Usar foto",
+    "pt": "Usar foto",
+    "hi": "फ़ोटो का उपयोग करें",
+    "zh": "使用照片",
+    "ru": "Использовать фото"
+  },
+  "Switch camera": {
+    "en": "Switch camera",
+    "es": "Cambiar cámara",
+    "pt": "Trocar câmera",
+    "hi": "कैमरा बदलें",
+    "zh": "切换摄像头",
+    "ru": "Сменить камеру"
+  },
+  "Close camera": {
+    "en": "Close camera",
+    "es": "Cerrar cámara",
+    "pt": "Fechar câmera",
+    "hi": "कैमरा बंद करें",
+    "zh": "关闭摄像头",
+    "ru": "Закрыть камеру"
+  },
+  "Camera access was denied. Use your device camera instead.": {
+    "en": "Camera access was denied. Use your device camera instead.",
+    "es": "Se denegó el acceso a la cámara. Use la cámara de su dispositivo.",
+    "pt": "O acesso à câmera foi negado. Use a câmera do dispositivo.",
+    "hi": "कैमरा ऐक्सेस अस्वीकार कर दिया गया था। इसके बजाय अपने डिवाइस का कैमरा उपयोग करें।",
+    "zh": "相机访问被拒绝。请改用设备相机。",
+    "ru": "Доступ к камере запрещен. Используйте камеру устройства."
+  },
+  "Camera access is not supported here. Use your device camera instead.": {
+    "en": "Camera access is not supported here. Use your device camera instead.",
+    "es": "El acceso a la cámara no es compatible aquí. Use la cámara de su dispositivo.",
+    "pt": "O acesso à câmera não é compatível aqui. Use a câmera do dispositivo.",
+    "hi": "यहां कैमरा ऐक्सेस समर्थित नहीं है। इसके बजाय अपने डिवाइस का कैमरा उपयोग करें।",
+    "zh": "此处不支持相机访问。请改用设备相机。",
+    "ru": "Доступ к камере здесь не поддерживается. Используйте камеру устройства."
+  },
+  "The photo could not be captured. Use your device camera instead.": {
+    "en": "The photo could not be captured. Use your device camera instead.",
+    "es": "No se pudo capturar la foto. Use la cámara de su dispositivo.",
+    "pt": "Não foi possível capturar a foto. Use a câmera do dispositivo.",
+    "hi": "फ़ोटो कैप्चर नहीं हो सकी। इसके बजाय अपने डिवाइस का कैमरा उपयोग करें।",
+    "zh": "无法拍摄照片。请改用设备相机。",
+    "ru": "Не удалось сделать фото. Используйте камеру устройства."
+  },
+  "Use device camera": {
+    "en": "Use device camera",
+    "es": "Usar cámara del dispositivo",
+    "pt": "Usar câmera do dispositivo",
+    "hi": "डिवाइस कैमरा उपयोग करें",
+    "zh": "使用设备相机",
+    "ru": "Использовать камеру устройства"
+  },
+  "Try again": {
+    "en": "Try again",
+    "es": "Intentar de nuevo",
+    "pt": "Tentar novamente",
+    "hi": "फिर से कोशिश करें",
+    "zh": "重试",
+    "ru": "Повторить"
+  },
+  "Starting camera...": {
+    "en": "Starting camera...",
+    "es": "Iniciando la cámara...",
+    "pt": "Iniciando a câmera...",
+    "hi": "कैमरा शुरू हो रहा है...",
+    "zh": "正在启动摄像头...",
+    "ru": "Запуск камеры..."
+  },
+  "Captured photo": {
+    "en": "Captured photo",
+    "es": "Foto capturada",
+    "pt": "Foto capturada",
+    "hi": "ली गई फ़ोटो",
+    "zh": "已拍摄的照片",
+    "ru": "Снятое фото"
+  },
+  "You can attach up to 5 files.": {
+    "en": "You can attach up to 5 files.",
+    "es": "Puede adjuntar hasta 5 archivos.",
+    "pt": "Você pode anexar até 5 arquivos.",
+    "hi": "आप अधिकतम 5 फ़ाइलें संलग्न कर सकते हैं।",
+    "zh": "最多可附加 5 个文件。",
+    "ru": "Можно прикрепить до 5 файлов."
+  },
+  "Apps": {
+    "en": "Apps",
+    "es": "Apps",
+    "pt": "Apps",
+    "hi": "Apps",
+    "zh": "Apps",
+    "ru": "Apps"
+  },
+  "Warning": {
+    "en": "Warning",
+    "es": "Advertencia",
+    "pt": "Aviso",
+    "hi": "चेतावनी",
+    "zh": "警告",
+    "ru": "Предупреждение"
+  },
+  "Leave this chat?": {
+    "en": "Leave this chat?",
+    "es": "¿Salir de este chat?",
+    "pt": "Sair desta conversa?",
+    "hi": "क्या इस चैट से बाहर निकलें?",
+    "zh": "离开此聊天？",
+    "ru": "Покинуть этот чат?"
+  },
+  "You are about to leave this chat. Any content in your current question that has not been sent will be lost.": {
+    "en": "You are about to leave this chat. Any content in your current question that has not been sent will be lost.",
+    "es": "Estás a punto de salir de este chat. Se perderá cualquier contenido de la pregunta actual que no hayas enviado.",
+    "pt": "Você está prestes a sair desta conversa. Qualquer conteúdo da pergunta atual que não tenha sido enviado será perdido.",
+    "hi": "आप इस चैट से बाहर निकलने वाले हैं। आपके वर्तमान प्रश्न की वह सामग्री खो जाएगी जो अभी तक भेजी नहीं गई है।",
+    "zh": "您即将离开此聊天。当前问题中尚未发送的任何内容都将丢失。",
+    "ru": "Вы собираетесь покинуть этот чат. Несохраненный текст текущего вопроса будет потерян."
+  },
+  "Stay in chat": {
+    "en": "Stay in chat",
+    "es": "Permanecer en el chat",
+    "pt": "Permanecer na conversa",
+    "hi": "चैट में रहें",
+    "zh": "留在聊天中",
+    "ru": "Остаться в чате"
+  },
+  "Leave chat": {
+    "en": "Leave chat",
+    "es": "Salir del chat",
+    "pt": "Sair da conversa",
+    "hi": "चैट छोड़ें",
+    "zh": "离开聊天",
+    "ru": "Покинуть чат"
+  },
+  "Close leave chat confirmation": {
+    "en": "Close leave chat confirmation",
+    "es": "Cerrar confirmación para salir del chat",
+    "pt": "Fechar confirmação de saída da conversa",
+    "hi": "चैट छोड़ने की पुष्टि बंद करें",
+    "zh": "关闭离开聊天确认",
+    "ru": "Закрыть подтверждение выхода из чата"
+  },
+  "Web search": {
+    "en": "Web search",
+    "es": "Búsqueda web",
+    "pt": "Pesquisa na web",
+    "hi": "वेब खोज",
+    "zh": "网络搜索",
+    "ru": "Веб-поиск"
+  },
+  "Toggle web search for private chats": {
+    "en": "Toggle web search for private chats",
+    "es": "Activar o desactivar la búsqueda web para los chats privados",
+    "pt": "Ativar ou desativar a pesquisa na web para chats privados",
+    "hi": "निजी चैट के लिए वेब खोज चालू या बंद करें",
+    "zh": "为私密聊天开启或关闭网络搜索",
+    "ru": "Включить или отключить веб-поиск для приватных чатов"
+  },
+  "Use web search in private chats to improve answers with up-to-date information.": {
+    "en": "Use web search in private chats to improve answers with up-to-date information.",
+    "es": "Usa la búsqueda web en chats privados para mejorar las respuestas con información actualizada.",
+    "pt": "Use a pesquisa na web em chats privados para melhorar as respostas com informações atualizadas.",
+    "hi": "निजी चैट में नवीनतम जानकारी वाले उत्तरों को बेहतर बनाने के लिए वेब खोज का उपयोग करें।",
+    "zh": "在私密聊天中使用网络搜索，以通过最新信息改进回答。",
+    "ru": "Используйте веб-поиск в приватных чатах, чтобы улучшать ответы актуальной информацией."
+  },
+  "Ask a question...": {
+    "en": "Ask a question...",
+    "es": "Haz una pregunta...",
+    "pt": "Faça uma pergunta...",
+    "hi": "एक प्रश्न पूछें...",
+    "zh": "提出一个问题...",
+    "ru": "Задайте вопрос..."
+  },
+  "Question": {
+    "en": "Question",
+    "es": "Pregunta",
+    "pt": "Pergunta",
+    "hi": "प्रश्न",
+    "zh": "问题",
+    "ru": "Вопрос"
+  },
+  "Send message": {
+    "en": "Send message",
+    "es": "Enviar mensaje",
+    "pt": "Enviar mensagem",
+    "hi": "संदेश भेजें",
+    "zh": "发送消息",
+    "ru": "Отправить сообщение"
+  },
+  "Generating a response...": {
+    "en": "Generating a response...",
+    "es": "Generando una respuesta...",
+    "pt": "Gerando uma resposta...",
+    "hi": "उत्तर तैयार किया जा रहा है...",
+    "zh": "正在生成回复...",
+    "ru": "Генерируется ответ..."
+  },
+  "Work complete": {
+    "en": "Work complete",
+    "es": "Trabajo completado",
+    "pt": "Trabalho concluído",
+    "hi": "काम पूरा हुआ",
+    "zh": "工作已完成",
+    "ru": "Работа завершена"
+  },
+  "Intelligence": {
+    "en": "Intelligence",
+    "es": "Inteligencia",
+    "pt": "Inteligência",
+    "hi": "बुद्धिमत्ता",
+    "zh": "智能",
+    "ru": "Интеллект"
+  },
+  "Select intelligence level": {
+    "en": "Select intelligence level",
+    "es": "Seleccionar nivel de inteligencia",
+    "pt": "Selecionar nível de inteligência",
+    "hi": "बुद्धिमत्ता स्तर चुनें",
+    "zh": "选择智能级别",
+    "ru": "Выберите уровень интеллекта"
+  },
+  "Fast": {
+    "en": "Fast",
+    "es": "Rápida",
+    "pt": "Rápida",
+    "hi": "तेज़",
+    "zh": "快速",
+    "ru": "Быстро"
+  },
+  "Balanced": {
+    "en": "Balanced",
+    "es": "Balanceada",
+    "pt": "Equilibrada",
+    "hi": "संतुलित",
+    "zh": "平衡",
+    "ru": "Сбалансированно"
+  },
+  "Deep": {
+    "en": "Deep",
+    "es": "Profunda",
+    "pt": "Profunda",
+    "hi": "गहन",
+    "zh": "深度",
+    "ru": "Глубоко"
+  },
+  "Quick responses": {
+    "en": "Quick responses",
+    "es": "Respuestas rápidas",
+    "pt": "Respostas rápidas",
+    "hi": "त्वरित उत्तर",
+    "zh": "快速回复",
+    "ru": "Быстрые ответы"
+  },
+  "Models": {
+    "en": "Models",
+    "es": "Modelos",
+    "pt": "Modelos",
+    "hi": "मॉडल",
+    "zh": "模型",
+    "ru": "Модели"
+  },
+  "Available models": {
+    "en": "Available models",
+    "es": "Modelos disponibles",
+    "pt": "Modelos disponíveis",
+    "hi": "उपलब्ध मॉडल",
+    "zh": "可用模型",
+    "ru": "Доступные модели"
+  },
+  "Loading models...": {
+    "en": "Loading models...",
+    "es": "Cargando modelos...",
+    "pt": "Carregando modelos...",
+    "hi": "मॉडल लोड हो रहे हैं...",
+    "zh": "正在加载模型...",
+    "ru": "Загрузка моделей..."
+  },
+  "Models unavailable": {
+    "en": "Models unavailable",
+    "es": "Modelos no disponibles",
+    "pt": "Modelos indisponíveis",
+    "hi": "मॉडल उपलब्ध नहीं हैं",
+    "zh": "暂无可用模型",
+    "ru": "Модели недоступны"
+  },
+  "Remove {{name}}": {
+    "en": "Remove {{name}}",
+    "es": "Eliminar {{name}}",
+    "pt": "Remover {{name}}",
+    "hi": "{{name}} हटाएँ",
+    "zh": "移除 {{name}}",
+    "ru": "Удалить {{name}}"
+  },
+  "file": {
+    "en": "file",
+    "es": "archivo",
+    "pt": "arquivo",
+    "hi": "फ़ाइल",
+    "zh": "文件",
+    "ru": "файл"
+  },
+  "Done": {
+    "en": "Done",
+    "es": "Listo",
+    "pt": "Concluir",
+    "hi": "हो गया",
+    "zh": "完成",
+    "ru": "Готово"
+  },
+  "Close settings": {
+    "en": "Close settings",
+    "es": "Cerrar ajustes",
+    "pt": "Fechar ajustes",
+    "hi": "सेटिंग्स बंद करें",
+    "zh": "关闭设置",
+    "ru": "Закрыть настройки"
+  },
+  "Turn off {{mode}}": {
+    "en": "Turn off {{mode}}",
+    "es": "Desactivar {{mode}}",
+    "pt": "Desativar {{mode}}",
+    "hi": "{{mode}} बंद करें",
+    "zh": "关闭{{mode}}",
+    "ru": "Выключить: {{mode}}"
+  },
+  "Open {{mode}} settings": {
+    "en": "Open {{mode}} settings",
+    "es": "Abrir ajustes de {{mode}}",
+    "pt": "Abrir ajustes de {{mode}}",
+    "hi": "{{mode}} सेटिंग्स खोलें",
+    "zh": "打开{{mode}}设置",
+    "ru": "Открыть настройки: {{mode}}"
+  },
+  "Reasoning": {
+    "en": "Reasoning",
+    "es": "Razonamiento",
+    "pt": "Raciocínio",
+    "hi": "तर्क",
+    "zh": "推理",
+    "ru": "Рассуждение"
+  },
+  "Generated image": {
+    "en": "Generated image",
+    "es": "Imagen generada",
+    "pt": "Imagem gerada",
+    "hi": "जनरेट की गई छवि",
+    "zh": "生成的图片",
+    "ru": "Сгенерированное изображение"
+  },
+  "Loading image...": {
+    "en": "Loading image...",
+    "es": "Cargando imagen...",
+    "pt": "Carregando imagem...",
+    "hi": "छवि लोड हो रही है...",
+    "zh": "正在加载图片...",
+    "ru": "Загрузка изображения..."
+  },
+  "The image could not be loaded.": {
+    "en": "The image could not be loaded.",
+    "es": "No se pudo cargar la imagen.",
+    "pt": "Não foi possível carregar a imagem.",
+    "hi": "छवि लोड नहीं हो सकी।",
+    "zh": "无法加载图片。",
+    "ru": "Не удалось загрузить изображение."
+  },
+  "Reload image": {
+    "en": "Reload image",
+    "es": "Volver a cargar la imagen",
+    "pt": "Recarregar imagem",
+    "hi": "छवि फिर से लोड करें",
+    "zh": "重新加载图片",
+    "ru": "Загрузить изображение повторно"
+  },
+  "Thinking": {
+    "en": "Thinking",
+    "es": "Pensamiento",
+    "pt": "Pensamento",
+    "hi": "विचार",
+    "zh": "思考",
+    "ru": "Мысли"
+  },
+  "Quotes": {
+    "en": "Quotes",
+    "es": "Citas",
+    "pt": "Citações",
+    "hi": "उद्धरण",
+    "zh": "引用",
+    "ru": "Цитаты"
+  },
+  "Copy": {
+    "en": "Copy",
+    "es": "Copiar",
+    "pt": "Copiar",
+    "hi": "Copy",
+    "zh": "Copy",
+    "ru": "Copy"
+  },
+  "Copied": {
+    "en": "Copied",
+    "es": "Copiado",
+    "pt": "Copiado",
+    "hi": "Copied",
+    "zh": "Copied",
+    "ru": "Copied"
+  },
+  "Response copied.": {
+    "en": "Response copied.",
+    "es": "Respuesta copiada.",
+    "pt": "Resposta copiada.",
+    "hi": "Response copied.",
+    "zh": "Response copied.",
+    "ru": "Response copied."
+  },
+  "The response could not be copied.": {
+    "en": "The response could not be copied.",
+    "es": "No se pudo copiar la respuesta.",
+    "pt": "Nao foi possivel copiar a resposta.",
+    "hi": "The response could not be copied.",
+    "zh": "The response could not be copied.",
+    "ru": "The response could not be copied."
+  },
+  "Preparing response": {
+    "en": "Preparing response",
+    "es": "Preparando respuesta",
+    "pt": "Preparando resposta",
+    "hi": "उत्तर तैयार किया जा रहा है",
+    "zh": "正在准备回复",
+    "ru": "Подготовка ответа"
+  },
+  "The assistant is preparing the response. It will appear here as soon as it is available.": {
+    "en": "The assistant is preparing the response. It will appear here as soon as it is available.",
+    "es": "El asistente está preparando la respuesta. Aparecerá aquí en cuanto esté disponible.",
+    "pt": "O assistente está preparando a resposta. Ela aparecerá aqui assim que estiver disponível.",
+    "hi": "सहायक उत्तर तैयार कर रहा है। उपलब्ध होते ही यह यहाँ दिखाई देगा।",
+    "zh": "助手正在准备回复。回复可用后会立即显示在这里。",
+    "ru": "Помощник готовит ответ. Он появится здесь, как только будет доступен."
+  },
+  "A response is not available yet.": {
+    "en": "A response is not available yet.",
+    "es": "Aún no hay una respuesta disponible.",
+    "pt": "Ainda não há uma resposta disponível.",
+    "hi": "अभी कोई उत्तर उपलब्ध नहीं है।",
+    "zh": "暂时没有可用回复。",
+    "ru": "Ответ пока недоступен."
+  },
+  "OpenJM organized the request into intent, context, and constraints before drafting a concise response.": {
+    "en": "OpenJM organized the request into intent, context, and constraints before drafting a concise response.",
+    "es": "OpenJM organizó la solicitud en intención, contexto y restricciones antes de redactar una respuesta concisa.",
+    "pt": "O OpenJM organizou a solicitação em intenção, contexto e restrições antes de redigir uma resposta concisa.",
+    "hi": "OpenJM ने संक्षिप्त उत्तर तैयार करने से पहले अनुरोध को उद्देश्य, संदर्भ और सीमाओं में व्यवस्थित किया।",
+    "zh": "OpenJM 在撰写简洁回复之前，先将请求整理为意图、上下文和约束条件。",
+    "ru": "OpenJM сначала структурировал запрос по намерению, контексту и ограничениям, а затем подготовил краткий ответ."
+  },
+  "Start a new chat?": {
+    "en": "Start a new chat?",
+    "es": "¿Iniciar un nuevo chat?",
+    "pt": "Iniciar um novo chat?",
+    "hi": "नई चैट शुरू करें?",
+    "zh": "开始新的聊天？",
+    "ru": "Начать новый чат?"
+  },
+  "Your current conversation will be cleared. Sign in first if you want to keep your history.": {
+    "en": "Your current conversation will be cleared. Sign in first if you want to keep your history.",
+    "es": "Tu conversación actual se borrará. Inicia sesión primero si quieres conservar tu historial.",
+    "pt": "Sua conversa atual será limpa. Entre primeiro se quiser manter seu histórico.",
+    "hi": "आपकी वर्तमान बातचीत साफ़ कर दी जाएगी। यदि आप अपना इतिहास रखना चाहते हैं तो पहले साइन इन करें।",
+    "zh": "当前对话将被清除。如果你想保留历史记录，请先登录。",
+    "ru": "Текущий разговор будет очищен. Сначала войдите в систему, если хотите сохранить историю."
+  },
+  "Cancel": {
+    "en": "Cancel",
+    "es": "Cancelar",
+    "pt": "Cancelar",
+    "hi": "रद्द करें",
+    "zh": "取消",
+    "ru": "Отмена"
+  },
+  "Start new chat": {
+    "en": "Start new chat",
+    "es": "Iniciar nuevo chat",
+    "pt": "Iniciar novo chat",
+    "hi": "नई चैट शुरू करें",
+    "zh": "开始新聊天",
+    "ru": "Начать новый чат"
+  },
+  "The public chat is unavailable right now.": {
+    "en": "The public chat is unavailable right now.",
+    "es": "El chat público no está disponible en este momento.",
+    "pt": "O chat público está indisponível no momento.",
+    "hi": "सार्वजनिक चैट इस समय उपलब्ध नहीं है।",
+    "zh": "公共聊天当前不可用。",
+    "ru": "Публичный чат сейчас недоступен."
+  },
+  "OpenJM could not complete the public request. The endpoint may be rate limited or temporarily unavailable.": {
+    "en": "OpenJM could not complete the public request. The endpoint may be rate limited or temporarily unavailable.",
+    "es": "OpenJM no pudo completar la solicitud pública. El endpoint puede estar limitado o temporalmente no disponible.",
+    "pt": "O OpenJM não conseguiu concluir a solicitação pública. O endpoint pode estar limitado ou temporariamente indisponível.",
+    "hi": "OpenJM सार्वजनिक अनुरोध पूरा नहीं कर सका। एंडपॉइंट पर सीमा हो सकती है या यह अस्थायी रूप से उपलब्ध नहीं है।",
+    "zh": "OpenJM 无法完成公共请求。该端点可能受到限制或暂时不可用。",
+    "ru": "OpenJM не смог завершить публичный запрос. Эндпоинт может быть ограничен или временно недоступен."
+  },
+  "The request was stopped before a model response could be returned.": {
+    "en": "The request was stopped before a model response could be returned.",
+    "es": "La solicitud se detuvo antes de que el modelo pudiera devolver una respuesta.",
+    "pt": "A solicitação foi interrompida antes que o modelo pudesse retornar uma resposta.",
+    "hi": "मॉडल उत्तर लौटाने से पहले अनुरोध रोक दिया गया था।",
+    "zh": "在模型返回回复之前，请求已被中止。",
+    "ru": "Запрос был остановлен до того, как модель смогла вернуть ответ."
+  },
+  "Endpoint status": {
+    "en": "Endpoint status",
+    "es": "Estado del endpoint",
+    "pt": "Status do endpoint",
+    "hi": "एंडपॉइंट स्थिति",
+    "zh": "端点状态",
+    "ru": "Статус эндпоинта"
+  }
+}

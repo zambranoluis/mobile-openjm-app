@@ -1,0 +1,23 @@
+appId: com.openjm.mobile.fixture
+---
+# Run after public attachments and host POST /fixture/public/expire.
+- tapOn: "Save or share anonymous result"
+- assertVisible: "The fictional resource credential has expired."
+- takeScreenshot: fixture-public-file-expired
+- back
+- scrollUntilVisible:
+    element: "Clear anonymous session"
+    direction: DOWN
+- tapOn: "Clear anonymous session"
+- tapOn: "Clear session"
+- scrollUntilVisible:
+    element: "Anonymous media and files"
+    direction: UP
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "Refresh anonymous resources"
+    direction: DOWN
+- scroll
+- scroll
+- assertNotVisible: "openjm-fixture-profile.png"
+- takeScreenshot: fixture-public-file-cleared

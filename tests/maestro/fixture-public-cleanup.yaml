@@ -1,0 +1,52 @@
+appId: com.openjm.mobile.fixture
+---
+- launchApp:
+    clearState: true
+- scrollUntilVisible:
+    element: "Try anonymous chat"
+    direction: DOWN
+- tapOn: "Try anonymous chat"
+- tapOn: "Attach anonymous file"
+- runFlow: fixture-pick-image.yaml
+- assertVisible: "Remove openjm-fixture-profile.png"
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "openjm-fixture-profile.png"
+    direction: DOWN
+- scroll
+- scroll
+- assertVisible: "openjm-fixture-profile.png"
+- takeScreenshot: fixture-public-resource-before-clear
+- back
+- scrollUntilVisible:
+    element: "Clear anonymous session"
+    direction: DOWN
+- tapOn: "Clear anonymous session"
+- tapOn: "Clear session"
+- scrollUntilVisible:
+    element: "Anonymous media and files"
+    direction: UP
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "Refresh anonymous resources"
+    direction: DOWN
+- tapOn: "Refresh anonymous resources"
+- scroll
+- scroll
+- assertNotVisible: "openjm-fixture-profile.png"
+- takeScreenshot: fixture-public-resource-cleared-bottom
+- stopApp
+- launchApp
+- scrollUntilVisible:
+    element: "Try anonymous chat"
+    direction: DOWN
+- tapOn: "Try anonymous chat"
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "Refresh anonymous resources"
+    direction: DOWN
+- tapOn: "Refresh anonymous resources"
+- scroll
+- scroll
+- assertNotVisible: "openjm-fixture-profile.png"
+- takeScreenshot: fixture-public-resource-cleared-restart

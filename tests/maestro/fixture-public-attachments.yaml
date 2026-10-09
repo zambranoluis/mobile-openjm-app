@@ -1,0 +1,59 @@
+appId: com.openjm.mobile.fixture
+---
+- launchApp:
+    clearState: true
+- scrollUntilVisible:
+    element: "Try anonymous chat"
+    direction: DOWN
+- tapOn: "Try anonymous chat"
+- tapOn: "Attach anonymous file"
+- runFlow: fixture-pick-image.yaml
+- assertVisible: "Remove openjm-fixture-profile.png"
+- takeScreenshot: fixture-public-attachment-uploaded
+- scrollUntilVisible:
+    element:
+      text: "Anonymous message"
+      index: 1
+    direction: DOWN
+    centerElement: true
+- tapOn:
+    text: "Anonymous message"
+    index: 1
+- inputText: "Fictional uploaded attachment"
+- hideKeyboard
+- scrollUntilVisible:
+    element: "Send anonymously"
+    direction: DOWN
+- tapOn: "Send anonymously"
+- scrollUntilVisible:
+    element: "Fictional anonymous response."
+    direction: UP
+- assertVisible: "Fictional anonymous response."
+- takeScreenshot: fixture-public-attachment-response
+- scrollUntilVisible:
+    element: "Anonymous media and files"
+    direction: DOWN
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "openjm-fixture-profile.png"
+    direction: DOWN
+- tapOn: "openjm-fixture-profile.png"
+- tapOn: "Save or share anonymous result"
+- assertVisible: "Sharing image"
+- takeScreenshot: fixture-public-file-share
+- back
+- stopApp
+- launchApp
+- scrollUntilVisible:
+    element: "Try anonymous chat"
+    direction: DOWN
+- tapOn: "Try anonymous chat"
+- tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element: "openjm-fixture-profile.png"
+    direction: DOWN
+- tapOn: "openjm-fixture-profile.png"
+- tapOn: "Save or share anonymous result"
+- assertVisible: "Sharing image"
+- takeScreenshot: fixture-public-file-restored-share
+- back

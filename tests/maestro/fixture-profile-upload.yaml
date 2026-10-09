@@ -1,0 +1,28 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-r5-sign-in.yaml
+- tapOn: "Account"
+- tapOn: "Profile and security"
+- scrollUntilVisible:
+    element: "Profile photo"
+    direction: DOWN
+- tapOn: "Profile photo"
+- scrollUntilVisible:
+    element: "Choose profile photo"
+    direction: DOWN
+- tapOn: "Choose profile photo"
+- runFlow: fixture-pick-image.yaml
+- scrollUntilVisible:
+    element: "Profile photo change confirmed by OpenJM."
+    direction: DOWN
+- assertVisible: "Profile photo change confirmed by OpenJM."
+- takeScreenshot: fixture-profile-upload-confirmed
+- scrollUntilVisible:
+    element: "Refresh profile photo"
+    direction: DOWN
+- tapOn: "Refresh profile photo"
+- scrollUntilVisible:
+    element: "Your profile photo"
+    direction: UP
+- assertVisible: "Your profile photo"
+- takeScreenshot: fixture-profile-upload-refreshed

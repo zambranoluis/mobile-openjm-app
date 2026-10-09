@@ -196,7 +196,11 @@ export class MobileClient {
     const length = Number(response.headers.get("content-length"));
     if (length > maxBytes) {
       await response.body?.cancel();
-      throw new Error("This file is too large to download on this device.");
+      throw new ApiFailure(
+        413,
+        "DOWNLOAD_TOO_LARGE",
+        "This file is too large to download on this device.",
+      );
     }
     if (!response.body) throw new Error("The download has no content.");
     const reader = response.body.getReader(),
@@ -219,7 +223,11 @@ export class MobileClient {
         if (part.done) break;
         size += part.value.byteLength;
         if (size > maxBytes)
-          throw new Error("This file is too large to download on this device.");
+          throw new ApiFailure(
+            413,
+            "DOWNLOAD_TOO_LARGE",
+            "This file is too large to download on this device.",
+          );
         chunks.push(part.value);
       }
       const bytes = new Uint8Array(size);
@@ -237,6 +245,13 @@ export class MobileClient {
             .trim()
             .toLowerCase() ?? "application/octet-stream",
       };
+    } catch (failure) {
+      if (failure instanceof ApiFailure || options.signal?.aborted) throw failure;
+      throw new ApiFailure(
+        503,
+        "DOWNLOAD_INTERRUPTED",
+        "The file download was interrupted. Try downloading again.",
+      );
     } finally {
       options.signal?.removeEventListener("abort", abort);
       await reader.cancel().catch(() => {});

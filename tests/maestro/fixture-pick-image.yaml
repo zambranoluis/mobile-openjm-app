@@ -1,0 +1,15 @@
+appId: com.openjm.mobile.fixture
+---
+# Seed assets/hummingbird.png as /sdcard/Download/openjm-fixture-profile.png.
+- extendedWaitUntil:
+    visible: "Show roots"
+    timeout: 10000
+- tapOn: "Show roots"
+- tapOn:
+    text: "Downloads"
+    below: "Images"
+- extendedWaitUntil:
+    visible: 'openjm-fixture-profile\.png(,.*)?'
+    timeout: 10000
+- takeScreenshot: fixture-image-document-picker
+- tapOn: 'openjm-fixture-profile\.png(,.*)?'

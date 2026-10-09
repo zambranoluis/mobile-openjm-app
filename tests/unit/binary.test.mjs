@@ -80,3 +80,19 @@ test("logout during a binary read discards the old account's bytes", async () =>
   output.enqueue(new Uint8Array([42]));
   await assert.rejects(reading, { code: "SESSION_CHANGED" });
 });
+
+test("native binary failures discard partial bytes and hide transport diagnostics", async () => {
+  const api = await client(async () => new Response(new ReadableStream({
+    start(controller) {
+      controller.enqueue(new Uint8Array([42]));
+    },
+    pull(controller) {
+      controller.error(new Error("Native framing diagnostics with content bytes"));
+    },
+  })));
+  await assert.rejects(api.binary("/v1/files/fixture/content"), {
+    status: 503,
+    code: "DOWNLOAD_INTERRUPTED",
+    message: "The file download was interrupted. Try downloading again.",
+  });
+});

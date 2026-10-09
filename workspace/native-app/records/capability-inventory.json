@@ -19,7 +19,7 @@
       "source": "src/app/api/account/plan/purchase/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native authoritative catalog, price/currency confirmation and credit-funded purchase implemented; validation checks pass; installed/live acceptance pending",
+      "status": "Native authoritative billing/catalog/gift redemption and credit-funded plan purchase implemented. Android R8 fictional12-character redemption/balance13.5 usd, keep-plan confirmation cancellation, confirmed purchase/balance8.5 usd passed; captures inspected. Hosted checkout/payment, duplicate/interruption/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -39,7 +39,7 @@
       "source": "src/app/api/account/plans/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native authoritative catalog and availability implemented; missing price/currency/endpoint disables purchase; installed/live acceptance pending",
+      "status": "Native authoritative billing/catalog/gift redemption and credit-funded plan purchase implemented. Android R8 fictional12-character redemption/balance13.5 usd, keep-plan confirmation cancellation, confirmed purchase/balance8.5 usd passed; captures inspected. Hosted checkout/payment, duplicate/interruption/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -49,7 +49,7 @@
       "source": "src/app/api/account/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native explicit typed DELETE confirmation and server ACCOUNT_DELETE OTP implemented in source; component authorization check passes. Credentials/cache clear only after server-confirmed deletion; installed/live deletion and failure acceptance pending.",
+      "status": "Native typed DELETE confirmation and server ACCOUNT_DELETE OTP implemented. Android R7 fictional invalid OTP rejection, valid deletion and signed-out cold restart passed; live deletion/ownership/interruption and device storage-failure acceptance pending.",
       "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -199,7 +199,7 @@
       "source": "src/app/api/audio/music/[jobId]/content/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned music generation/status/content/playback implemented. Android R8 fictional 300-second streamed tone passed; same task restored after HOME/Recents showed Play at 46/300 rather than automatic resume, and explicit restart/play passed. Captures inspected. Single-write native transfer failures/root cause, live ownership/codecs and iOS/physical audio acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -209,7 +209,7 @@
       "source": "src/app/api/audio/music/[jobId]/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned music generation/status/content/playback implemented. Android R8 fictional 300-second streamed tone passed; same task restored after HOME/Recents showed Play at 46/300 rather than automatic resume, and explicit restart/play passed. Captures inspected. Single-write native transfer failures/root cause, live ownership/codecs and iOS/physical audio acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -219,7 +219,7 @@
       "source": "src/app/api/audio/music/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned music generation/status/content/playback implemented. Android R8 fictional 300-second streamed tone passed; same task restored after HOME/Recents showed Play at 46/300 rather than automatic resume, and explicit restart/play passed. Captures inspected. Single-write native transfer failures/root cause, live ownership/codecs and iOS/physical audio acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -319,7 +319,7 @@
       "source": "src/app/api/auth/login/route.ts",
       "screen": "Authentication",
       "stage": 3,
-      "status": "Native login/OTP/upstream TOTP flow implemented; controller and response tests pass; installed live acceptance pending",
+      "status": "Native login/MFA completion and credential-free challenge implemented. Android R8 fictional sign-in/OTP passed at system font scales1.0 and2.0 with keyboard-visible OTP/no password inheritance. Controller/response/source checks pass. Invalid/expiry/resend/device storage failure and live/iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -329,7 +329,7 @@
       "source": "src/app/api/auth/login/verify-otp/route.ts",
       "screen": "Authentication",
       "stage": 3,
-      "status": "Native MFA completion implemented; no credentials on MFA challenge; installed live acceptance pending",
+      "status": "Native login/MFA completion and credential-free challenge implemented. Android R8 fictional sign-in/OTP passed at system font scales1.0 and2.0 with keyboard-visible OTP/no password inheritance. Controller/response/source checks pass. Invalid/expiry/resend/device storage failure and live/iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -369,7 +369,7 @@
       "source": "src/app/api/auth/reset-password/route.ts",
       "screen": "Authentication",
       "stage": 3,
-      "status": "Native one-time reset completion implemented, no credential persistence; server success required; component/URL parsing checks pass; live acceptance pending",
+      "status": "Native one-time password reset and protected adapter implemented; no reset credentials persist. Android R8 fictional completion passed in a split core journey after selecting the action rather than the same-named header. Confirmation capture inspected. Actual email/link/expiry/live/iOS/physical acceptance remains pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -399,7 +399,7 @@
       "source": "src/app/api/conversations/[conversationId]/files/route.ts",
       "screen": "Conversation attachments / file library",
       "stage": 3,
-      "status": "Native associated file library, metadata, bounded binary preview/share, confirmed deletion and HTTPS temporary-download browser source implemented; field/purpose/8MiB image limits checked; installed/live acceptance pending.",
+      "status": "Native associated library/bounded content/share/confirmed deletion implemented. Android R8 fictional text-file list, native chooser and confirmed deletion/empty library passed; captures inspected. Recipient contents, other formats, metadata/temporary links/upload interruptions, ownership/live/iOS/physical acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -429,7 +429,7 @@
       "source": "src/app/api/conversations/[conversationId]/messages/route.ts",
       "screen": "Conversations / result",
       "stage": 3,
-      "status": "Native SSE and document non-stream path with up to five uploads implemented; shared GET replay resumes on reopen without resubmission; Markdown rendering and reconnect checks pass; live acceptance pending",
+      "status": "Native history/saved Markdown/messages and focused replay implemented. Android R8 fictional MFA/history/saved content/message submission/streamed response passed; native formula/source and selected Spanish restart/English restoration passed. Captures inspected. Pagination/search/group/document/reconnect/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -449,7 +449,7 @@
       "source": "src/app/api/conversations/[conversationId]/route.ts",
       "screen": "Conversations / result",
       "stage": 3,
-      "status": "Native saved Markdown, job links and older-message cursor pagination with deduplicated boundaries implemented; rich media/live acceptance pending",
+      "status": "Native history/saved Markdown/messages and focused replay implemented. Android R8 fictional MFA/history/saved content/message submission/streamed response passed; native formula/source and selected Spanish restart/English restoration passed. Captures inspected. Pagination/search/group/document/reconnect/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -519,7 +519,7 @@
       "source": "src/app/api/conversations/route.ts",
       "screen": "Conversations / result",
       "stage": 3,
-      "status": "Native history/search/pagination/group filter implemented; live acceptance pending",
+      "status": "Native history/saved Markdown/messages and focused replay implemented. Android R8 fictional MFA/history/saved content/message submission/streamed response passed; native formula/source and selected Spanish restart/English restoration passed. Captures inspected. Pagination/search/group/document/reconnect/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -539,7 +539,7 @@
       "source": "src/app/api/credits/redeem/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native 12-character gift code normalization and redemption implemented without truncation/retry; installed/live acceptance pending",
+      "status": "Native authoritative billing/catalog/gift redemption and credit-funded plan purchase implemented. Android R8 fictional12-character redemption/balance13.5 usd, keep-plan confirmation cancellation, confirmed purchase/balance8.5 usd passed; captures inspected. Hosted checkout/payment, duplicate/interruption/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -549,7 +549,7 @@
       "source": "src/app/api/credits/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native authoritative balance read implemented without invented defaults; live acceptance pending",
+      "status": "Native authoritative billing/catalog/gift redemption and credit-funded plan purchase implemented. Android R8 fictional12-character redemption/balance13.5 usd, keep-plan confirmation cancellation, confirmed purchase/balance8.5 usd passed; captures inspected. Hosted checkout/payment, duplicate/interruption/ownership/live acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -609,7 +609,7 @@
       "source": "src/app/api/embeddings/route.ts",
       "screen": "Embeddings",
       "stage": 4,
-      "status": "Native authoritative embeddings-model picker, text/JSON input, format/dimensions and complete JSON export implemented in source. Request/response bounds apply; installed/live acceptance pending.",
+      "status": "Native embeddings model/text/JSON/format/dimensions/export implemented. Android R7 fictional float/text request, keyboard-visible input, result and native JSON chooser passed with inspected captures; JSON/base64/dimensions, receiver contents and live acceptance pending. R8 same utility journey also passed at system font scale2.0; keyboard/result/chooser captures inspected and font1.0 restored.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -619,7 +619,7 @@
       "source": "src/app/api/files/[fileId]/content/route.ts",
       "screen": "Conversation attachments / file library",
       "stage": 3,
-      "status": "Native associated file library, metadata, bounded binary preview/share, confirmed deletion and HTTPS temporary-download browser source implemented; field/purpose/8MiB image limits checked; installed/live acceptance pending.",
+      "status": "Native associated library/bounded content/share/confirmed deletion implemented. Android R8 fictional text-file list, native chooser and confirmed deletion/empty library passed; captures inspected. Recipient contents, other formats, metadata/temporary links/upload interruptions, ownership/live/iOS/physical acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -659,7 +659,7 @@
       "source": "src/app/api/files/[fileId]/route.ts",
       "screen": "Conversation attachments / file library",
       "stage": 3,
-      "status": "Native associated file library, metadata, bounded binary preview/share, confirmed deletion and HTTPS temporary-download browser source implemented; field/purpose/8MiB image limits checked; installed/live acceptance pending.",
+      "status": "Native associated library/bounded content/share/confirmed deletion implemented. Android R8 fictional text-file list, native chooser and confirmed deletion/empty library passed; captures inspected. Recipient contents, other formats, metadata/temporary links/upload interruptions, ownership/live/iOS/physical acceptance remain pending by operation. Evidence: records/r7-native-validation.md.",
       "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -729,7 +729,7 @@
       "source": "src/app/api/image-profile/route.ts",
       "screen": "Account / Profile photo",
       "stage": 4,
-      "status": "Native profile-photo read/picker/raw Base64 upload/confirmed removal implemented in source; existing Spring 2 MiB/format/metadata-removal contract retained. Gateway envelope checks pass. New installed/live ownership/picker acceptance pending.",
+      "status": "Native profile-photo read/picker/raw Base64 upload/confirmed removal implemented. Android R7 read/removal and R8 local Downloads picker, upload confirmation and refresh passed in a split fictional journey; captures inspected. Live ownership, format/size/metadata removal, interruption and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -739,7 +739,7 @@
       "source": "src/app/api/image-profile/route.ts",
       "screen": "Account / Profile photo",
       "stage": 4,
-      "status": "Native profile-photo read/picker/raw Base64 upload/confirmed removal implemented in source; existing Spring 2 MiB/format/metadata-removal contract retained. Gateway envelope checks pass. New installed/live ownership/picker acceptance pending.",
+      "status": "Native profile-photo read/picker/raw Base64 upload/confirmed removal implemented. Android R7 read/removal and R8 local Downloads picker, upload confirmation and refresh passed in a split fictional journey; captures inspected. Live ownership, format/size/metadata removal, interruption and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "PUT authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -749,7 +749,7 @@
       "source": "src/app/api/image-profile/route.ts",
       "screen": "Account / Profile photo",
       "stage": 4,
-      "status": "Native profile-photo read/picker/raw Base64 upload/confirmed removal implemented in source; existing Spring 2 MiB/format/metadata-removal contract retained. Gateway envelope checks pass. New installed/live ownership/picker acceptance pending.",
+      "status": "Native confirmed profile-photo removal implemented. Android R7 fictional confirmation/removal/authoritative refresh passed; live ownership/failure acceptance pending.",
       "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -759,7 +759,7 @@
       "source": "src/app/api/images/[imageId]/content/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned image generation/status/content implemented. Android R8 fictional generation/status/image content passed; captures inspected. Live ownership/results and iOS/physical acceptance remain pending. Product video/voice restrictions retained. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -769,7 +769,7 @@
       "source": "src/app/api/images/generations/[jobId]/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned image generation/status/content implemented. Android R8 fictional generation/status/image content passed; captures inspected. Live ownership/results and iOS/physical acceptance remain pending. Product video/voice restrictions retained. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -779,7 +779,7 @@
       "source": "src/app/api/images/generations/route.ts",
       "screen": "Media creation / owned result",
       "stage": 4,
-      "status": "Native bounded generation/status/result/playback/share source implemented; durable music request IDs and account-isolated recovery; device/live acceptance pending. Video/voice release restrictions preserved.",
+      "status": "Native owned image generation/status/content implemented. Android R8 fictional generation/status/image content passed; captures inspected. Live ownership/results and iOS/physical acceptance remain pending. Product video/voice restrictions retained. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -789,7 +789,7 @@
       "source": "src/app/api/jobs/[jobId]/result/route.ts",
       "screen": "Response jobs / result",
       "stage": 3,
-      "status": "Native text result read implemented; rich results/stream cursor pending",
+      "status": "Native text result read implemented. Android R7 fictional completed result journey passed and capture inspected; rich results/ownership/live acceptance pending. R8 same utility journey also passed at system font scale2.0; keyboard/result/chooser captures inspected and font1.0 restored.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -799,7 +799,7 @@
       "source": "src/app/api/jobs/[jobId]/route.ts",
       "screen": "Response jobs / result",
       "stage": 3,
-      "status": "Native job refresh/background-reopen read implemented; live acceptance pending",
+      "status": "Native job refresh/background-reopen read implemented. Android R7 fictional created-job status/completion journey passed; background/ownership/live acceptance pending. R8 same utility journey also passed at system font scale2.0; keyboard/result/chooser captures inspected and font1.0 restored.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -819,7 +819,7 @@
       "source": "src/app/api/jobs/[jobId]/stream/route.ts",
       "screen": "Response jobs / result",
       "stage": 3,
-      "status": "Native focused job SSE/result/reopen/cancellation source implemented; upstream integer cursor remains distinct from Redis conversation cursors. Identity, status, late-account-event and cursor tests added; new installed/live acceptance pending.",
+      "status": "Native focused job SSE/result/reopen/cancellation implemented; integer cursor distinct from conversation replay. Android R7 fictional follow/completion/result passed; cursor/account-race source checks pass. Installed reconnect/cancellation and live acceptance pending. R8 same utility journey also passed at system font scale2.0; keyboard/result/chooser captures inspected and font1.0 restored.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -829,7 +829,7 @@
       "source": "src/app/api/jobs/route.ts",
       "screen": "Response jobs / result",
       "stage": 3,
-      "status": "Native explicit job submission/priority, account-isolated draft and recent job identifiers implemented in source. No automatic mutation retry; device-history failure keeps confirmed ID visible. New installed/live acceptance pending.",
+      "status": "Native explicit job submission/priority, account-isolated draft and recent IDs implemented. Android R7 fictional standard-priority create/follow/result passed; duplicate/interruption/realtime-priority and live acceptance pending. R8 same utility journey also passed at system font scale2.0; keyboard/result/chooser captures inspected and font1.0 restored.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -989,7 +989,7 @@
       "source": "src/app/api/public-chat/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native public SSE/session clear/draft and token-bound attachments implemented. Android R4 chat/session clear passed; R5 attachments and live quota/expiry checks remain open. No account bearer or proxy credentials enter public requests.",
+      "status": "Native public SSE/session clear and token-bound attachments implemented. Android R8 fictional PNG picker/upload, attachment response, cold resource-token restoration, expired-token rejection and session cleanup passed; captures inspected. Isolated HTTP fixture checks reject missing/wrong tokens and account bearer. Live quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md. Stronger R8 cleanup also passed: saved row visibly present before clear, absent at list bottom after clear and after cold restart; captures inspected.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -999,7 +999,7 @@
       "source": "src/app/api/public-chat/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native public SSE/session clear/draft and token-bound attachments implemented. Android R4 chat/session clear passed; R5 attachments and live quota/expiry checks remain open. No account bearer or proxy credentials enter public requests.",
+      "status": "Native public SSE/session clear and token-bound attachments implemented. Android R8 fictional PNG picker/upload, attachment response, cold resource-token restoration, expired-token rejection and session cleanup passed; captures inspected. Isolated HTTP fixture checks reject missing/wrong tokens and account bearer. Live quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md. Stronger R8 cleanup also passed: saved row visibly present before clear, absent at list bottom after clear and after cold restart; captures inspected.",
       "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -1009,7 +1009,7 @@
       "source": "src/app/api/public-files/[fileId]/content/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 3,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native secure session-scoped anonymous upload/content/share implemented. Android R8 fictional PNG upload, attachment chat, full native image chooser before/after cold restart, expired-token rejection and resource cleanup passed; captures inspected. No share recipient was selected. Production sizes/quotas/ownership/expiry, receiver completion and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md. Stronger R8 cleanup also passed: saved row visibly present before clear, absent at list bottom after clear and after cold restart; captures inspected.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1019,7 +1019,7 @@
       "source": "src/app/api/public-files/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 3,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native secure session-scoped anonymous upload/content/share implemented. Android R8 fictional PNG upload, attachment chat, full native image chooser before/after cold restart, expired-token rejection and resource cleanup passed; captures inspected. No share recipient was selected. Production sizes/quotas/ownership/expiry, receiver completion and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md. Stronger R8 cleanup also passed: saved row visibly present before clear, absent at list bottom after clear and after cold restart; captures inspected.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -1029,7 +1029,7 @@
       "source": "src/app/api/public-images/generations/[jobId]/content/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous image generation/status/content implemented with secure resource tokens. Android R8 fictional creation/status/image content and session cleanup passed; captures inspected. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1039,7 +1039,7 @@
       "source": "src/app/api/public-images/generations/[jobId]/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous image generation/status/content implemented with secure resource tokens. Android R8 fictional creation/status/image content and session cleanup passed; captures inspected. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1049,7 +1049,7 @@
       "source": "src/app/api/public-images/generations/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous image generation/status/content implemented with secure resource tokens. Android R8 fictional creation/status/image content and session cleanup passed; captures inspected. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -1059,7 +1059,7 @@
       "source": "src/app/api/public-music/[jobId]/content/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous music generation/status/content/playback implemented with secure resource tokens. Android R8 fictional 300-second chunked tone passed with bounded 64 KiB fixture writes. Earlier single-write chunked/known-length native failures are retained; root cause and production transfer shapes remain unresolved. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1069,7 +1069,7 @@
       "source": "src/app/api/public-music/[jobId]/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous music generation/status/content/playback implemented with secure resource tokens. Android R8 fictional 300-second chunked tone passed with bounded 64 KiB fixture writes. Earlier single-write chunked/known-length native failures are retained; root cause and production transfer shapes remain unresolved. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1079,7 +1079,7 @@
       "source": "src/app/api/public-music/route.ts",
       "screen": "Anonymous chat / media / files",
       "stage": 4,
-      "status": "Native anonymous attachment/media/result/share operations implemented in source with secure session-scoped token chunks and isolated public requests. Storage restoration/rollback/ownership checks pass. Spring public availability/quotas remain authoritative; new installed/live acceptance pending.",
+      "status": "Native anonymous music generation/status/content/playback implemented with secure resource tokens. Android R8 fictional 300-second chunked tone passed with bounded 64 KiB fixture writes. Earlier single-write chunked/known-length native failures are retained; root cause and production transfer shapes remain unresolved. Live availability/quotas/ownership/expiry and iOS/physical acceptance remain pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {
@@ -1119,7 +1119,7 @@
       "source": "src/app/api/usage/details/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native event details with ISO date/model/kind/tier/stream/source/finish filters, bounded offset pagination and partial-sync state implemented; malformed/duplicate page checks pass; installed/live acceptance pending",
+      "status": "Native bounded detailed activity/filter/pagination source implemented. Android R8 fictional125-token detail read and opening ISO-date filter controls passed; captures inspected. Applied filter semantics/pagination/partial sync/ownership/live acceptance remains pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1199,7 +1199,7 @@
       "source": "src/app/api/users/me/memory-preferences/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native server-owned memory and web-search preferences implemented; payload and range validation pass; installed/live acceptance pending",
+      "status": "Native account-owned memory/web-search preferences implemented. Android R8 fictional read, disable related memories, confirmed save and dependent creation control disabled passed; capture inspected. Restart/ownership/availability/live acceptance remains pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
     },
     {
@@ -1209,7 +1209,7 @@
       "source": "src/app/api/users/me/memory-preferences/route.ts",
       "screen": "Account / configuration",
       "stage": 4,
-      "status": "Native preferences save uses explicit PATCH and confirmed server response, memory limit 1-50, no invented availability; installed/live acceptance pending",
+      "status": "Native account-owned memory/web-search preferences implemented. Android R8 fictional read, disable related memories, confirmed save and dependent creation control disabled passed; capture inspected. Restart/ownership/availability/live acceptance remains pending. Evidence: records/r7-native-validation.md.",
       "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
     },
     {

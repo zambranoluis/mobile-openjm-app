@@ -10,6 +10,12 @@ appId: com.openjm.mobile.fixture
     element: "Anonymous media and files"
     direction: DOWN
 - tapOn: "Anonymous media and files"
+- scrollUntilVisible:
+    element:
+      text: "Anonymous media prompt"
+      index: 1
+    direction: DOWN
+    centerElement: true
 - tapOn:
     text: "Anonymous media prompt"
     index: 1
@@ -45,10 +51,12 @@ appId: com.openjm.mobile.fixture
 - tapOn: "Refresh anonymous job"
 - assertVisible: "music · completed"
 - tapOn: "View anonymous media"
+- scrollUntilVisible:
+    element: "Play music"
+    direction: DOWN
 - tapOn: "Play music"
 - assertVisible: "Pause music"
 - takeScreenshot: fixture-public-music
-- back
 - back
 - scrollUntilVisible:
     element: "Clear anonymous session"

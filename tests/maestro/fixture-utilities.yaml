@@ -6,6 +6,12 @@ appId: com.openjm.mobile.fixture
     direction: UP
 - tapOn: "Response jobs"
 - tapOn: "fixture-chat"
+- scrollUntilVisible:
+    element:
+      text: "Job prompt"
+      index: 1
+    direction: DOWN
+    centerElement: true
 - tapOn:
     text: "Job prompt"
     index: 1
@@ -20,7 +26,13 @@ appId: com.openjm.mobile.fixture
     direction: DOWN
 - tapOn: "Open created response job"
 - assertVisible: "running"
+- scrollUntilVisible:
+    element: "Follow response job"
+    direction: DOWN
 - tapOn: "Follow response job"
+- scrollUntilVisible:
+    element: "Fictional job result."
+    direction: UP
 - assertVisible: "completed"
 - assertVisible: "Fictional job result."
 - takeScreenshot: fixture-response-job-completed
@@ -32,8 +44,11 @@ appId: com.openjm.mobile.fixture
 - tapOn: "Embeddings"
 - tapOn: "fixture-embeddings"
 - scrollUntilVisible:
-    element: "Embedding text"
+    element:
+      text: "Embedding text"
+      index: 1
     direction: DOWN
+    centerElement: true
 - tapOn:
     text: "Embedding text"
     index: 1

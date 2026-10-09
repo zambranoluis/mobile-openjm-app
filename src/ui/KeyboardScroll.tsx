@@ -17,6 +17,7 @@ export const useInputReveal = () => useContext(FocusContext);
 export function KeyboardScroll({
   children,
   onScroll,
+  onLayout,
   onContentSizeChange,
   ...props
 }: ScrollViewProps) {
@@ -73,7 +74,14 @@ export function KeyboardScroll({
       <ScrollView
         {...props}
         ref={scroll}
+        // Focused fields must remain measurable after the keyboard clips them.
+        removeClippedSubviews={false}
         scrollEventThrottle={16}
+        onLayout={(event) => {
+          onLayout?.(event);
+          // Keyboard events can precede Android's resized scroll viewport.
+          reveal();
+        }}
         onScroll={(event) => {
           offset.current = event.nativeEvent.contentOffset.y;
           onScroll?.(event);

@@ -29,6 +29,12 @@ appId: com.openjm.mobile.fixture
 - takeScreenshot: fixture-history
 - tapOn: "Fixture conversation"
 - assertVisible: "This is fictional test content."
+- scrollUntilVisible:
+    element:
+      text: "Message"
+      index: 1
+    direction: DOWN
+    centerElement: true
 - tapOn:
     text: "Message"
     index: 1
@@ -89,6 +95,8 @@ appId: com.openjm.mobile.fixture
     index: 1
 - inputText: "fictional-password"
 - hideKeyboard
-- tapOn: "Reset password"
+- tapOn:
+    text: "Reset password"
+    index: 1
 - assertVisible: "Your password was reset. Sign in with your new password."
 - takeScreenshot: fixture-reset-complete

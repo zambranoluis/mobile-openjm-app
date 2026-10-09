@@ -20,6 +20,9 @@ appId: com.openjm.mobile.fixture
 - inputText: "123456"
 - hideKeyboard
 - tapOn: "Verify and sign in"
+- scrollUntilVisible:
+    element: "Fixture conversation"
+    direction: DOWN
 - assertVisible: "Fixture conversation"
 - tapOn: "Account"
 - tapOn: "Credits and plan"

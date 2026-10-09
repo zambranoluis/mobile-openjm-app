@@ -6,14 +6,29 @@ appId: com.openjm.mobile.fixture
     element: "Try anonymous chat"
     direction: DOWN
 - tapOn: "Try anonymous chat"
+- scrollUntilVisible:
+    element:
+      text: "Anonymous message"
+      index: 1
+    direction: DOWN
+    centerElement: true
 - tapOn:
     text: "Anonymous message"
     index: 1
 - inputText: "A fictional anonymous test"
 - hideKeyboard
+- scrollUntilVisible:
+    element: "Send anonymously"
+    direction: DOWN
 - tapOn: "Send anonymously"
+- scrollUntilVisible:
+    element: "Fictional anonymous response."
+    direction: UP
 - assertVisible: "Fictional anonymous response."
 - takeScreenshot: fixture-anonymous-response
+- scrollUntilVisible:
+    element: "Clear anonymous session"
+    direction: DOWN
 - tapOn: "Clear anonymous session"
 - tapOn: "Clear session"
 - assertNotVisible: "Fictional anonymous response."

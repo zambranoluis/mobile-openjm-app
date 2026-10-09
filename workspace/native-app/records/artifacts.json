@@ -2029,7 +2029,35 @@
       "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
       "build": "Gradle bundled build passed1m24s;910tasks24executed. Frozen244source hashes matched before preservation.",
       "installation": "apksigner verify and adb install passed",
-      "maestro": "R6 initially failed an offscreen-history assertion; inspected capture confirms Conversations landing. Corrected flow scrolls the library and retains keyboard-visible OTP assertion. Utilities/other journeys in progress."
+      "maestro": "R6 initially failed an offscreen-history assertion; inspected capture confirms Conversations landing. Resumed utility flow reached the indexed input but failed because the keyboard obscured it; failure capture inspected and retained. Shared form correction is in R7."
+    },
+    {
+      "recordedAt": "2026-10-08",
+      "inputRecord": "workspace/native-app/records/fixture-r7-inputs.json",
+      "status": "Preserved, signature verified and installed; acceptance in progress",
+      "path": "workspace/native-app/output/OpenJM-0.1.0-android-emulator-fixture-r7.apk",
+      "bytes": 48281224,
+      "sha256": "d1fa5c14ffed46e338276cefe855adae63c89830d79c42bd710244a6d421d6a3",
+      "architecture": "x86_64",
+      "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
+      "purpose": "Fictional installed native form, utilities, photo/public-media and lifecycle verification; not a distribution release",
+      "build": "Gradle bundled build passed in 1m59s; 910 tasks, 24 executed. All 244 frozen source hashes matched before preservation.",
+      "installation": "apksigner verify and adb install passed",
+      "maestro": "Utilities passed with inspected keyboard/result/native JSON chooser; photo removal, invalid/valid deletion OTP and signed-out restart passed. Public image passed; 300-second music transfer failed with both chunked and known-length framing. Failures retained; lifecycle remains open."
+    },
+    {
+      "recordedAt": "2026-10-08",
+      "inputRecord": "workspace/native-app/records/fixture-r8-inputs.json",
+      "status": "Preserved, signature verified and installed; selected native checks passed, full acceptance remains open",
+      "path": "workspace/native-app/output/OpenJM-0.1.0-android-emulator-fixture-r8.apk",
+      "bytes": 48281596,
+      "sha256": "76d71e0e953a1054b995aaf47b45932c7304cf8f3629cb3045bfd31de558f685",
+      "architecture": "x86_64",
+      "certificateSha256": "fac61745dc0903786fb9ede62a962b399f7348f0bb6f899b8332667591033b9c",
+      "purpose": "Fictional native download-failure feedback and remaining local acceptance; not a distribution release",
+      "build": "Gradle bundled build passed in 2m9s; 910 tasks, 24 executed. All 244 frozen source hashes matched before preservation.",
+      "installation": "apksigner verify and adb install passed; independently observed installed APK SHA256 matches preserved R8",
+      "maestro": "Public image/music (300-second bounded streamed tone), owned media/early background pause at46/300, split profile picker/upload/refresh and core/reset, anonymous PNG attachment response/share/cold restoration/expiry, full account/preferences/usage/files/math-language and utilities at font2.0 passed with inspected selected captures; font1.0 restored. Stronger public cleanup passed with inspected saved-row-before-clear and empty-bottom-after-clear/cold-restart captures. Installed controlled binary-interruption/retry remains pending after automatic approval review rejected task-owned server restart: blocked by policy. All11 distinct recorded APK hashes verified unchanged."
     }
   ],
   "fixture": {

@@ -31,6 +31,46 @@ let mediaJobs = [],
 let publicJobs = [],
   responseJobs = [],
   profilePhoto = true;
+const publicFiles = new Map();
+let interruptNextBinary = false;
+const binaryFraming = process.env.OPENJM_FIXTURE_BINARY_FRAMING ?? "chunked";
+if (!["chunked", "length"].includes(binaryFraming))
+  throw new Error("Invalid fixture binary framing.");
+function binaryHeaders(payload, contentType) {
+  return {
+    "content-type": contentType,
+    ...(binaryFraming === "length" ? { "content-length": payload.length } : {}),
+  };
+}
+async function sendBinary(response, payload, contentType) {
+  if (interruptNextBinary) {
+    interruptNextBinary = false;
+    response.writeHead(200, {
+      "content-type": contentType,
+      "content-length": payload.length,
+    });
+    response.write(payload.subarray(0, Math.min(16, payload.length - 1)));
+    // Allow headers and a partial body to reach the native reader before failure.
+    await new Promise((resolve) => setTimeout(resolve, 250));
+    response.destroy();
+    return;
+  }
+  response.writeHead(200, binaryHeaders(payload, contentType));
+  // Stream bounded writes instead of submitting a multi-megabyte socket write.
+  for (let offset = 0; offset < payload.length; offset += 65536) {
+    if (response.destroyed) return;
+    await new Promise((resolve, reject) => {
+      response.write(payload.subarray(offset, offset + 65536), (error) => {
+        if (error) reject(error);
+        else resolve();
+      });
+    });
+  }
+  response.end();
+}
+const fixturePort = Number(process.env.OPENJM_FIXTURE_PORT ?? 8097);
+if (!Number.isInteger(fixturePort) || fixturePort < 0 || fixturePort > 65535)
+  throw new Error("Invalid fixture port.");
 const id = "11111111-1111-4111-8111-111111111111";
 const conversation = {
   id,
@@ -162,9 +202,12 @@ const server = createServer(async (request, response) => {
     const url = new URL(request.url, "http://fixture.local");
     const path = url.pathname;
     let raw = "";
+    const chunks = [];
+    let bytes = 0;
     for await (const chunk of request) {
-      raw += chunk;
-      if (raw.length > 1048576) {
+      chunks.push(chunk);
+      bytes += chunk.length;
+      if (bytes > 1048576) {
         json(response, 413, {
           code: "TOO_LARGE",
           message: "Fixture input too large.",
@@ -172,13 +215,64 @@ const server = createServer(async (request, response) => {
         return;
       }
     }
+    const body = Buffer.concat(chunks);
+    raw = body.toString("utf8");
     const input =
       raw && request.headers["content-type"]?.includes("application/json")
         ? JSON.parse(raw)
         : {};
+    if (path.startsWith("/v1/public/") && request.headers.authorization) {
+      json(response, 403, { message: "Account credentials are forbidden in the fictional public lane." });
+      return;
+    }
+    // Fixture-only host control. Never part of the mobile gateway contract.
+    if (path === "/fixture/binary/interrupt-next" && request.method === "POST") {
+      interruptNextBinary = true;
+      json(response, 200, { armed: true });
+      return;
+    }
+    if (path === "/fixture/public/expire" && request.method === "POST") {
+      for (const job of publicJobs) job.expired = true;
+      for (const file of publicFiles.values()) file.expired = true;
+      json(response, 200, { expired: publicJobs.length + publicFiles.size });
+      return;
+    }
     if (path === "/v1/public/memory/session" && request.method === "DELETE") {
       publicJobs = [];
+      publicFiles.clear();
       response.writeHead(204).end();
+      return;
+    }
+    if (path === "/v1/public/files" && request.method === "POST") {
+      if (!request.headers["content-type"]?.startsWith("multipart/form-data;")) {
+        json(response, 415, { message: "The fictional upload requires multipart data." });
+        return;
+      }
+      const form = await new Response(body, {
+        headers: { "content-type": request.headers["content-type"] },
+      }).formData();
+      const file = form.get("file"), purpose = form.get("purpose");
+      if (!(file instanceof File) || !file.size || !["vision", "user_data", "assistants"].includes(purpose)) {
+        json(response, 400, { message: "The fictional upload is invalid." });
+        return;
+      }
+      const id = `file_public_fixture_${publicFiles.size + 1}`;
+      const token = `fictional-file-token-${publicFiles.size + 1}`;
+      publicFiles.set(id, { token, bytes: Buffer.from(await file.arrayBuffer()), mime: file.type, expired: false });
+      json(response, 201, { id, file_token: token, filename: file.name, bytes: file.size });
+      return;
+    }
+    if (/^\/v1\/public\/files\/[^/]+\/content$/.test(path) && request.method === "GET") {
+      const file = publicFiles.get(path.split("/")[4]);
+      if (!file || file.token !== request.headers["x-openjm-file-token"]) {
+        json(response, 403, { message: "The fictional file credential is required." });
+        return;
+      }
+      if (file.expired) {
+        json(response, 403, { message: "The fictional resource credential has expired." });
+        return;
+      }
+      await sendBinary(response, file.bytes, file.mime || "application/octet-stream");
       return;
     }
     const publicKind = path.startsWith("/v1/public/images/generations")
@@ -208,12 +302,15 @@ const server = createServer(async (request, response) => {
         });
         return;
       }
+      if (job.expired) {
+        json(response, 403, { message: "The fictional resource credential has expired." });
+        return;
+      }
       if (path.endsWith("/content")) {
-        response
-          .writeHead(200, {
-            "content-type": publicKind === "image" ? "image/png" : "audio/wav",
-          })
-          .end(publicKind === "image" ? fictionalImage : fictionalAudio);
+        await sendBinary(response,
+          publicKind === "image" ? fictionalImage : fictionalAudio,
+          publicKind === "image" ? "image/png" : "audio/wav",
+        );
         return;
       }
       job.status = "completed";
@@ -221,6 +318,15 @@ const server = createServer(async (request, response) => {
       return;
     }
     if (path === "/v1/public/chat/completions" && request.method === "POST") {
+      const attachments = input.attachments ?? [];
+      const tokens = String(request.headers["x-openjm-file-token"] ?? "").split(",");
+      if (!Array.isArray(attachments) || attachments.length > 3 || attachments.some((entry, index) => {
+        const file = publicFiles.get(entry.file_id);
+        return !file || file.expired || file.token !== tokens[index];
+      })) {
+        json(response, 403, { message: "The fictional attachment credential is missing or expired." });
+        return;
+      }
       response.writeHead(200, { "content-type": "text/event-stream" });
       response.write(
         `data: ${JSON.stringify({ choices: [{ delta: { content: "Fictional anonymous response." } }] })}\n\n`,
@@ -415,8 +521,7 @@ const server = createServer(async (request, response) => {
       return;
     }
     if (path === "/v1/files/file_fixture/content") {
-      response.writeHead(200, { "content-type": "text/plain" });
-      response.end("Fictional local file sharing content.");
+      await sendBinary(response, Buffer.from("Fictional local file sharing content."), "text/plain");
       return;
     }
     if (path === "/v1/files/file_fixture" && request.method === "DELETE") {
@@ -459,9 +564,7 @@ const server = createServer(async (request, response) => {
       return;
     }
     if (path.startsWith("/v1/images/") && path.endsWith("/content")) {
-      response
-        .writeHead(200, { "content-type": "image/png" })
-        .end(fictionalImage);
+      await sendBinary(response, fictionalImage, "image/png");
       return;
     }
     if (mediaKind && request.method === "GET") {
@@ -475,9 +578,7 @@ const server = createServer(async (request, response) => {
         return;
       }
       if (path.endsWith("/content")) {
-        response
-          .writeHead(200, { "content-type": "audio/wav" })
-          .end(fictionalAudio);
+        await sendBinary(response, fictionalAudio, "audio/wav");
         return;
       }
       item.reads++;
@@ -957,15 +1058,19 @@ const server = createServer(async (request, response) => {
       message: "This operation is outside the local fixture journey.",
     });
   } catch {
+    if (response.headersSent) {
+      response.destroy();
+      return;
+    }
     json(response, 400, {
       code: "INVALID_FIXTURE_REQUEST",
       message: "The fixture request is invalid.",
     });
   }
 });
-server.listen(8097, "127.0.0.1", () =>
+server.listen(fixturePort, "127.0.0.1", () =>
   console.log(
-    "FICTIONAL fixture service: 127.0.0.1:8097. No upstream connection exists.",
+    `FICTIONAL fixture service: 127.0.0.1:${server.address().port}. No upstream connection exists. Audio ${audioSeconds}s; binary framing ${binaryFraming}.`,
   ),
 );
 for (const event of ["SIGTERM", "SIGINT"])

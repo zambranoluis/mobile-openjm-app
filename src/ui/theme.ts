@@ -14,7 +14,7 @@ export const color = {
 };
 export const text = {
   body: Platform.OS === "ios" ? 17 : 16,
-  title: 30,
+  title: 24,
   label: 16,
   metadata: 13,
 };

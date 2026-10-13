@@ -7,6 +7,7 @@ import { amountInCents, balance as readBalance } from "./billingModel";
 import { currentPlan, giftCardCode, planCatalog } from "./planModel";
 import type { Plan } from "./planModel";
 import { PlanChoices } from "./PlanChoices";
+import { QrCodePicker } from "../../platform/QrCodePicker";
 import {
   Button,
   Copy,
@@ -226,6 +227,7 @@ export function BillingScreen() {
         disabled={busy || !code.trim()}
         onPress={() => void change("redeem")}
       />
+      <QrCodePicker onUseCode={setCode} disabled={busy || checkoutBusy} />
       <Feedback message={plansError} />
       <PlanChoices
         plans={plans}

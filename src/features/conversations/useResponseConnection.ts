@@ -10,6 +10,7 @@ type Replay = {
   submissionId: string | null;
   cursor: string | null;
   text: string;
+  thinking: string;
   interrupted: boolean;
 };
 /** One consumer connection; reconnects are GETs and never submit a draft again. */
@@ -20,6 +21,7 @@ export function useResponseConnection(
 ) {
   const [busy, setBusy] = useState(false);
   const [partial, setPartial] = useState("");
+  const [thinking, setThinking] = useState("");
   const [error, setError] = useState<string | null>(null);
   const connection = useRef<AbortController | null>(null);
   const pending = useRef<Promise<boolean> | null>(null);
@@ -29,6 +31,7 @@ export function useResponseConnection(
     submissionId: null,
     cursor: null,
     text: "",
+    thinking: "",
     interrupted: false,
   });
   const event = useCallback((value: SseEvent) => {
@@ -37,8 +40,15 @@ export function useResponseConnection(
       if (value.event === "error")
         throw new Error(data.message ?? "The response could not be completed.");
       const delta = data.choices?.[0]?.delta?.content;
+      const reasoning = data.choices?.[0]?.delta?.reasoning ?? data.choices?.[0]?.delta?.reasoning_content;
+      if (typeof reasoning === "string") {
+        if (replay.current.thinking.length + replay.current.text.length + reasoning.length > 2 * 1024 * 1024)
+          throw new Error("The response exceeded the device text limit. Reload its saved conversation.");
+        replay.current.thinking += reasoning;
+        if (mounted.current) setThinking(replay.current.thinking);
+      }
       if (typeof delta === "string") {
-        if (replay.current.text.length + delta.length > 2 * 1024 * 1024)
+        if (replay.current.thinking.length + replay.current.text.length + delta.length > 2 * 1024 * 1024)
           throw new Error(
             "The response exceeded the device text limit. Reload its saved conversation.",
           );
@@ -65,6 +75,8 @@ export function useResponseConnection(
           await reload();
           if (mounted.current) onCompleted(replay.current.submissionId);
           replay.current.text = "";
+          replay.current.thinking = "";
+          if (mounted.current) setThinking("");
           if (mounted.current) setPartial("");
           return true;
         } catch (failure) {
@@ -125,9 +137,11 @@ export function useResponseConnection(
               : null,
           cursor: null,
           text: "",
+          thinking: "",
           interrupted: false,
         };
         setPartial("");
+        setThinking("");
       }
       await run((abort) =>
         api.resume(
@@ -156,9 +170,11 @@ export function useResponseConnection(
         submissionId: input.client_submission_id,
         cursor: null,
         text: "",
+        thinking: "",
         interrupted: false,
       };
       setPartial("");
+      setThinking("");
       return run((abort) =>
         api.stream(
           `/v1/conversations/${encodeURIComponent(id)}/messages`,
@@ -191,5 +207,5 @@ export function useResponseConnection(
   const close = useCallback(() => {
     connection.current?.abort();
   }, []);
-  return { busy, partial, error, reconnect, send, close };
+  return { busy, partial, thinking, error, reconnect, send, close };
 }

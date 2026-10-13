@@ -1,6 +1,6 @@
 # OpenJM native app
 
-Android/iPhone Expo SDK 57 application with an independent Spring-backed mobile gateway. This repository contains its own product, design, instructions, contract snapshot and tests. Build status and remaining integration are recorded in [native app plan](workspace/native-app/plan.md); requirements are not claims of completion.
+Android/iPhone Expo SDK 57 application with an independent Spring-backed mobile gateway. This repository contains its own product, design, instructions, contract snapshot and tests. Build status and remaining integration are recorded in the [native reproduction plan](workspace/native-app-reproduction/plan.md) and [resume checkpoint](workspace/native-app-reproduction/resume.md); requirements are not claims of completion. Earlier work records and artifacts remain historical evidence.
 
 Install Node 22.13 or later and run `npm ci`. Copy `.env.example` to an ignored `.env.local` and set `EXPO_PUBLIC_MOBILE_API_URL` to the mobile gateway origin. Only that public address belongs in the app; backend/gateway secrets never do. Android emulator uses `http://10.0.2.2:8090` for a gateway on the host; use a configured HTTPS address for a physical device/private release. `npm start` opens the development-client server; `npm run android` builds/runs an Android development client with a configured SDK. `npm run ios` needs macOS/Xcode or an EAS signed build. `npm run web` is an auxiliary preview, not native-device evidence.
 

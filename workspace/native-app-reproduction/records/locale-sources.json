@@ -1,0 +1,16 @@
+{
+  "source": "web-openjm-frontend/src/lib/i18n/resources.ts and features/chat/music/translations.ts",
+  "resourceSha256": "aeaeaf5c51a9900fb43f87d4970ed44ec871f3e85550ae8122f4017e53c311ea",
+  "musicSha256": "425b031f6d9d58aab61512c98b9359c6e0763239f39749c64002648e083641b1",
+  "retainedEntries": 173,
+  "collisions": 3,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "hi",
+    "zh",
+    "ru"
+  ],
+  "limits": "Retained approved common copy; native-specific untranslated copy remains an explicit acceptance gap. No sibling imports at runtime."
+}

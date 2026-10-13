@@ -1,0 +1,37 @@
+[
+  {
+    "source": "workspace\\native-app\\records\\native-coverage.json",
+    "destination": "workspace\\native-app-reproduction\\records\\native-coverage.json",
+    "sha256": "60b07f30d05d99286079314e32ccd9693586a07860f4cb372db38182d15a69b4"
+  },
+  {
+    "source": "workspace\\native-app\\records\\capability-inventory.json",
+    "destination": "workspace\\native-app-reproduction\\records\\capability-inventory.json",
+    "sha256": "c816ab0dc3f308d611debe8f0f2c366ca3a5d281ea9b05acf8271c7c0cbfa786"
+  },
+  {
+    "source": "workspace\\native-app\\records\\assets.json",
+    "destination": "workspace\\native-app-reproduction\\records\\assets.json",
+    "sha256": "3c864b762df79cf36b600fc3a8e9aa78541c432fd03230f11bb2466a58393936"
+  },
+  {
+    "source": "workspace\\native-app\\records\\locale-sources.json",
+    "destination": "workspace\\native-app-reproduction\\records\\locale-sources.json",
+    "sha256": "2068ebfb9cb99d085b3be7128119b3f393367fdf8f1bfdc01456059d2bde6652"
+  },
+  {
+    "source": "workspace\\native-app\\records\\instruction-loading.md",
+    "destination": "workspace\\native-app-reproduction\\records\\instruction-loading.md",
+    "sha256": "6424b4f3a66de3e4706f7a1354bb62bc27de92b0645baf0e285533fd9b2f22b1"
+  },
+  {
+    "source": "workspace\\native-app\\records\\release-prerequisites.md",
+    "destination": "workspace\\native-app-reproduction\\records\\release-prerequisites.md",
+    "sha256": "e8021e238fbad79de27478b57b258684ac8022d8828ed057c0b0881c4b6dc53c"
+  },
+  {
+    "source": "workspace\\native-app\\records\\r7-native-validation.md",
+    "destination": "workspace\\native-app-reproduction\\records\\r7-native-validation.md",
+    "sha256": "77eef61a5117386db5fe49e7053812189b3a64a5717611e98921109e7b89cae3"
+  }
+]

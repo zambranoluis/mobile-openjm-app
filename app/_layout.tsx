@@ -6,6 +6,7 @@ import { ActivityIndicator } from "react-native";
 import { AuthProvider, useAuth } from "../src/features/auth/AuthProvider";
 import { color } from "../src/ui/theme";
 import { NotificationLinks } from "../src/features/auth/NotificationLinks";
+import { loadBrandFonts } from "../src/platform/brandFonts";
 function Routes() {
   const { t } = useLanguage();
   const { profile, loading } = useAuth();
@@ -31,6 +32,7 @@ function Routes() {
       >
         <Stack.Protected guard={profile?.profileComplete === true}>
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="configuration" options={{ title: t("Configuration") }} />
           <Stack.Screen
             name="response-jobs"
             options={{ title: t("Response jobs") }}
@@ -158,6 +160,7 @@ function Routes() {
 export default function Root() {
   useEffect(() => {
     void initializeLanguage();
+    void loadBrandFonts().catch(() => {});
   }, []);
   return (
     <AuthProvider>

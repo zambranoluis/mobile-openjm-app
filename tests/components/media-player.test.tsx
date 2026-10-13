@@ -16,6 +16,7 @@ let mockStatus = {
   duration: 300,
   didJustFinish: false,
 };
+jest.mock("../../src/ui/motion/PlaybackBloom", () => ({ PlaybackBloom: () => null }));
 jest.mock("expo-router", () => ({
   useFocusEffect: (callback: () => void) =>
     require("react").useEffect(callback, [callback]),

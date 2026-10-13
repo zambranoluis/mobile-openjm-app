@@ -13,6 +13,7 @@ import {
   Title,
 } from "../../ui/controls";
 import { useAuth } from "./AuthProvider";
+import { AmbientField } from "../../ui/motion/AmbientField";
 
 export function LoginScreen() {
   const auth = useAuth();
@@ -128,7 +129,7 @@ export function LoginScreen() {
     }
   }
   return (
-    <Screen>
+    <Screen background={<AmbientField />}>
       <View style={{ alignItems: "center", marginBottom: 8 }}>
         <Image
           source={require("../../../assets/hummingbird.png")}

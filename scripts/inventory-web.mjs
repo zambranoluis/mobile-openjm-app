@@ -17,7 +17,7 @@ async function files(dir) {
 }
 const rows = [];
 const nativeCoverage = JSON.parse(
-  await readFile("workspace/native-app/records/native-coverage.json", "utf8"),
+  await readFile("workspace/native-app-reproduction/records/native-coverage.json", "utf8"),
 );
 for (const file of (await files(resolve(root, "src/app/api")))
   .filter((f) => /route\.(ts|js)$/.test(f))
@@ -131,9 +131,9 @@ for (const file of (await files(resolve(root, "src/app/api")))
       acceptance: `${method} authorized success, controlled failure and ownership/expiry; native state/render; ${method === "GET" ? "reopen/reload" : "duplicate input and interruption"}`,
     });
 }
-await mkdir("workspace/native-app/records", { recursive: true });
+await mkdir("workspace/native-app-reproduction/records", { recursive: true });
 await writeFile(
-  "workspace/native-app/records/capability-inventory.json",
+  "workspace/native-app-reproduction/records/capability-inventory.json",
   JSON.stringify(
     {
       inspected: "2026-10-08",
@@ -145,7 +145,7 @@ await writeFile(
   ) + "\n",
 );
 await writeFile(
-  "workspace/native-app/records/capability-matrix.md",
+  "workspace/native-app-reproduction/records/capability-matrix.md",
   "# Capability matrix\n\nSource inventory, not live proof. Backend path expressions are evidence from each handler; combined expressions must be resolved against controller/DTO/service before enabling an operation. Deprecated browser authentication routes remain 404; native authentication uses dedicated session endpoints. Legal assets have separate entries below. Matrix acceptance remains pending until an operation has an installed native journey and its backend checks.\n\n| Web operation / evidence | Backend contract evidence | Native screen | Stage | Status | Acceptance |\n| --- | --- | --- | --- | --- | --- |\n" +
     rows
       .map(

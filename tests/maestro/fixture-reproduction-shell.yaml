@@ -1,0 +1,37 @@
+appId: com.openjm.mobile.fixture
+---
+- runFlow: fixture-r5-sign-in.yaml
+- assertVisible: "Fixture conversation"
+- assertVisible: "Search conversations"
+- takeScreenshot: reproduction-history
+- tapOn: "Open menu"
+- assertVisible: "Configuration"
+- takeScreenshot: reproduction-drawer
+- back
+- assertNotVisible: "Configuration"
+- assertVisible: "Fixture conversation"
+- tapOn: "Open menu"
+- tapOn: "Apps"
+- assertVisible: "Fictional notes connector"
+- takeScreenshot: reproduction-apps
+- tapOn: "Open menu"
+- tapOn: "Profile"
+- assertVisible: "Avery Sample"
+- tapOn: "Open menu"
+- tapOn: "Configuration"
+- assertVisible: "Saved memories"
+- assertVisible: "API keys"
+- takeScreenshot: reproduction-configuration
+- back
+- tapOn: "Open menu"
+- tapOn: "History"
+- assertVisible: "Fixture conversation"
+- tapOn: "Filters"
+- assertVisible: "Start date: Any date"
+- tapOn: "Clear filters"
+- assertVisible: "Fixture conversation"
+- tapOn: "Fixture conversation"
+- assertVisible: "This is fictional test content."
+- takeScreenshot: reproduction-saved-response
+- back
+- assertVisible: "Fixture conversation"

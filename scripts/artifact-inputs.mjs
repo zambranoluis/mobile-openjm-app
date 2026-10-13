@@ -7,10 +7,10 @@ if (!["create", "verify"].includes(mode) || !recordPath)
   throw new Error("Use artifact-inputs.mjs create|verify <record.json>.");
 const target = resolve(recordPath);
 if (
-  !target.startsWith(resolve("workspace/native-app/records") + "\\") &&
-  !target.startsWith(resolve("workspace/native-app/records") + "/")
+  !["workspace/native-app/records", "workspace/native-app-reproduction/records"].some((directory) =>
+    target.startsWith(resolve(directory) + "\\") || target.startsWith(resolve(directory) + "/"))
 )
-  throw new Error("Input records belong in workspace/native-app/records.");
+  throw new Error("Input records belong in a native work item's records directory.");
 async function walk(path) {
   return (
     await Promise.all(

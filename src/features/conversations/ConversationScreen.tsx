@@ -21,6 +21,7 @@ import { useAuth } from "../auth/AuthProvider";
 import { useResponseConnection } from "./useResponseConnection";
 import { conversationDetail, prependMessages } from "./conversationData";
 import { ConversationActions } from "./ConversationActions";
+import { ResponseDetails } from "./ResponseDetails";
 import { ModelOptions, chatOptions } from "./ModelOptions";
 import type { ChatOptions } from "./ModelOptions";
 
@@ -485,7 +486,7 @@ export function ConversationScreen({ id }: { id: string }) {
             {message.role === "user" ? (
               <Copy>{message.content}</Copy>
             ) : (
-              <RichText>{message.content}</RichText>
+              <ResponseDetails message={message} />
             )}
             {message.job_id ? (
               <Row
@@ -505,7 +506,7 @@ export function ConversationScreen({ id }: { id: string }) {
             <Copy muted>
               {busy ? "OpenJM · responding" : "OpenJM · partial response"}
             </Copy>
-            <RichText>{partial}</RichText>
+            <ResponseDetails message={{ id: "partial", role: "assistant", content: partial, thinking: response.thinking }} streaming={busy} />
           </View>
         ) : null}
         {!messages.length && !partial ? (

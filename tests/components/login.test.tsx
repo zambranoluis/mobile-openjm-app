@@ -9,6 +9,7 @@ import { api } from "../../src/platform/runtime";
 /* eslint-disable @typescript-eslint/no-require-imports -- Jest factories run before static imports. */
 import { beforeEach, expect, jest, test } from "@jest/globals";
 const mockReload = jest.fn(async () => {});
+jest.mock("../../src/ui/motion/AmbientField", () => ({ AmbientField: () => null }));
 jest.mock("expo-router", () => ({
   router: { push: require("@jest/globals").jest.fn() },
 }));

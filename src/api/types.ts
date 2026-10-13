@@ -42,7 +42,17 @@ export type Message = {
   content: string;
   job_id?: string | null;
   job_status?: string | null;
+  thinking?: string | null;
+  quotes?: { source: string; excerpt: string; reference: string }[] | null;
+  token_usage?: { entry?: number | null; output?: number | null; total?: number | null } | null;
+  work_duration_ms?: number | null;
+  image_attachments?: ResponseFile[] | null;
+  document_attachments?: ResponseFile[] | null;
+  context_files?: ResponseFile[] | null;
+  generated_files?: ResponseFile[] | null;
+  attachment_processing_state?: string | null;
 };
+export type ResponseFile = { file_id?: string; filename?: string; content_type?: string; bytes?: number; purpose?: string };
 export type ConversationDetail = Conversation & {
   messages: Message[];
   has_more: boolean;

@@ -5,6 +5,9 @@ const files = [
   "assets/hummingbird.svg",
   "assets/hummingbird.png",
   "assets/icon.png",
+  "assets/brand/wordmark.svg",
+  "assets/brand/wordmark.png",
+  ...(await readdir("assets/fonts")).sort().map((file) => "assets/fonts/" + file),
   ...(await readdir("assets/legal"))
     .sort()
     .map((file) => "assets/legal/" + file),
@@ -12,7 +15,11 @@ const files = [
 const entries = [];
 for (const file of files) {
   const bytes = await readFile(file);
-  const source = file.endsWith(".svg")
+  const source = file === "assets/brand/wordmark.svg"
+    ? "../web-openjm-frontend/public/images/logos/SVG/negative/N5.svg"
+    : file.startsWith("assets/fonts/")
+      ? "../web-openjm-frontend/src/app/fonts/" + file.split("/").at(-1)
+    : file.endsWith(".svg")
     ? "../web-openjm-frontend/public/images/logos/SVG/hummingbird.svg"
     : file.endsWith(".md")
       ? "../web-openjm-frontend/public/legal/" + file.split("/").at(-1)
@@ -28,12 +35,14 @@ for (const file of files) {
     bytes: bytes.length,
     sha256: hash(bytes),
     source,
-    derivation: file.endsWith(".png")
+    derivation: file === "assets/brand/wordmark.png"
+      ? "Unmodified approved N5 SVG rasterized with Sharp 0.35.3 to 384px wide (4x native display)"
+      : file.endsWith(".png")
       ? "Rasterized from retained hummingbird.svg with Sharp; icon 1024 dark canvas; mark 256 transparent"
       : null,
   });
 }
-const path = "workspace/native-app/records/assets.json";
+const path = "workspace/native-app-reproduction/records/assets.json";
 const generated =
   JSON.stringify(
     {

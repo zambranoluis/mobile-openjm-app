@@ -19,14 +19,17 @@ import { KeyboardScroll, useInputReveal } from "./KeyboardScroll";
 export function Screen({
   children,
   scroll = true,
+  background,
 }: {
   children: ReactNode;
   scroll?: boolean;
+  background?: ReactNode;
 }) {
   return (
     <SafeAreaView style={styles.screen} edges={["bottom", "left", "right"]}>
+      {background}
       <KeyboardAvoidingView
-        style={styles.screen}
+        style={[styles.screen, !!background && { backgroundColor: "transparent" }]}
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         keyboardVerticalOffset={Platform.OS === "ios" ? 96 : 0}
       >
@@ -186,12 +189,13 @@ export function Row({
 }
 export const styles = StyleSheet.create({
   screen: { flex: 1, backgroundColor: color.canvas },
-  content: { padding: 24, gap: 16, paddingBottom: 32 },
-  copy: { fontSize: text.body, lineHeight: 25, color: color.text },
+  content: { padding: 16, gap: 12, paddingBottom: 32 },
+  copy: { fontSize: text.body, lineHeight: 25, color: color.text, fontFamily: "Roboto" },
   secondary: { color: color.secondary },
   title: {
     fontSize: text.title,
     fontWeight: "600",
+    fontFamily: "Roboto-Bold",
     color: color.text,
     marginBottom: 8,
   },
@@ -212,10 +216,11 @@ export const styles = StyleSheet.create({
     fontSize: text.label,
     fontWeight: "600",
     textAlign: "center",
+    fontFamily: "Roboto-Medium",
   },
   secondaryLabel: { color: color.text },
   fieldGroup: { gap: 8 },
-  fieldLabel: { color: color.secondary, fontSize: text.label },
+  fieldLabel: { color: color.secondary, fontSize: text.label, fontFamily: "Roboto" },
   input: {
     minHeight: target,
     backgroundColor: color.field,
@@ -223,6 +228,7 @@ export const styles = StyleSheet.create({
     padding: 14,
     borderRadius: 8,
     fontSize: text.body,
+    fontFamily: "Roboto",
   },
   row: {
     paddingVertical: 16,
@@ -231,10 +237,11 @@ export const styles = StyleSheet.create({
     borderColor: color.outline,
     gap: 6,
   },
-  rowTitle: { color: color.text, fontSize: text.body, fontWeight: "500" },
+  rowTitle: { color: color.text, fontSize: text.body, fontWeight: "500", fontFamily: "Roboto-Medium" },
   rowDetail: {
     color: color.secondary,
     fontSize: text.metadata,
     lineHeight: 20,
+    fontFamily: "Roboto",
   },
 });

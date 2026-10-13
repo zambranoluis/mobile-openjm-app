@@ -10,6 +10,7 @@ import {
 } from "expo-audio";
 import { Button, Copy, Feedback } from "../ui/controls";
 import type { MediaKind } from "../features/media/mediaModel";
+import { PlaybackBloom } from "../ui/motion/PlaybackBloom";
 function usePauseOnLeave(pause: () => void) {
   const active = useRef(false);
   useFocusEffect(
@@ -99,6 +100,7 @@ function Audio({ uri }: { uri: string }) {
       <Copy>
         {Math.floor(status.currentTime)} / {Math.floor(status.duration)} seconds
       </Copy>
+      <PlaybackBloom playing={status.playing} />
       <Feedback message={error} />
       <Button
         label={status.playing ? "Pause music" : "Play music"}

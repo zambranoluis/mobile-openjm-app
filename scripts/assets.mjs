@@ -42,7 +42,7 @@ for (const file of files) {
       : null,
   });
 }
-const path = "workspace/native-app-reproduction/records/assets.json";
+const path = "tests/criteria/assets.json";
 const generated =
   JSON.stringify(
     {

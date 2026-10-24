@@ -1,0 +1,7 @@
+# Native comparison criteria
+
+`capability-inventory.json` owns operation contracts and acceptance requirements. `parity-matrix.json` maps those operations, page routes and workflow/state requirements to native destinations, with frozen source identities. `assets.json` owns exact brand/font/legal asset hashes and derivations. These inputs preserve the retained baseline; none records approval, implementation stage, execution status or a passing build.
+
+`npm run parity:check` and `npm run assets:check` read only this repository. Source hashes identify a comparison revision and do not imply that a sibling checkout must exist. `npm run inventory:web -- EXPLICIT_WEB_ROOT`, reviewed mapping edits and `npm run parity:generate -- --web=EXPLICIT_WEB_ROOT` deliberately refresh a coordinated comparison; source changes and new routes need review. `npm run assets:check -- --source` explicitly compares supplied source assets; `node scripts/assets.mjs --write` updates identities only after an authorized asset revision. Normal checks never regenerate expected values to hide drift.
+
+Live native producer integration is unavailable in the current backend. iOS, physical-device, signing, QA/provider and delivery acceptance require their separately established prerequisites and per-build evidence under the test guide. Keep execution progress and approval narration in the selected task, without making normal checks depend on it.

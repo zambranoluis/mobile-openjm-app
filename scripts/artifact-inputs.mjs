@@ -1,16 +1,17 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { resolve, relative } from "node:path";
+import { resolve, relative, isAbsolute, sep } from "node:path";
 const root = process.cwd();
 const [mode, recordPath] = process.argv.slice(2);
 if (!["create", "verify"].includes(mode) || !recordPath)
   throw new Error("Use artifact-inputs.mjs create|verify <record.json>.");
 const target = resolve(recordPath);
-if (
-  !["workspace/native-app/records", "workspace/native-app-reproduction/records"].some((directory) =>
-    target.startsWith(resolve(directory) + "\\") || target.startsWith(resolve(directory) + "/"))
-)
-  throw new Error("Input records belong in a native work item's records directory.");
+const outputIndex = process.argv.indexOf("--output-root");
+const outputRoot = outputIndex < 0 ? resolve("workspace") : process.argv[outputIndex + 1];
+if (!outputRoot || !isAbsolute(outputRoot)) throw new Error("Provide an absolute selected --output-root");
+const location = relative(resolve(outputRoot), target);
+if (!location || location === ".." || location.startsWith(".." + sep) || isAbsolute(location) || !target.endsWith(".json"))
+  throw new Error("Input records must be JSON files beneath the selected output root.");
 async function walk(path) {
   return (
     await Promise.all(
@@ -25,7 +26,7 @@ async function walk(path) {
 const paths = [
   ...(
     await Promise.all(
-      ["app", "src", "scripts", "assets"].map((path) => walk(resolve(path))),
+      ["app", "src", "scripts", "assets", "tests/criteria"].map((path) => walk(resolve(path))),
     )
   ).flat(),
   ...[

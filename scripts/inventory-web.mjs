@@ -1,7 +1,8 @@
 import { readdir, readFile, writeFile, mkdir } from "node:fs/promises";
 import { resolve, relative } from "node:path";
 
-const root = resolve(process.argv[2] ?? "../web-openjm-frontend");
+if (!process.argv[2]) throw new Error("Provide an explicit web source root for coordinated inventory");
+const root = resolve(process.argv[2]);
 async function files(dir) {
   return (
     await Promise.all(
@@ -16,9 +17,8 @@ async function files(dir) {
   ).flat();
 }
 const rows = [];
-const nativeCoverage = JSON.parse(
-  await readFile("workspace/native-app-reproduction/records/native-coverage.json", "utf8"),
-);
+const baseline = JSON.parse(await readFile("tests/criteria/capability-inventory.json", "utf8"));
+const acceptance = new Map(baseline.operations.map(row => [`${row.method} ${row.route}`, row.acceptance]));
 for (const file of (await files(resolve(root, "src/app/api")))
   .filter((f) => /route\.(ts|js)$/.test(f))
   .sort()) {
@@ -108,10 +108,6 @@ for (const file of (await files(resolve(root, "src/app/api")))
                           )
                         ? "Conversations / result"
                         : "Account / configuration";
-  const stage =
-    /auth|complete-profile|conversations|models|groups|files|jobs/.test(route)
-      ? 3
-      : 4;
   const contract =
     [...new Set(contracts)].join("; ") ||
     "Transport helper: inspect linked handler before implementing";
@@ -122,37 +118,9 @@ for (const file of (await files(resolve(root, "src/app/api")))
       contract,
       source: relative(root, file).replaceAll("\\", "/"),
       screen,
-      stage,
-      status:
-        nativeCoverage[`${method} ${route}`] ??
-        (/voices/.test(route)
-          ? "Restricted by Spring security"
-          : "Not implemented natively; inventoried contract"),
-      acceptance: `${method} authorized success, controlled failure and ownership/expiry; native state/render; ${method === "GET" ? "reopen/reload" : "duplicate input and interruption"}`,
+      acceptance: acceptance.get(`${method} ${route}`) ?? `${method} authorized success, controlled failure and ownership/expiry; native state/render; ${method === "GET" ? "reopen/reload" : "duplicate input and interruption"}`,
     });
 }
-await mkdir("workspace/native-app-reproduction/records", { recursive: true });
-await writeFile(
-  "workspace/native-app-reproduction/records/capability-inventory.json",
-  JSON.stringify(
-    {
-      inspected: "2026-10-08",
-      sourceRoot: "../web-openjm-frontend",
-      operations: rows,
-    },
-    null,
-    2,
-  ) + "\n",
-);
-await writeFile(
-  "workspace/native-app-reproduction/records/capability-matrix.md",
-  "# Capability matrix\n\nSource inventory, not live proof. Backend path expressions are evidence from each handler; combined expressions must be resolved against controller/DTO/service before enabling an operation. Deprecated browser authentication routes remain 404; native authentication uses dedicated session endpoints. Legal assets have separate entries below. Matrix acceptance remains pending until an operation has an installed native journey and its backend checks.\n\n| Web operation / evidence | Backend contract evidence | Native screen | Stage | Status | Acceptance |\n| --- | --- | --- | --- | --- | --- |\n" +
-    rows
-      .map(
-        (r) =>
-          `| ${r.method} ${r.route} ([source](../../../../web-openjm-frontend/${r.source})) | ${r.contract.replaceAll("|", "\\|").replaceAll("\n", " ")} | ${r.screen} | ${r.stage} | ${r.status} | ${r.acceptance} |`,
-      )
-      .join("\n") +
-    "\n\nLegal documents: terms of service, privacy, cookies, subprocessors, security, AI transparency, acceptable use, data processing and copyright → Account / Legal, stage 4; preserve approved source text; acceptance: offline reading, native scrolling, large text, links and language coverage.\n",
-);
-console.log(`Inventoried ${rows.length} web operations.`);
+await mkdir("tests/criteria", { recursive: true });
+await writeFile("tests/criteria/capability-inventory.json", JSON.stringify({ schema: 1, operations: rows }, null, 2) + "\n");
+console.log(`Inventoried ${rows.length} web operations; review changed contracts/mappings before parity regeneration.`);

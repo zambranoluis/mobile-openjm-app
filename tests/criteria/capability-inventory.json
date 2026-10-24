@@ -1,0 +1,1045 @@
+{
+  "schema": 1,
+  "operations": [
+    {
+      "method": "GET",
+      "route": "/api/account/export",
+      "contract": "/v1/users/me/export",
+      "source": "src/app/api/account/export/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/account/plan/purchase",
+      "contract": "/v1/me/plan/purchase",
+      "source": "src/app/api/account/plan/purchase/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/account/plan",
+      "contract": "/v1/me/plan",
+      "source": "src/app/api/account/plan/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/account/plans",
+      "contract": "/v1/me/plans",
+      "source": "src/app/api/account/plans/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/account",
+      "contract": "/v1/users/me; /v1/",
+      "source": "src/app/api/account/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/account/subscription",
+      "contract": "/v1/me/subscription",
+      "source": "src/app/api/account/subscription/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/account/subscription",
+      "contract": "/v1/me/subscription",
+      "source": "src/app/api/account/subscription/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/apps/:appId/install",
+      "contract": "/v1/apps/${encodeURIComponent(appId)}/install",
+      "source": "src/app/api/apps/[appId]/install/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/apps/:appId",
+      "contract": "/v1/apps/${encodeURIComponent(appId)}",
+      "source": "src/app/api/apps/[appId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/export",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/export",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/export/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/import",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/import",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/import/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/status",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/status",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/status/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/rotate-secret",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/rotate-secret",
+      "source": "src/app/api/apps/installations/[installationId]/rotate-secret/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/apps/installations/:installationId/status",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/status",
+      "source": "src/app/api/apps/installations/[installationId]/status/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/apps/installations",
+      "contract": "/v1/apps/installations",
+      "source": "src/app/api/apps/installations/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/apps",
+      "contract": "/v1/apps",
+      "source": "src/app/api/apps/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/audio/music/:jobId/content",
+      "contract": "/v1/audio/music/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/audio/music/[jobId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/audio/music/:jobId",
+      "contract": "/v1/audio/music/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/audio/music/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/audio/music",
+      "contract": "/v1/audio/music",
+      "source": "src/app/api/audio/music/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/audio/voices/:voiceId",
+      "contract": "/v1/audio/voices/${encodeURIComponent(voiceId)}",
+      "source": "src/app/api/audio/voices/[voiceId]/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/audio/voices/:voiceId",
+      "contract": "/v1/audio/voices/${encodeURIComponent(voiceId)}",
+      "source": "src/app/api/audio/voices/[voiceId]/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/audio/voices/challenges",
+      "contract": "/v1/audio/voices/challenges",
+      "source": "src/app/api/audio/voices/challenges/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/audio/voices",
+      "contract": "/v1/audio/voices",
+      "source": "src/app/api/audio/voices/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/audio/voices",
+      "contract": "/v1/audio/voices",
+      "source": "src/app/api/audio/voices/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/auth/:...nextauth",
+      "contract": "Deprecated browser route: permanent 404; no backend operation",
+      "source": "src/app/api/auth/[...nextauth]/route.ts",
+      "screen": "Authentication",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/:...nextauth",
+      "contract": "Deprecated browser route: permanent 404; no backend operation",
+      "source": "src/app/api/auth/[...nextauth]/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/forgot-password",
+      "contract": "/api/auth/forgot-password",
+      "source": "src/app/api/auth/forgot-password/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/login/resend-otp",
+      "contract": "/api/users/login/resend-otp",
+      "source": "src/app/api/auth/login/resend-otp/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/login",
+      "contract": "/api/; /api/users/login",
+      "source": "src/app/api/auth/login/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/login/verify-otp",
+      "contract": "/api/users/login/verify-otp",
+      "source": "src/app/api/auth/login/verify-otp/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/logout",
+      "contract": "/api/users/logout; /v1/",
+      "source": "src/app/api/auth/logout/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/refresh",
+      "contract": "/api/auth/refresh",
+      "source": "src/app/api/auth/refresh/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/register",
+      "contract": "/api/users/register",
+      "source": "src/app/api/auth/register/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/reset-password",
+      "contract": "/api/auth/reset-password",
+      "source": "src/app/api/auth/reset-password/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/auth/session/touch",
+      "contract": "/api/auth/refresh; /api/users/session/touch?renew=false",
+      "source": "src/app/api/auth/session/touch/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/billing/credits",
+      "contract": "/v1/credits (credits route alias)",
+      "source": "src/app/api/billing/credits/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/files",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/files",
+      "source": "src/app/api/conversations/[conversationId]/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/conversations/:conversationId/files",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/files",
+      "source": "src/app/api/conversations/[conversationId]/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/conversations/:conversationId/group",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/group",
+      "source": "src/app/api/conversations/[conversationId]/group/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/conversations/:conversationId/messages",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/messages; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/messages/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/conversations/:conversationId/model",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/model",
+      "source": "src/app/api/conversations/[conversationId]/model/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations/:conversationId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}${query}; /v1/conversations/${encodeURIComponent(conversationId)}",
+      "source": "src/app/api/conversations/[conversationId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/conversations/:conversationId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}${query}; /v1/conversations/${encodeURIComponent(conversationId)}",
+      "source": "src/app/api/conversations/[conversationId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/streams/:streamId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/streams/${encodeURIComponent(streamId)}; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/streams/[streamId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/streams/active",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/streams/active; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/streams/active/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/turn",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/turn",
+      "source": "src/app/api/conversations/[conversationId]/turn/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/conversations/complexity",
+      "contract": "/v1/conversations/complexity",
+      "source": "src/app/api/conversations/complexity/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/conversations/request-mode",
+      "contract": "/v1/conversations/request-mode",
+      "source": "src/app/api/conversations/request-mode/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/conversations",
+      "contract": "/v1/conversations${query}; /v1/conversations",
+      "source": "src/app/api/conversations/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/conversations",
+      "contract": "/v1/conversations${query}; /v1/conversations",
+      "source": "src/app/api/conversations/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/credits/redeem",
+      "contract": "/v1/credits/redeem",
+      "source": "src/app/api/credits/redeem/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/credits",
+      "contract": "/v1/credits",
+      "source": "src/app/api/credits/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/credits/topup",
+      "contract": "/v1/credits/topup",
+      "source": "src/app/api/credits/topup/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/domains/challenges/:domain",
+      "contract": "/v1/domains/challenges/${encodeURIComponent(domain)}",
+      "source": "src/app/api/domains/challenges/[domain]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/domains/challenges/:domain/verify",
+      "contract": "/v1/domains/challenges/${encodeURIComponent(domain)}/verify",
+      "source": "src/app/api/domains/challenges/[domain]/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/domains/challenges",
+      "contract": "/v1/domains/challenges",
+      "source": "src/app/api/domains/challenges/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/domains/verify",
+      "contract": "/v1/domains/verify",
+      "source": "src/app/api/domains/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/embeddings",
+      "contract": "/v1/embeddings",
+      "source": "src/app/api/embeddings/route.ts",
+      "screen": "Embeddings",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/files/:fileId/content",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/files/[fileId]/content/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/files/:fileId/download-url",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/download-url",
+      "source": "src/app/api/files/[fileId]/download-url/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/files/:fileId/preview",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/files/[fileId]/preview/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/files/:fileId",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}",
+      "source": "src/app/api/files/[fileId]/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/files/:fileId",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}",
+      "source": "src/app/api/files/[fileId]/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/files",
+      "contract": "/v1/files",
+      "source": "src/app/api/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/groups",
+      "contract": "/v1/groups",
+      "source": "src/app/api/groups/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/groups",
+      "contract": "/v1/groups",
+      "source": "src/app/api/groups/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "PUT",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "PUT authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/images/:imageId/content",
+      "contract": "/v1/images/${encodeURIComponent(imageId)}/content",
+      "source": "src/app/api/images/[imageId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/images/generations/:jobId",
+      "contract": "/v1/images/generations/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/images/generations/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/images/generations",
+      "contract": "/v1/images/generations",
+      "source": "src/app/api/images/generations/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/jobs/:jobId/result",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}/result",
+      "source": "src/app/api/jobs/[jobId]/result/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/jobs/:jobId",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/jobs/[jobId]/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/jobs/:jobId",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/jobs/[jobId]/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/jobs/:jobId/stream",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}/stream",
+      "source": "src/app/api/jobs/[jobId]/stream/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/jobs",
+      "contract": "/v1/jobs",
+      "source": "src/app/api/jobs/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/keys/:keyId/revoke",
+      "contract": "/v1/keys/${encodeURIComponent(keyId)}/revoke",
+      "source": "src/app/api/keys/[keyId]/revoke/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/keys/:keyId",
+      "contract": "/v1/keys/${encodeURIComponent(keyId)}",
+      "source": "src/app/api/keys/[keyId]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/keys",
+      "contract": "/v1/keys${query}; /v1/keys",
+      "source": "src/app/api/keys/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/keys",
+      "contract": "/v1/keys${query}; /v1/keys",
+      "source": "src/app/api/keys/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory/:itemId/neighbors",
+      "contract": "/v1/memory/${encodeURIComponent(itemId)}/neighbors",
+      "source": "src/app/api/memory/[itemId]/neighbors/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/memory/:itemId",
+      "contract": "/v1/memory/${encodeURIComponent(itemId)}",
+      "source": "src/app/api/memory/[itemId]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory/export",
+      "contract": "/v1/memory/export",
+      "source": "src/app/api/memory/export/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory/graph",
+      "contract": "/v1/memory/graph",
+      "source": "src/app/api/memory/graph/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/memory/import",
+      "contract": "/v1/memory/import",
+      "source": "src/app/api/memory/import/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory/search",
+      "contract": "/v1/memory/search",
+      "source": "src/app/api/memory/search/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/memory/usage",
+      "contract": "/v1/memory/usage",
+      "source": "src/app/api/memory/usage/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/models",
+      "contract": "/v1/models",
+      "source": "src/app/api/models/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/public-chat",
+      "contract": "/v1/public/chat/completions; /v1/public/memory/session",
+      "source": "src/app/api/public-chat/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/public-chat",
+      "contract": "/v1/public/chat/completions; /v1/public/memory/session",
+      "source": "src/app/api/public-chat/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/public-files/:fileId/content",
+      "contract": "/v1/public/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/public-files/[fileId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/public-files",
+      "contract": "/v1/public/files",
+      "source": "src/app/api/public-files/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/public-images/generations/:jobId/content",
+      "contract": "/v1/public/images/generations/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/public-images/generations/[jobId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/public-images/generations/:jobId",
+      "contract": "/v1/public/images/generations/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/public-images/generations/[jobId]/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/public-images/generations",
+      "contract": "/v1/public/images/generations; /v1/api/public-images/generations/${encodeURIComponent(payload.id)}",
+      "source": "src/app/api/public-images/generations/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/public-music/:jobId/content",
+      "contract": "/v1/public/audio/music/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/public-music/[jobId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/public-music/:jobId",
+      "contract": "/v1/public/audio/music/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/public-music/[jobId]/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/public-music",
+      "contract": "/v1/public/audio/music",
+      "source": "src/app/api/public-music/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/request",
+      "contract": "/api/users/me/security/sensitive-actions/request",
+      "source": "src/app/api/security/sensitive-actions/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/resend",
+      "contract": "/api/users/me/security/sensitive-actions/resend",
+      "source": "src/app/api/security/sensitive-actions/resend/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/verify",
+      "contract": "/api/users/me/security/sensitive-actions/verify",
+      "source": "src/app/api/security/sensitive-actions/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/usage/details",
+      "contract": "/v1/usage/details",
+      "source": "src/app/api/usage/details/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/usage",
+      "contract": "/v1/usage",
+      "source": "src/app/api/usage/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/2fa/disable/request",
+      "contract": "/api/users/me/2fa/disable/request",
+      "source": "src/app/api/users/me/2fa/disable/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/2fa/disable/verify",
+      "contract": "/api/users/me/2fa/disable/verify",
+      "source": "src/app/api/users/me/2fa/disable/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/2fa/enable/request",
+      "contract": "/api/users/me/2fa/enable/request",
+      "source": "src/app/api/users/me/2fa/enable/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/2fa/enable/verify",
+      "contract": "/api/users/me/2fa/enable/verify",
+      "source": "src/app/api/users/me/2fa/enable/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/users/me/2fa",
+      "contract": "/api/users/me/2fa",
+      "source": "src/app/api/users/me/2fa/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/complete-profile",
+      "contract": "/api/users/me/complete-profile",
+      "source": "src/app/api/users/me/complete-profile/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/users/me/memory-preferences",
+      "contract": "/v1/users/me/memory-preferences",
+      "source": "src/app/api/users/me/memory-preferences/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "PATCH",
+      "route": "/api/users/me/memory-preferences",
+      "contract": "/v1/users/me/memory-preferences",
+      "source": "src/app/api/users/me/memory-preferences/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/profile/resend-otp",
+      "contract": "/api/users/me/profile/resend-otp",
+      "source": "src/app/api/users/me/profile/resend-otp/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "POST",
+      "route": "/api/users/me/profile/verify-otp",
+      "contract": "/api/users/me/profile/verify-otp",
+      "source": "src/app/api/users/me/profile/verify-otp/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/users/me",
+      "contract": "/api/users/me",
+      "source": "src/app/api/users/me/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "PUT",
+      "route": "/api/users/me",
+      "contract": "/api/users/me",
+      "source": "src/app/api/users/me/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PUT authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/videos/:jobId/content",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/videos/[jobId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "GET",
+      "route": "/api/videos/:jobId",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/videos/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "DELETE",
+      "route": "/api/videos/:jobId",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/videos/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    },
+    {
+      "method": "GET",
+      "route": "/api/videos/:jobId/thumbnail",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}/thumbnail",
+      "source": "src/app/api/videos/[jobId]/thumbnail/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload"
+    },
+    {
+      "method": "POST",
+      "route": "/api/videos",
+      "contract": "/v1/videos",
+      "source": "src/app/api/videos/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption"
+    }
+  ]
+}

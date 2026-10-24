@@ -1,0 +1,2511 @@
+{
+  "schema": 1,
+  "operations": [
+    {
+      "id": "OP-16516b078731",
+      "method": "GET",
+      "route": "/api/account/export",
+      "contract": "/v1/users/me/export",
+      "source": "src/app/api/account/export/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-92511a7d3673",
+      "method": "POST",
+      "route": "/api/account/plan/purchase",
+      "contract": "/v1/me/plan/purchase",
+      "source": "src/app/api/account/plan/purchase/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-37c2c85663ec",
+      "method": "GET",
+      "route": "/api/account/plan",
+      "contract": "/v1/me/plan",
+      "source": "src/app/api/account/plan/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-37d8dc608d2d",
+      "method": "GET",
+      "route": "/api/account/plans",
+      "contract": "/v1/me/plans",
+      "source": "src/app/api/account/plans/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-b4fa79d75517",
+      "method": "DELETE",
+      "route": "/api/account",
+      "contract": "/v1/users/me; /v1/",
+      "source": "src/app/api/account/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d272d277a1b4",
+      "method": "POST",
+      "route": "/api/account/subscription",
+      "contract": "/v1/me/subscription",
+      "source": "src/app/api/account/subscription/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a4643c18a392",
+      "method": "DELETE",
+      "route": "/api/account/subscription",
+      "contract": "/v1/me/subscription",
+      "source": "src/app/api/account/subscription/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a2d73ba3f6c0",
+      "method": "POST",
+      "route": "/api/apps/:appId/install",
+      "contract": "/v1/apps/${encodeURIComponent(appId)}/install",
+      "source": "src/app/api/apps/[appId]/install/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/AppsScreen.tsx",
+      "destination": "/(tabs)/apps",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a36514842888",
+      "method": "GET",
+      "route": "/api/apps/:appId",
+      "contract": "/v1/apps/${encodeURIComponent(appId)}",
+      "source": "src/app/api/apps/[appId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/apps/AppsScreen.tsx",
+      "destination": "/(tabs)/apps",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-29c09ebb6d97",
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/export",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/export",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/export/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ec55fba24c35",
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/import",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/import",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/import/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-42e1728bdabc",
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/obsidian/status",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/obsidian/status",
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/status/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-8e8721606db4",
+      "method": "POST",
+      "route": "/api/apps/installations/:installationId/rotate-secret",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/rotate-secret",
+      "source": "src/app/api/apps/installations/[installationId]/rotate-secret/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-70b05de452a1",
+      "method": "GET",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c601efa78ad0",
+      "method": "PATCH",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c8faa0aa587a",
+      "method": "DELETE",
+      "route": "/api/apps/installations/:installationId",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}",
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c3c24990dc6f",
+      "method": "GET",
+      "route": "/api/apps/installations/:installationId/status",
+      "contract": "/v1/apps/installations/${encodeURIComponent(installationId)}/status",
+      "source": "src/app/api/apps/installations/[installationId]/status/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d6e675b96f62",
+      "method": "GET",
+      "route": "/api/apps/installations",
+      "contract": "/v1/apps/installations",
+      "source": "src/app/api/apps/installations/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/apps/InstallationScreen.tsx",
+      "destination": "/installation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-8e636d25307c",
+      "method": "GET",
+      "route": "/api/apps",
+      "contract": "/v1/apps",
+      "source": "src/app/api/apps/route.ts",
+      "screen": "Apps / integration detail",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/apps/AppsScreen.tsx",
+      "destination": "/(tabs)/apps",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-4c9f4d697310",
+      "method": "GET",
+      "route": "/api/audio/music/:jobId/content",
+      "contract": "/v1/audio/music/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/audio/music/[jobId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-70554976814d",
+      "method": "GET",
+      "route": "/api/audio/music/:jobId",
+      "contract": "/v1/audio/music/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/audio/music/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-f07127999ed7",
+      "method": "POST",
+      "route": "/api/audio/music",
+      "contract": "/v1/audio/music",
+      "source": "src/app/api/audio/music/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-554020bd0f98",
+      "method": "GET",
+      "route": "/api/audio/voices/:voiceId",
+      "contract": "/v1/audio/voices/${encodeURIComponent(voiceId)}",
+      "source": "src/app/api/audio/voices/[voiceId]/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "restricted by server security; no enabled native voice operation"
+    },
+    {
+      "id": "OP-55dac0e9944b",
+      "method": "DELETE",
+      "route": "/api/audio/voices/:voiceId",
+      "contract": "/v1/audio/voices/${encodeURIComponent(voiceId)}",
+      "source": "src/app/api/audio/voices/[voiceId]/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "restricted by server security; no enabled native voice operation"
+    },
+    {
+      "id": "OP-890fc1a6fcfb",
+      "method": "POST",
+      "route": "/api/audio/voices/challenges",
+      "contract": "/v1/audio/voices/challenges",
+      "source": "src/app/api/audio/voices/challenges/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "restricted by server security; no enabled native voice operation"
+    },
+    {
+      "id": "OP-822bf874a9e0",
+      "method": "GET",
+      "route": "/api/audio/voices",
+      "contract": "/v1/audio/voices",
+      "source": "src/app/api/audio/voices/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "restricted by server security; no enabled native voice operation"
+    },
+    {
+      "id": "OP-d424124c5277",
+      "method": "POST",
+      "route": "/api/audio/voices",
+      "contract": "/v1/audio/voices",
+      "source": "src/app/api/audio/voices/route.ts",
+      "screen": "Restricted voice notice",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "restricted by server security; no enabled native voice operation"
+    },
+    {
+      "id": "OP-89a29a6f71e7",
+      "method": "GET",
+      "route": "/api/auth/:...nextauth",
+      "contract": "Deprecated browser route: permanent 404; no backend operation",
+      "source": "src/app/api/auth/[...nextauth]/route.ts",
+      "screen": "Authentication",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "deprecated browser 404; retain, no native NextAuth clone"
+    },
+    {
+      "id": "OP-0ab5fe456baf",
+      "method": "POST",
+      "route": "/api/auth/:...nextauth",
+      "contract": "Deprecated browser route: permanent 404; no backend operation",
+      "source": "src/app/api/auth/[...nextauth]/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "deprecated browser 404; retain, no native NextAuth clone"
+    },
+    {
+      "id": "OP-6c79c53abe3d",
+      "method": "POST",
+      "route": "/api/auth/forgot-password",
+      "contract": "/api/auth/forgot-password",
+      "source": "src/app/api/auth/forgot-password/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-277b64a67beb",
+      "method": "POST",
+      "route": "/api/auth/login/resend-otp",
+      "contract": "/api/users/login/resend-otp",
+      "source": "src/app/api/auth/login/resend-otp/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-7137dbb07420",
+      "method": "POST",
+      "route": "/api/auth/login",
+      "contract": "/api/; /api/users/login",
+      "source": "src/app/api/auth/login/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-40d02a2df2cd",
+      "method": "POST",
+      "route": "/api/auth/login/verify-otp",
+      "contract": "/api/users/login/verify-otp",
+      "source": "src/app/api/auth/login/verify-otp/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d2e7a02cdb91",
+      "method": "POST",
+      "route": "/api/auth/logout",
+      "contract": "/api/users/logout; /v1/",
+      "source": "src/app/api/auth/logout/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-5c4e15a24879",
+      "method": "POST",
+      "route": "/api/auth/refresh",
+      "contract": "/api/auth/refresh",
+      "source": "src/app/api/auth/refresh/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a07e3e4c1922",
+      "method": "POST",
+      "route": "/api/auth/register",
+      "contract": "/api/users/register",
+      "source": "src/app/api/auth/register/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-231772e78383",
+      "method": "POST",
+      "route": "/api/auth/reset-password",
+      "contract": "/api/auth/reset-password",
+      "source": "src/app/api/auth/reset-password/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-901a92d52dac",
+      "method": "POST",
+      "route": "/api/auth/session/touch",
+      "contract": "/api/auth/refresh; /api/users/session/touch?renew=false",
+      "source": "src/app/api/auth/session/touch/route.ts",
+      "screen": "Authentication",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/LoginScreen.tsx",
+      "destination": "/login",
+      "disposition": "browser session touch; native serialized session refresh replaces browser transport"
+    },
+    {
+      "id": "OP-513138977418",
+      "method": "GET",
+      "route": "/api/billing/credits",
+      "contract": "/v1/credits (credits route alias)",
+      "source": "src/app/api/billing/credits/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-3d4b96ade891",
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/files",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/files",
+      "source": "src/app/api/conversations/[conversationId]/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-5041806aeaf6",
+      "method": "POST",
+      "route": "/api/conversations/:conversationId/files",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/files",
+      "source": "src/app/api/conversations/[conversationId]/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-3f4722a9504a",
+      "method": "PATCH",
+      "route": "/api/conversations/:conversationId/group",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/group",
+      "source": "src/app/api/conversations/[conversationId]/group/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-6ab3fe47c237",
+      "method": "POST",
+      "route": "/api/conversations/:conversationId/messages",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/messages; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/messages/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-434dfc1f7c6c",
+      "method": "PATCH",
+      "route": "/api/conversations/:conversationId/model",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/model",
+      "source": "src/app/api/conversations/[conversationId]/model/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-63a64de75a1e",
+      "method": "GET",
+      "route": "/api/conversations/:conversationId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}${query}; /v1/conversations/${encodeURIComponent(conversationId)}",
+      "source": "src/app/api/conversations/[conversationId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-78d5625445da",
+      "method": "DELETE",
+      "route": "/api/conversations/:conversationId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}${query}; /v1/conversations/${encodeURIComponent(conversationId)}",
+      "source": "src/app/api/conversations/[conversationId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-b30bf41bca91",
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/streams/:streamId",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/streams/${encodeURIComponent(streamId)}; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/streams/[streamId]/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-cefda19b7b49",
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/streams/active",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/streams/active; Legacy Next.js replay broker retained while shared cutover flag is off",
+      "source": "src/app/api/conversations/[conversationId]/streams/active/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-fa8cb0e0f784",
+      "method": "GET",
+      "route": "/api/conversations/:conversationId/turn",
+      "contract": "/v1/conversations/${encodeURIComponent(conversationId)}/turn",
+      "source": "src/app/api/conversations/[conversationId]/turn/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c9416cd00003",
+      "method": "POST",
+      "route": "/api/conversations/complexity",
+      "contract": "/v1/conversations/complexity",
+      "source": "src/app/api/conversations/complexity/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-2f7180484520",
+      "method": "POST",
+      "route": "/api/conversations/request-mode",
+      "contract": "/v1/conversations/request-mode",
+      "source": "src/app/api/conversations/request-mode/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-8b7ed2e0bcff",
+      "method": "GET",
+      "route": "/api/conversations",
+      "contract": "/v1/conversations${query}; /v1/conversations",
+      "source": "src/app/api/conversations/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-139010f09833",
+      "method": "POST",
+      "route": "/api/conversations",
+      "contract": "/v1/conversations${query}; /v1/conversations",
+      "source": "src/app/api/conversations/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-619ec1954615",
+      "method": "POST",
+      "route": "/api/credits/redeem",
+      "contract": "/v1/credits/redeem",
+      "source": "src/app/api/credits/redeem/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-db89947353f1",
+      "method": "GET",
+      "route": "/api/credits",
+      "contract": "/v1/credits",
+      "source": "src/app/api/credits/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-e648a9ccc3bb",
+      "method": "POST",
+      "route": "/api/credits/topup",
+      "contract": "/v1/credits/topup",
+      "source": "src/app/api/credits/topup/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/BillingScreen.tsx",
+      "destination": "/account/billing",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-f819bb298c38",
+      "method": "GET",
+      "route": "/api/domains/challenges/:domain",
+      "contract": "/v1/domains/challenges/${encodeURIComponent(domain)}",
+      "source": "src/app/api/domains/challenges/[domain]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/DomainsScreen.tsx",
+      "destination": "/account/domains",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c93ea1227691",
+      "method": "POST",
+      "route": "/api/domains/challenges/:domain/verify",
+      "contract": "/v1/domains/challenges/${encodeURIComponent(domain)}/verify",
+      "source": "src/app/api/domains/challenges/[domain]/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/DomainsScreen.tsx",
+      "destination": "/account/domains",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ec1380d8500b",
+      "method": "POST",
+      "route": "/api/domains/challenges",
+      "contract": "/v1/domains/challenges",
+      "source": "src/app/api/domains/challenges/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/DomainsScreen.tsx",
+      "destination": "/account/domains",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-14f5e877a365",
+      "method": "POST",
+      "route": "/api/domains/verify",
+      "contract": "/v1/domains/verify",
+      "source": "src/app/api/domains/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/DomainsScreen.tsx",
+      "destination": "/account/domains",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-9d45be37b757",
+      "method": "POST",
+      "route": "/api/embeddings",
+      "contract": "/v1/embeddings",
+      "source": "src/app/api/embeddings/route.ts",
+      "screen": "Embeddings",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/UtilityScreen.tsx",
+      "destination": "/embeddings",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-9f47a4337e1f",
+      "method": "GET",
+      "route": "/api/files/:fileId/content",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/files/[fileId]/content/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-1dfb5adf300e",
+      "method": "POST",
+      "route": "/api/files/:fileId/download-url",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/download-url",
+      "source": "src/app/api/files/[fileId]/download-url/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a5bd1a20569f",
+      "method": "GET",
+      "route": "/api/files/:fileId/preview",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/files/[fileId]/preview/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-363efbf9348f",
+      "method": "GET",
+      "route": "/api/files/:fileId",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}",
+      "source": "src/app/api/files/[fileId]/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-9aa14902eca4",
+      "method": "DELETE",
+      "route": "/api/files/:fileId",
+      "contract": "/v1/files/${encodeURIComponent(fileId)}",
+      "source": "src/app/api/files/[fileId]/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-2a3251961c08",
+      "method": "POST",
+      "route": "/api/files",
+      "contract": "/v1/files",
+      "source": "src/app/api/files/route.ts",
+      "screen": "Conversation attachments / file library",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/files/FilesScreen.tsx",
+      "destination": "/conversation/[id]/files",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-889920a76626",
+      "method": "GET",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/GroupsScreen.tsx",
+      "destination": "/groups",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-e0ad6602b9f6",
+      "method": "PATCH",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/GroupsScreen.tsx",
+      "destination": "/groups",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-588a1ba2e593",
+      "method": "DELETE",
+      "route": "/api/groups/:groupId",
+      "contract": "/v1/groups/${encodeURIComponent(groupId)}",
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/GroupsScreen.tsx",
+      "destination": "/groups",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-e9b22dcb146f",
+      "method": "GET",
+      "route": "/api/groups",
+      "contract": "/v1/groups",
+      "source": "src/app/api/groups/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/GroupsScreen.tsx",
+      "destination": "/groups",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ec6996291cdb",
+      "method": "POST",
+      "route": "/api/groups",
+      "contract": "/v1/groups",
+      "source": "src/app/api/groups/route.ts",
+      "screen": "Groups / filtered history",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/GroupsScreen.tsx",
+      "destination": "/groups",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d8e2c71eb6a7",
+      "method": "GET",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/ProfileImageScreen.tsx",
+      "destination": "/account/photo",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d0a541bc5c22",
+      "method": "PUT",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "PUT authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileImageScreen.tsx",
+      "destination": "/account/photo",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-0ac3d8230863",
+      "method": "DELETE",
+      "route": "/api/image-profile",
+      "contract": "/api/image-profile",
+      "source": "src/app/api/image-profile/route.ts",
+      "screen": "Account / Profile photo",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileImageScreen.tsx",
+      "destination": "/account/photo",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-bf81fe7cb9ca",
+      "method": "GET",
+      "route": "/api/images/:imageId/content",
+      "contract": "/v1/images/${encodeURIComponent(imageId)}/content",
+      "source": "src/app/api/images/[imageId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-9d3b4405be33",
+      "method": "GET",
+      "route": "/api/images/generations/:jobId",
+      "contract": "/v1/images/generations/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/images/generations/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-98f5aa0cfd55",
+      "method": "POST",
+      "route": "/api/images/generations",
+      "contract": "/v1/images/generations",
+      "source": "src/app/api/images/generations/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-985e5c1300f6",
+      "method": "GET",
+      "route": "/api/jobs/:jobId/result",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}/result",
+      "source": "src/app/api/jobs/[jobId]/result/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/JobScreen.tsx",
+      "destination": "/job/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-78e3668bb6eb",
+      "method": "GET",
+      "route": "/api/jobs/:jobId",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/jobs/[jobId]/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/JobScreen.tsx",
+      "destination": "/job/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-70b794bbb8b3",
+      "method": "DELETE",
+      "route": "/api/jobs/:jobId",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/jobs/[jobId]/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/JobScreen.tsx",
+      "destination": "/job/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-e6a1242cf5f7",
+      "method": "GET",
+      "route": "/api/jobs/:jobId/stream",
+      "contract": "/v1/jobs/${encodeURIComponent(jobId)}/stream",
+      "source": "src/app/api/jobs/[jobId]/stream/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/JobScreen.tsx",
+      "destination": "/job/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-7795508656f8",
+      "method": "POST",
+      "route": "/api/jobs",
+      "contract": "/v1/jobs",
+      "source": "src/app/api/jobs/route.ts",
+      "screen": "Response jobs / result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/conversations/JobScreen.tsx",
+      "destination": "/job/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-1056c5fa0b9c",
+      "method": "POST",
+      "route": "/api/keys/:keyId/revoke",
+      "contract": "/v1/keys/${encodeURIComponent(keyId)}/revoke",
+      "source": "src/app/api/keys/[keyId]/revoke/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/KeysScreen.tsx",
+      "destination": "/account/keys",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-75c9d0fbbf36",
+      "method": "PATCH",
+      "route": "/api/keys/:keyId",
+      "contract": "/v1/keys/${encodeURIComponent(keyId)}",
+      "source": "src/app/api/keys/[keyId]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/KeysScreen.tsx",
+      "destination": "/account/keys",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-3e782bc71440",
+      "method": "GET",
+      "route": "/api/keys",
+      "contract": "/v1/keys${query}; /v1/keys",
+      "source": "src/app/api/keys/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/KeysScreen.tsx",
+      "destination": "/account/keys",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ef95fdebeece",
+      "method": "POST",
+      "route": "/api/keys",
+      "contract": "/v1/keys${query}; /v1/keys",
+      "source": "src/app/api/keys/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/KeysScreen.tsx",
+      "destination": "/account/keys",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-71c9bb955fbe",
+      "method": "GET",
+      "route": "/api/memory/:itemId/neighbors",
+      "contract": "/v1/memory/${encodeURIComponent(itemId)}/neighbors",
+      "source": "src/app/api/memory/[itemId]/neighbors/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-cdcf357aa248",
+      "method": "DELETE",
+      "route": "/api/memory/:itemId",
+      "contract": "/v1/memory/${encodeURIComponent(itemId)}",
+      "source": "src/app/api/memory/[itemId]/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-eece30379c35",
+      "method": "GET",
+      "route": "/api/memory/export",
+      "contract": "/v1/memory/export",
+      "source": "src/app/api/memory/export/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-95eb88b940c1",
+      "method": "GET",
+      "route": "/api/memory/graph",
+      "contract": "/v1/memory/graph",
+      "source": "src/app/api/memory/graph/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-2f7f14fc9f2e",
+      "method": "POST",
+      "route": "/api/memory/import",
+      "contract": "/v1/memory/import",
+      "source": "src/app/api/memory/import/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-33a7fbd00cb6",
+      "method": "GET",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-79b88548d455",
+      "method": "POST",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-46e650eef417",
+      "method": "DELETE",
+      "route": "/api/memory",
+      "contract": "/v1/memory",
+      "source": "src/app/api/memory/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-13db67ead186",
+      "method": "GET",
+      "route": "/api/memory/search",
+      "contract": "/v1/memory/search",
+      "source": "src/app/api/memory/search/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/MemoryScreen.tsx",
+      "destination": "/account/memory",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-8d1b57386788",
+      "method": "GET",
+      "route": "/api/memory/usage",
+      "contract": "/v1/memory/usage",
+      "source": "src/app/api/memory/usage/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/UsageScreen.tsx",
+      "destination": "/account/usage",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-8b7f4ecce6fb",
+      "method": "GET",
+      "route": "/api/models",
+      "contract": "/v1/models",
+      "source": "src/app/api/models/route.ts",
+      "screen": "Conversations / result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/conversations/ConversationScreen.tsx",
+      "destination": "/conversation/[id]",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ffa74a7bdb6e",
+      "method": "POST",
+      "route": "/api/public-chat",
+      "contract": "/v1/public/chat/completions; /v1/public/memory/session",
+      "source": "src/app/api/public-chat/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/anonymous/AnonymousScreen.tsx",
+      "destination": "/anonymous",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-f11aabe7f800",
+      "method": "DELETE",
+      "route": "/api/public-chat",
+      "contract": "/v1/public/chat/completions; /v1/public/memory/session",
+      "source": "src/app/api/public-chat/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/anonymous/AnonymousScreen.tsx",
+      "destination": "/anonymous",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-def042168cd3",
+      "method": "GET",
+      "route": "/api/public-files/:fileId/content",
+      "contract": "/v1/public/files/${encodeURIComponent(fileId)}/content",
+      "source": "src/app/api/public-files/[fileId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-5235df77ab12",
+      "method": "POST",
+      "route": "/api/public-files",
+      "contract": "/v1/public/files",
+      "source": "src/app/api/public-files/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-b7d4992dd5bf",
+      "method": "GET",
+      "route": "/api/public-images/generations/:jobId/content",
+      "contract": "/v1/public/images/generations/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/public-images/generations/[jobId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-4235d1ba20f6",
+      "method": "GET",
+      "route": "/api/public-images/generations/:jobId",
+      "contract": "/v1/public/images/generations/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/public-images/generations/[jobId]/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-309e0138d598",
+      "method": "POST",
+      "route": "/api/public-images/generations",
+      "contract": "/v1/public/images/generations; /v1/api/public-images/generations/${encodeURIComponent(payload.id)}",
+      "source": "src/app/api/public-images/generations/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-dc15a6ef1b3d",
+      "method": "GET",
+      "route": "/api/public-music/:jobId/content",
+      "contract": "/v1/public/audio/music/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/public-music/[jobId]/content/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-4bca165fd592",
+      "method": "GET",
+      "route": "/api/public-music/:jobId",
+      "contract": "/v1/public/audio/music/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/public-music/[jobId]/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-b4e02d1faf40",
+      "method": "POST",
+      "route": "/api/public-music",
+      "contract": "/v1/public/audio/music",
+      "source": "src/app/api/public-music/route.ts",
+      "screen": "Anonymous chat / media / files",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/anonymous/AnonymousResourcesScreen.tsx",
+      "destination": "/anonymous-resources",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-526043de3203",
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/request",
+      "contract": "/api/users/me/security/sensitive-actions/request",
+      "source": "src/app/api/security/sensitive-actions/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-d97759e2d085",
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/resend",
+      "contract": "/api/users/me/security/sensitive-actions/resend",
+      "source": "src/app/api/security/sensitive-actions/resend/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-7aacc2b5dc59",
+      "method": "POST",
+      "route": "/api/security/sensitive-actions/verify",
+      "contract": "/api/users/me/security/sensitive-actions/verify",
+      "source": "src/app/api/security/sensitive-actions/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-0aed6e2f2b8f",
+      "method": "GET",
+      "route": "/api/usage/details",
+      "contract": "/v1/usage/details",
+      "source": "src/app/api/usage/details/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/UsageScreen.tsx",
+      "destination": "/account/usage",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-a034468d8e75",
+      "method": "GET",
+      "route": "/api/usage",
+      "contract": "/v1/usage",
+      "source": "src/app/api/usage/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/UsageScreen.tsx",
+      "destination": "/account/usage",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-bc7fb72638ba",
+      "method": "POST",
+      "route": "/api/users/me/2fa/disable/request",
+      "contract": "/api/users/me/2fa/disable/request",
+      "source": "src/app/api/users/me/2fa/disable/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-5eef2ee95bc5",
+      "method": "POST",
+      "route": "/api/users/me/2fa/disable/verify",
+      "contract": "/api/users/me/2fa/disable/verify",
+      "source": "src/app/api/users/me/2fa/disable/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-45d55d572d1c",
+      "method": "POST",
+      "route": "/api/users/me/2fa/enable/request",
+      "contract": "/api/users/me/2fa/enable/request",
+      "source": "src/app/api/users/me/2fa/enable/request/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-e4b5ad784ab8",
+      "method": "POST",
+      "route": "/api/users/me/2fa/enable/verify",
+      "contract": "/api/users/me/2fa/enable/verify",
+      "source": "src/app/api/users/me/2fa/enable/verify/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-4efa090c9bcf",
+      "method": "GET",
+      "route": "/api/users/me/2fa",
+      "contract": "/api/users/me/2fa",
+      "source": "src/app/api/users/me/2fa/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-6ba072804470",
+      "method": "POST",
+      "route": "/api/users/me/complete-profile",
+      "contract": "/api/users/me/complete-profile",
+      "source": "src/app/api/users/me/complete-profile/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/auth/CompleteProfileScreen.tsx",
+      "destination": "/complete-profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-11970db24dc0",
+      "method": "GET",
+      "route": "/api/users/me/memory-preferences",
+      "contract": "/v1/users/me/memory-preferences",
+      "source": "src/app/api/users/me/memory-preferences/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/PreferencesScreen.tsx",
+      "destination": "/account/preferences",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-4b5b0b6c33f1",
+      "method": "PATCH",
+      "route": "/api/users/me/memory-preferences",
+      "contract": "/v1/users/me/memory-preferences",
+      "source": "src/app/api/users/me/memory-preferences/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PATCH authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/PreferencesScreen.tsx",
+      "destination": "/account/preferences",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-23c8620206de",
+      "method": "POST",
+      "route": "/api/users/me/profile/resend-otp",
+      "contract": "/api/users/me/profile/resend-otp",
+      "source": "src/app/api/users/me/profile/resend-otp/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-c08fa2592bbc",
+      "method": "POST",
+      "route": "/api/users/me/profile/verify-otp",
+      "contract": "/api/users/me/profile/verify-otp",
+      "source": "src/app/api/users/me/profile/verify-otp/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-42256ae6b467",
+      "method": "GET",
+      "route": "/api/users/me",
+      "contract": "/api/users/me",
+      "source": "src/app/api/users/me/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-0851f443883f",
+      "method": "PUT",
+      "route": "/api/users/me",
+      "contract": "/api/users/me",
+      "source": "src/app/api/users/me/route.ts",
+      "screen": "Account / configuration",
+      "acceptance": "PUT authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/account/ProfileScreen.tsx",
+      "destination": "/account/profile",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-329f8a4607bc",
+      "method": "GET",
+      "route": "/api/videos/:jobId/content",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}/content",
+      "source": "src/app/api/videos/[jobId]/content/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-b1a16427ea79",
+      "method": "GET",
+      "route": "/api/videos/:jobId",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/videos/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-08584365c735",
+      "method": "DELETE",
+      "route": "/api/videos/:jobId",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}",
+      "source": "src/app/api/videos/[jobId]/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "DELETE authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-ca4664eef18e",
+      "method": "GET",
+      "route": "/api/videos/:jobId/thumbnail",
+      "contract": "/v1/videos/${encodeURIComponent(jobId)}/thumbnail",
+      "source": "src/app/api/videos/[jobId]/thumbnail/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "GET authorized success, controlled failure and ownership/expiry; native state/render; reopen/reload",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "native mapping"
+    },
+    {
+      "id": "OP-25fbf1edafe2",
+      "method": "POST",
+      "route": "/api/videos",
+      "contract": "/v1/videos",
+      "source": "src/app/api/videos/route.ts",
+      "screen": "Media creation / owned result",
+      "acceptance": "POST authorized success, controlled failure and ownership/expiry; native state/render; duplicate input and interruption",
+      "nativeSource": "src/features/media/MediaScreen.tsx",
+      "destination": "/conversation/[id]/media",
+      "disposition": "video generation disabled; owned video reads remain conditional"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "SURFACE-d68fd62929a6",
+      "route": "/dashboard/apps",
+      "source": "src/app/(dashboard)/dashboard/apps/page.tsx",
+      "sourceSha256": "c800ea321192fc72a15e5181a329658ba016c35b49f37c04690d696bdb4877f7",
+      "destination": "/(tabs)/apps"
+    },
+    {
+      "id": "SURFACE-3e8de32e41d2",
+      "route": "/dashboard/configuration",
+      "source": "src/app/(dashboard)/dashboard/configuration/page.tsx",
+      "sourceSha256": "94550b39532e3ffd6958559831086f28595ddaf06ae79969d5795d4c59e1c045",
+      "destination": "/configuration"
+    },
+    {
+      "id": "SURFACE-89347bb23a64",
+      "route": "/dashboard",
+      "source": "src/app/(dashboard)/dashboard/page.tsx",
+      "sourceSha256": "f33a42316bc2b8c470d26c2907570d7fef1d461d70065c5c4e56b5b3bb596a5b",
+      "destination": "/(tabs)"
+    },
+    {
+      "id": "SURFACE-fe5527538ac2",
+      "route": "/account-created",
+      "source": "src/app/account-created/page.tsx",
+      "sourceSha256": "129bcbc905551f0e54811ef318febf94b8f678a946efe2dbf7794c66f6b6fc64",
+      "destination": "/register (authoritative status)"
+    },
+    {
+      "id": "SURFACE-59a56456e60e",
+      "route": "/complete-profile",
+      "source": "src/app/complete-profile/page.tsx",
+      "sourceSha256": "2d9e4f97a8c6b41b4a4e8149276176cefa98cc865a2c81a882469801c5ff70dd",
+      "destination": "/complete-profile"
+    },
+    {
+      "id": "SURFACE-b798fcee2a65",
+      "route": "/forgot-password",
+      "source": "src/app/forgot-password/page.tsx",
+      "sourceSha256": "908152833f044734d0d0c96d3e2f969ae64d834d8238534853720d2b9f0216ba",
+      "destination": "/recover"
+    },
+    {
+      "id": "SURFACE-7e93fba0bc7a",
+      "route": "/login",
+      "source": "src/app/login/page.tsx",
+      "sourceSha256": "d9d31911c4a9bafcadcadebeded8de4ebf9b54ca41281cd6ef699ba5eae7ce7b",
+      "destination": "/login"
+    },
+    {
+      "id": "SURFACE-8a5edab28263",
+      "route": "/",
+      "source": "src/app/page.tsx",
+      "sourceSha256": "e165d96c9146a319d31a00be793d0ad5ffaa4d4311339592b2c808f84e0addf3",
+      "destination": "/anonymous"
+    },
+    {
+      "id": "SURFACE-d4699c05385a",
+      "route": "/register",
+      "source": "src/app/register/page.tsx",
+      "sourceSha256": "2e7aefc1918d12719478430dc6b097954f38b7363bbda17499c1eeef6cdac3b8",
+      "destination": "/register"
+    },
+    {
+      "id": "SURFACE-84aa1abab39f",
+      "route": "/reset-password",
+      "source": "src/app/reset-password/page.tsx",
+      "sourceSha256": "8517ab0162a64e1498541a0af4984786d5c2b1402ba1c4e43a2f6a95e7fc0d77",
+      "destination": "/reset-password"
+    },
+    {
+      "id": "SURFACE-c501809b68fa",
+      "route": "/top-up-result",
+      "source": "src/app/top-up-result/page.tsx",
+      "sourceSha256": "c8306d18b07b748900ad087bf9ed84440496d5dcc04750152d0c26a75e728ea5",
+      "destination": "src/platform/checkout.ts (authoritative refresh)"
+    }
+  ],
+  "requirements": [
+    {
+      "id": "REQ-shell",
+      "source": "src/features/dashboard/components/DashboardResponsiveShell.tsx",
+      "sourceSha256": "b0c37c53c2390413af1e0f0745feb80df18fc9e94871c4feb43d17fdb4ad2865",
+      "destination": "/(tabs)",
+      "acceptance": "Branded header/drawer, history default, profile/configuration hierarchy; secondary groups/jobs/embeddings/alerts; native Back/gestures, focus, safe areas, restoration"
+    },
+    {
+      "id": "REQ-references",
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sourceSha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb",
+      "destination": "src/ui",
+      "acceptance": "Fictional equivalent states at 320/390/430; freeze source/assets/captures, inspect OS adaptations"
+    },
+    {
+      "id": "REQ-controls",
+      "source": "src/features/auth/components/FormFields.tsx",
+      "sourceSha256": "a7383c326e076471812f69998e017273dbf838c73cb48ec6fe3d8837cb3372ca",
+      "destination": "src/ui/controls.tsx",
+      "acceptance": "Roboto/logos/artwork, compact fields, contextual menus/sheets/dialogs, dates, feedback/loading, 48dp/44pt targets and large text"
+    },
+    {
+      "id": "REQ-virtualization",
+      "source": "src/features/history/components/History.tsx",
+      "sourceSha256": "8fb5f92579e0c242619b9eabaf96ca0fffb3f30202d2402c71be0181e7f0137f",
+      "destination": "/(tabs)",
+      "acceptance": "Virtualized accumulating history/activity; retained pagination and bounded layout"
+    },
+    {
+      "id": "REQ-auth-entry",
+      "source": "src/features/auth/pages/LoginPage.tsx",
+      "sourceSha256": "0336264fed66140cd6125ea178a823476e81ce440226f62c00ce23b3fd8cfcd8",
+      "destination": "/login",
+      "acceptance": "Login/register/recovery/reset/account-created/status/profile completion, guest/legal/language entry"
+    },
+    {
+      "id": "REQ-auth-challenges",
+      "source": "src/features/auth/pages/LoginPage.tsx",
+      "sourceSha256": "0336264fed66140cd6125ea178a823476e81ce440226f62c00ce23b3fd8cfcd8",
+      "destination": "/login",
+      "acceptance": "MFA/TOTP invalid/expired challenges, cooldown/password controls/input retention and authoritative completion"
+    },
+    {
+      "id": "REQ-auth-lifecycle",
+      "source": "src/features/auth/pages/LoginPage.tsx",
+      "sourceSha256": "0336264fed66140cd6125ea178a823476e81ce440226f62c00ce23b3fd8cfcd8",
+      "destination": "src/api/session.ts",
+      "acceptance": "Memory access/SecureStore refresh, installation binding, serialized rotation/expiry/revocation/logout, failed credential removal and restart"
+    },
+    {
+      "id": "REQ-auth-keyboard",
+      "source": "src/features/auth/components/AuthShell.tsx",
+      "sourceSha256": "3ab41a4e9bf7084bd25acc2adeb8a052cb38aade218bec95cd53248a1777e15f",
+      "destination": "src/ui/KeyboardScroll.tsx",
+      "acceptance": "Positive/failure forms with focused input visible at normal/large text"
+    },
+    {
+      "id": "REQ-bird",
+      "source": "src/features/dashboard/components/DashboardLoadingOverlay.tsx",
+      "sourceSha256": "1ca066a99b61cc1ddbbcccc29b1695ea9c5131c0bd8a7911e2276123bfb461d3",
+      "destination": "src/ui/motion",
+      "acceptance": "Offline approved-model transparent frame pipeline, native flight/hover/landing, deterministic provenance/checkpoints"
+    },
+    {
+      "id": "REQ-launch",
+      "source": "src/features/dashboard/hooks/useDashboardLoaderSequence.ts",
+      "sourceSha256": "c730852c6f216025deb713eb69792d4524122a95a153e9574d68c63009e216c7",
+      "destination": "app/_layout.tsx",
+      "acceptance": "Immediate static brand, pending-only bird, finish entrance then exit on readiness, no fixed hold/navigation replay; readiness interruption/re-entry"
+    },
+    {
+      "id": "REQ-login-field",
+      "source": "src/features/auth/components/AuthShell.tsx",
+      "sourceSha256": "3ab41a4e9bf7084bd25acc2adeb8a052cb38aade218bec95cd53248a1777e15f",
+      "destination": "/login",
+      "acceptance": "Native beams/stars/grain around quiet form, independent scroll/keyboard region"
+    },
+    {
+      "id": "REQ-orb",
+      "source": "src/features/chat/private/components/ChatMobileHeader.tsx",
+      "sourceSha256": "9d3f39ad2c4e342b6d474cafc6157664be705525a188606ecf67f9b308921e9b",
+      "destination": "/conversation/[id]",
+      "acceptance": "Bounded native standby/working/menu/creation/playback orb driven by actual state"
+    },
+    {
+      "id": "REQ-bloom",
+      "source": "src/features/chat/private/components/ChatMobileHeader.tsx",
+      "sourceSha256": "9d3f39ad2c4e342b6d474cafc6157664be705525a188606ecf67f9b308921e9b",
+      "destination": "src/platform/MediaPlayer.tsx",
+      "acceptance": "Playback bloom without microphone or invented spectrum/progress; contextual skeletons/attachment readiness/transitions"
+    },
+    {
+      "id": "REQ-motion-lifecycle",
+      "source": "src/features/dashboard/hooks/useDashboardLoaderSequence.ts",
+      "sourceSha256": "c730852c6f216025deb713eb69792d4524122a95a153e9574d68c63009e216c7",
+      "destination": "src/ui/motion",
+      "acceptance": "Hidden/background/unmount stop/release; reduced motion and renderer/asset failure static fallback; stills/continuous review and 30fps effects-on/off profiles"
+    },
+    {
+      "id": "REQ-history",
+      "source": "src/features/history/components/History.tsx",
+      "sourceSha256": "8fb5f92579e0c242619b9eabaf96ca0fffb3f30202d2402c71be0181e7f0137f",
+      "destination": "/(tabs)",
+      "acceptance": "Compact search/date filters/date rows/row menus/New chat/groups/pagination; loading/empty/error"
+    },
+    {
+      "id": "REQ-composer",
+      "source": "src/features/chat/private/components/ChatMobileHeader.tsx",
+      "sourceSha256": "9d3f39ad2c4e342b6d474cafc6157664be705525a188606ecf67f9b308921e9b",
+      "destination": "/conversation/[id]",
+      "acceptance": "Expanding keyboard-docked composer independent of message list; secondary settings contextual"
+    },
+    {
+      "id": "REQ-first-send",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/conversation/new",
+      "acceptance": "One action creates+sends including first attachments; persist conversation/submission identity; reconcile uncertain outcomes without retry"
+    },
+    {
+      "id": "REQ-response-details",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/conversation/[id]",
+      "acceptance": "Actual producer structured thinking/answer, references/context/attachments/results/work state; Thinking/Quotes/Sources, Markdown/code/math/copy/model/mode/reasoning/web search"
+    },
+    {
+      "id": "REQ-reading-position",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/conversation/[id]",
+      "acceptance": "Conditional auto-follow, stable older-message reading position, older pagination/drafts/stream recovery without duplicate execution"
+    },
+    {
+      "id": "REQ-jobs",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/job/[id]",
+      "acceptance": "Create/follow/cancel/cold reopen; separate integer job cursor and replay cursor; ownership/interruption"
+    },
+    {
+      "id": "REQ-embeddings",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/embeddings",
+      "acceptance": "JSON/base64/dimensions, complete result and export with applied options"
+    },
+    {
+      "id": "REQ-guest",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/anonymous",
+      "acceptance": "Public welcome/multi-turn/composer menus/attachments/details/New chat cleanup"
+    },
+    {
+      "id": "REQ-media",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/conversation/[id]/media",
+      "acceptance": "Private/public image/music options/results in chat, conditional owned video playback; video generation and voice remain restricted"
+    },
+    {
+      "id": "REQ-files",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/conversation/[id]/files",
+      "acceptance": "Picker/camera capture/upload readiness/preview/context/download/share; explicit permission, cancellation and recipient receipt"
+    },
+    {
+      "id": "REQ-anonymous-credentials",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/anonymous-resources",
+      "acceptance": "Resource credentials independent of bearer, expiry/cleanup/cold reopen"
+    },
+    {
+      "id": "REQ-binary",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "src/api/client.ts",
+      "acceptance": "Interrupted downloads discard partial bytes, user retry, retained large-write failure investigation and production transfer compatibility; preserve denied restart"
+    },
+    {
+      "id": "REQ-profile",
+      "source": "src/features/profile/types/profilePanel.ts",
+      "sourceSha256": "152fbcba50f34661f75bbc3e77eb2505cb844a96fd1df24db7f33b5748635bc8",
+      "destination": "/account/profile",
+      "acceptance": "Personal/security/photo/OTP/two-factor/consequential confirmations; positive/failure/cancel"
+    },
+    {
+      "id": "REQ-credits-billing",
+      "source": "src/features/profile/types/profilePanel.ts",
+      "sourceSha256": "152fbcba50f34661f75bbc3e77eb2505cb844a96fd1df24db7f33b5748635bc8",
+      "destination": "/account/billing",
+      "acceptance": "Separate credits activity/redemption/top-up and billing plan compare/purchase/subscription; system-browser hosted checkout authoritative return"
+    },
+    {
+      "id": "REQ-qr",
+      "source": "src/features/profile/hooks/useGiftCardQrScanner.ts",
+      "sourceSha256": "55e20fa8f81759891640635905fa36ed869d53c9f15d271e8006eb08ab5e850b",
+      "destination": "/account/billing",
+      "acceptance": "Native preview QR/image decoding, review then intentional redemption; camera denied/cancel; no automatic redemption"
+    },
+    {
+      "id": "REQ-usage",
+      "source": "src/features/profile/services/usage.ts",
+      "sourceSha256": "6f114e9580717c393a1e1a3878e1318c1e0e25b85a2c946ba27ec31939e43fd6",
+      "destination": "/account/usage",
+      "acceptance": "Summaries/model/metric charts/date-range history/Requests/Conversations/events/plan limits/filters/pagination; authoritative units/costs/balances and missing/partial/stale"
+    },
+    {
+      "id": "REQ-reports",
+      "source": "src/features/profile/services/usageDetails.ts",
+      "sourceSha256": "96663217feb3e5396441958c47d6c579b0c1f5ab4404089e28773d5fec1bb676",
+      "destination": "/account/usage",
+      "acceptance": "Usage JSON reports and CSV exports distinct from sensitive account export; scope/content equals represented data"
+    },
+    {
+      "id": "REQ-apps",
+      "source": "src/features/apps/services/apps.ts",
+      "sourceSha256": "f7b0db835712ce899a386cb623175bead1a2e74c2c4f2063141dbad44033a186",
+      "destination": "/(tabs)/apps",
+      "acceptance": "Catalog/installations/search/status/artwork/details/configuration/install enable/secrets rotate/remove/Obsidian status/import/export; truthful partial outcomes"
+    },
+    {
+      "id": "REQ-configuration",
+      "source": "src/features/configuration/services/memory.ts",
+      "sourceSha256": "3300cd782d1a27c02f617eda5062a17f39a490e45a0a0b1c3de01bbb70985c04",
+      "destination": "/configuration",
+      "acceptance": "Memories/preferences/tools/domains/API-key hierarchy, sensitive auth/import/export/connection-versus-verification"
+    },
+    {
+      "id": "REQ-legal",
+      "source": "src/features/legal/legalDocuments.ts",
+      "sourceSha256": "874a752a79b06754c007b387e7acc52f92b791be6d67ba792101759be5d1d8b6",
+      "destination": "/legal",
+      "acceptance": "Nine approved offline documents, readable navigation/links/large text, supplied legal language"
+    },
+    {
+      "id": "REQ-languages",
+      "source": "src/features/profile/types/profilePanel.ts",
+      "sourceSha256": "152fbcba50f34661f75bbc3e77eb2505cb844a96fd1df24db7f33b5748635bc8",
+      "destination": "/language",
+      "acceptance": "English/Spanish/Portuguese/Hindi/Chinese/Russian whole-interface review including errors/dynamic labels/large text; user/server text preserved"
+    },
+    {
+      "id": "REQ-gateway",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "src/api/openapi-v1.json",
+      "acceptance": "Trace existing contracts before mappings/DTO changes; gateway spec+snapshot; validated bounded transport/errors/redacted logs; independent build"
+    },
+    {
+      "id": "REQ-web-build",
+      "source": "src/features/dashboard/components/DashboardResponsiveShell.tsx",
+      "sourceSha256": "b0c37c53c2390413af1e0f0745feb80df18fc9e94871c4feb43d17fdb4ad2865",
+      "destination": "../web-openjm-frontend",
+      "acceptance": "Recheck/fix mixed UI/ui production blocker and affected lint/types/quality/build/unit/Playwright through wrappers"
+    },
+    {
+      "id": "REQ-live",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "../web-openjm-backend-api",
+      "acceptance": "QA auth/MFA/profile/attachments/jobs/billing/integrations/ownership, one shared response, duplicate/conflict/disconnect/expiry/backend Redis interruption"
+    },
+    {
+      "id": "REQ-cutover",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "../web-openjm-backend-api",
+      "acceptance": "Preserve legacy readers/records, actual producer drain/retention before separately authorized cutover; dispatch off"
+    },
+    {
+      "id": "REQ-push",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "/account/alerts",
+      "acceptance": "Opt-in account/resource-bound tracking/dedupe/leases/tickets/receipts/invalid/logout cleanup and actual provider/device authenticated links"
+    },
+    {
+      "id": "REQ-devices",
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sourceSha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb",
+      "destination": "tests/maestro",
+      "acceptance": "Full installed Android+iOS matrix small phones/large text/languages/readers/reduced motion/keyboard/safe areas/gestures/denied permissions"
+    },
+    {
+      "id": "REQ-network-lifecycle",
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sourceSha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643",
+      "destination": "tests/maestro",
+      "acceptance": "Network/background/cold restart/refresh races/logout/uploads/downloads/job recovery; complete corrected split journeys"
+    },
+    {
+      "id": "REQ-physical",
+      "source": "src/features/profile/hooks/useGiftCardQrScanner.ts",
+      "sourceSha256": "55e20fa8f81759891640635905fa36ed869d53c9f15d271e8006eb08ab5e850b",
+      "destination": "tests/maestro",
+      "acceptance": "Physical camera/QR/share receipt/media/audio/push/deep links/animation performance; Android never closes iOS"
+    },
+    {
+      "id": "REQ-private-builds",
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sourceSha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb",
+      "destination": "eas.json",
+      "acceptance": "Approved HTTPS/QA/EAS/Android signing/Apple provisioning; signed ARM APK and private iOS install smoke/lifecycle on registered testers"
+    },
+    {
+      "id": "REQ-release-record",
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sourceSha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb",
+      "destination": "output",
+      "acceptance": "Hashes/source/contracts/reproducible builds/install guide/known limits/rollout rollback/additive migrations/active readers; separate hosting/publication direction"
+    },
+    {
+      "id": "REQ-providers",
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sourceSha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb",
+      "destination": "AGENTS.md",
+      "acceptance": "Independent Codex/Copilot/Claude/OpenCode guidance with format and runtime loading separate; authenticated provider access required"
+    }
+  ],
+  "sourceFreeze": [
+    {
+      "source": "src/app/(dashboard)/dashboard/apps/page.tsx",
+      "sha256": "c800ea321192fc72a15e5181a329658ba016c35b49f37c04690d696bdb4877f7"
+    },
+    {
+      "source": "src/app/(dashboard)/dashboard/configuration/page.tsx",
+      "sha256": "94550b39532e3ffd6958559831086f28595ddaf06ae79969d5795d4c59e1c045"
+    },
+    {
+      "source": "src/app/(dashboard)/dashboard/page.tsx",
+      "sha256": "f33a42316bc2b8c470d26c2907570d7fef1d461d70065c5c4e56b5b3bb596a5b"
+    },
+    {
+      "source": "src/app/account-created/page.tsx",
+      "sha256": "129bcbc905551f0e54811ef318febf94b8f678a946efe2dbf7794c66f6b6fc64"
+    },
+    {
+      "source": "src/app/api/account/export/route.ts",
+      "sha256": "fcebc344aeaf00ac7fd659c1aa375c9fbb230d42e199f16ee5aef645e153d6be"
+    },
+    {
+      "source": "src/app/api/account/plan/purchase/route.ts",
+      "sha256": "3abbcb4b983a6628123dc5a2a095364f50b49e5407fa405febe4ed8630c02f4e"
+    },
+    {
+      "source": "src/app/api/account/plan/route.ts",
+      "sha256": "6acd6f41c50634a942556fd29223ac015343a6ec562cf7fa03e582ef265053f3"
+    },
+    {
+      "source": "src/app/api/account/plans/route.ts",
+      "sha256": "72247e139f429d2f579951ba146a34a4fed8e931fcaf1e05ce471dc1ef624cce"
+    },
+    {
+      "source": "src/app/api/account/route.ts",
+      "sha256": "0c71bb12822a0edd101f7502ad74eb29f5235464ffd7a23c11a68cd804fc8cf8"
+    },
+    {
+      "source": "src/app/api/account/subscription/route.ts",
+      "sha256": "526986c6a35a6ac517a52f0f6fbac072cff66772413489d0ecfface41d9d65e3"
+    },
+    {
+      "source": "src/app/api/apps/[appId]/install/route.ts",
+      "sha256": "363fd287a51fa32f6882bc1c03659eb4ae43e693dcffcf8653bfc6b1aeae48e9"
+    },
+    {
+      "source": "src/app/api/apps/[appId]/route.ts",
+      "sha256": "845f0ba8399f4ee8a661da605ddc1eaa793197cb3ff80528f60260d834f4a2ee"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/export/route.ts",
+      "sha256": "8c92a226367c52bd3c0749b8b8e627b745b18aeffe5601ddb53656a825ffb751"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/import/route.ts",
+      "sha256": "8b2d29c68dc3c3fa48fcb86330d0419703ede492fe28b2f15d6ccd609241bba6"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/obsidian/status/route.ts",
+      "sha256": "54dda1428050ff05799d3cabe60bec55487c590c3b6710f9b7cf24e0215d65af"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/rotate-secret/route.ts",
+      "sha256": "28e30f955aa1f209c55dc866eb0e2329b9a4f467e26a46b0f42b8e332ad5221d"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/route.ts",
+      "sha256": "d3fa5c305be397bcda09f91fb4e0977fc24df9af2f47e12875c6763f5856ee7a"
+    },
+    {
+      "source": "src/app/api/apps/installations/[installationId]/status/route.ts",
+      "sha256": "faab5da0e57474b00f3497fa3248c0d55d23b750bb583ad2e4b5ce13ad5a98d6"
+    },
+    {
+      "source": "src/app/api/apps/installations/route.ts",
+      "sha256": "4f7b8a4a0d607bf749a45fd20b57ec2496444b11cbe70c5d3fabcc7d157f08b3"
+    },
+    {
+      "source": "src/app/api/apps/route.ts",
+      "sha256": "b318900be658779692da6de24e79eb8021e4727e6ded3ff37a322bb23f7cdfc6"
+    },
+    {
+      "source": "src/app/api/audio/music/[jobId]/content/route.ts",
+      "sha256": "4406bdcd8361e5c170f7dc932a3f85da32c8ce3750fe939cfe2fa878ab477cce"
+    },
+    {
+      "source": "src/app/api/audio/music/[jobId]/route.ts",
+      "sha256": "5c9673b9385e007d9d2983333ff731ec97a20822697c425b4b714f5f5a12dec3"
+    },
+    {
+      "source": "src/app/api/audio/music/route.ts",
+      "sha256": "59f38fdf5448d6bc04847d32d827cb6a097d66f01943279ebb81fc0e63baf2fd"
+    },
+    {
+      "source": "src/app/api/audio/voices/[voiceId]/route.ts",
+      "sha256": "ca08b29c7fc5c2917c32d73d2c00dc5659f45ccdeb4be9554200286eb476a5be"
+    },
+    {
+      "source": "src/app/api/audio/voices/challenges/route.ts",
+      "sha256": "4fcd8c1a962a05565988a5c0d7eb3aeb9c51de4dc82a4d563b62498b7fb8d228"
+    },
+    {
+      "source": "src/app/api/audio/voices/route.ts",
+      "sha256": "5035e5793c2d500522f646ae9d2fa5e69f5e6bdb14a51b365f25c3d53479ee00"
+    },
+    {
+      "source": "src/app/api/auth/[...nextauth]/route.ts",
+      "sha256": "872934a94261a5ea2eb55b2dd398a35397d70c57af4be741482529cf5b50b213"
+    },
+    {
+      "source": "src/app/api/auth/forgot-password/route.ts",
+      "sha256": "28076666ba160fc47e852b736ae8da21dd5ff15fa12ab4dd1f32026f937c7f7b"
+    },
+    {
+      "source": "src/app/api/auth/login/resend-otp/route.ts",
+      "sha256": "b71399dd96351a2eaedcaa800b7ee31793d041ca214bb8486f17f79351adbde9"
+    },
+    {
+      "source": "src/app/api/auth/login/route.ts",
+      "sha256": "76299eb4f226b00b33c4d01bb5a0a9c0244bc89085113288240b476383116970"
+    },
+    {
+      "source": "src/app/api/auth/login/verify-otp/route.ts",
+      "sha256": "a34470d033d5842b07db9b74d9305714dd191a83cbaca36054366715684bf240"
+    },
+    {
+      "source": "src/app/api/auth/logout/route.ts",
+      "sha256": "2f1f5fcea9d5f42cddc64d021979a22fc352a72adcc1a45d0ab665da2c17db9b"
+    },
+    {
+      "source": "src/app/api/auth/refresh/route.ts",
+      "sha256": "549281f34426d61fa839886ad063dae541939f936ad32d0fba5bcdbe81611ad1"
+    },
+    {
+      "source": "src/app/api/auth/register/route.ts",
+      "sha256": "41e60be0f3d04911fd962fed8372d6f3627490574d99394f4b1ed32550f47b8c"
+    },
+    {
+      "source": "src/app/api/auth/reset-password/route.ts",
+      "sha256": "ec185593b7f8494f1d3a489f239a8f79d4f92923fb816bea10730d6050ba8577"
+    },
+    {
+      "source": "src/app/api/auth/session/touch/route.ts",
+      "sha256": "0be496e6f44b33931fde21d4d903d0de51c51fcbecded0b7a49870df75096de1"
+    },
+    {
+      "source": "src/app/api/billing/credits/route.ts",
+      "sha256": "86ea4a70f4ccf80fc7e26e4ce487a07e91f1c62ab4e7e578b10deb02df76dee4"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/files/route.ts",
+      "sha256": "fb9c35eaae1a975383139d03f59c46bb4cd24125b2e2d0bd5b2925b2613500df"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/group/route.ts",
+      "sha256": "a80e2677acd6d8dd00e2c309f74c39aca52816864cf47631d77cb15855607b46"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/messages/route.ts",
+      "sha256": "360f2ce53aa24f2329ce575c0d85030cb5638dcd4caf5cbee79e63ae8cd7fb1e"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/model/route.ts",
+      "sha256": "0c69f8e06c3862181ed5781c161bf9346c440a9d6199287e99a0b5d0d5b2a5c7"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/route.ts",
+      "sha256": "ada42783669a822ba5e23d406dbf196dd23cfe1b5ea8f23d77972017cd3fb6f7"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/streams/[streamId]/route.ts",
+      "sha256": "1c644a9963cb44d1c9cf5cbac4108b686c48290fdab506945430fa9e4b92d8a7"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/streams/active/route.ts",
+      "sha256": "f10e1b9d045645abe7a7c4810b097d0b4e2539852921bc8d14a9ba7a954bfa15"
+    },
+    {
+      "source": "src/app/api/conversations/[conversationId]/turn/route.ts",
+      "sha256": "0d734b0f73a6b495f5c7d732b4e0eb848b1fed8ce034e9f8470cb5eb8babeb0c"
+    },
+    {
+      "source": "src/app/api/conversations/complexity/route.ts",
+      "sha256": "cb9596bd046b05067a5d78f706d26b8e042f965fb7875229b41aea195d45b500"
+    },
+    {
+      "source": "src/app/api/conversations/request-mode/route.ts",
+      "sha256": "66b2baa0249fce7a1cf3f26134cc285385ccb650f5777f91721a1953169a8cc1"
+    },
+    {
+      "source": "src/app/api/conversations/route.ts",
+      "sha256": "f3dbadf8486b2aeb0ccbe5560cbd9c0cf838c0e4eefb0368e2db88acde207fc4"
+    },
+    {
+      "source": "src/app/api/credits/redeem/route.ts",
+      "sha256": "e45d931d45cd990ace9919a8b2625f5dade40f347a0afe3ae19d3198da31b967"
+    },
+    {
+      "source": "src/app/api/credits/route.ts",
+      "sha256": "ee5ea2516135b1c2267871e25b83d37d4d38d3a7747be3cf28b5b4847f64db2d"
+    },
+    {
+      "source": "src/app/api/credits/topup/route.ts",
+      "sha256": "fd7f9cc68605828e54ce070c00701e38a5bb432236d598caa2ab5cc3913566f3"
+    },
+    {
+      "source": "src/app/api/domains/challenges/[domain]/route.ts",
+      "sha256": "f4cbde8598162c0325a13f10cf623916239d8d147a7e6b9edca4a6034eb2694d"
+    },
+    {
+      "source": "src/app/api/domains/challenges/[domain]/verify/route.ts",
+      "sha256": "9f9e56527477c6d6fa2c14989308b4e051170d5049b95d7d5c4f8b757127c31e"
+    },
+    {
+      "source": "src/app/api/domains/challenges/route.ts",
+      "sha256": "91544ed734ac8126f1d685b6c01d9ba7a083d4127c696a59f3aaa00129453d11"
+    },
+    {
+      "source": "src/app/api/domains/verify/route.ts",
+      "sha256": "4d56a9f3747e2a945ca794c616e50cc78af3df6215927b5c2d0b112374931dff"
+    },
+    {
+      "source": "src/app/api/embeddings/route.ts",
+      "sha256": "4b9c010139301a3704923e43c7cd9f63623d0c974b1788982099922038b19952"
+    },
+    {
+      "source": "src/app/api/files/[fileId]/content/route.ts",
+      "sha256": "3d403fcd384d56b125c4ef59e02fb804c788a9800fe4cfd22bcc90b908789b66"
+    },
+    {
+      "source": "src/app/api/files/[fileId]/download-url/route.ts",
+      "sha256": "b6cb7a793cf93cfcc4ee485bf8d32f282a977724b0dbe56099294d31e59dbf65"
+    },
+    {
+      "source": "src/app/api/files/[fileId]/preview/route.ts",
+      "sha256": "da2974d15e556117b57d83954fae4763ed0c0bc0902be31914f57a44374e1a19"
+    },
+    {
+      "source": "src/app/api/files/[fileId]/route.ts",
+      "sha256": "0e315b875e20c7713e643b9a3745239291b2087850647e80a672e2b66c7f63aa"
+    },
+    {
+      "source": "src/app/api/files/route.ts",
+      "sha256": "264636be3a3096ea9635d126286e5a6effee610d8f713d8781e05b89d3618c6b"
+    },
+    {
+      "source": "src/app/api/groups/[groupId]/route.ts",
+      "sha256": "5a80706d697fdf0f6e77d48eddcb5239e80932d31c9577b321f4a2fffecb6802"
+    },
+    {
+      "source": "src/app/api/groups/route.ts",
+      "sha256": "c499e3115797d97008398975e1fe4a39d4df9f46fcfb6a670ddfd1c39f9eebed"
+    },
+    {
+      "source": "src/app/api/image-profile/route.ts",
+      "sha256": "3ae1df6cdc23c86f0e2fefcd2d01d0e4f327e80173101befd240d107e951bf8d"
+    },
+    {
+      "source": "src/app/api/images/[imageId]/content/route.ts",
+      "sha256": "04596932c748a9df3b41efc7a3a3793a11929f9ba9233af4de3b32ddce89b82b"
+    },
+    {
+      "source": "src/app/api/images/generations/[jobId]/route.ts",
+      "sha256": "f1669b72edcf818a426084fac0594aac54865ac2f1da2719ae66d7844246dde1"
+    },
+    {
+      "source": "src/app/api/images/generations/route.ts",
+      "sha256": "bb914beabd9b9ce8b2a6be10a56ee1c656b9303f1369a8e661160b36dee0a49a"
+    },
+    {
+      "source": "src/app/api/jobs/[jobId]/result/route.ts",
+      "sha256": "7ec883b616f70af730ae0533e987b582ba4667a07745cbc967bb5a3cd28b7199"
+    },
+    {
+      "source": "src/app/api/jobs/[jobId]/route.ts",
+      "sha256": "943bfcd8a82201ed546ad098cf7f3e12e76ca10b725f367ca4ea20280506b282"
+    },
+    {
+      "source": "src/app/api/jobs/[jobId]/stream/route.ts",
+      "sha256": "4ff831321ecd7dbe70ebefd67f5d6d776724515c6036ed81270d63924a5ee361"
+    },
+    {
+      "source": "src/app/api/jobs/route.ts",
+      "sha256": "60df466ed8188b84340425f4c40c90cd85345ec7d1dd847fa8aa76f5fc4ca71e"
+    },
+    {
+      "source": "src/app/api/keys/[keyId]/revoke/route.ts",
+      "sha256": "d27030154e38f4f72248bc0f4d51e103022cdfe7fb913fc1e0785b73c278ccc4"
+    },
+    {
+      "source": "src/app/api/keys/[keyId]/route.ts",
+      "sha256": "08f62564329f9be48bdc2ca8df53670c4700f0dea52c21aa561544fe67ed2bc5"
+    },
+    {
+      "source": "src/app/api/keys/route.ts",
+      "sha256": "fa397176792b124777da9f45f7471b3ff006c13f4b9ef13f6ac47db510fad28f"
+    },
+    {
+      "source": "src/app/api/memory/[itemId]/neighbors/route.ts",
+      "sha256": "97121cf8365650c0d49071684b4025928a8882d70ab65af8aa7c983d96c2ba19"
+    },
+    {
+      "source": "src/app/api/memory/[itemId]/route.ts",
+      "sha256": "04058b569ce2f38f99a362f1bedd8ceba63df00c6e5e64ce08e3de46dd80be37"
+    },
+    {
+      "source": "src/app/api/memory/export/route.ts",
+      "sha256": "d5869a6c8546cddb32baaed76b53a20f541c894908fe1af099e39baecb34d0d0"
+    },
+    {
+      "source": "src/app/api/memory/graph/route.ts",
+      "sha256": "b1454f6f2a7ccca4cdd30e233ea6e8c2b775b686c2f4eb7853d279330b42d0f5"
+    },
+    {
+      "source": "src/app/api/memory/import/route.ts",
+      "sha256": "7e23cffbeeba2370dcdc2a1edf93c6396f7ae2a64aa20421837e3605d74ce8f5"
+    },
+    {
+      "source": "src/app/api/memory/route.ts",
+      "sha256": "d327200e5db8138516c4b70fa17dc80e6907c1aca0639b1d9ccb251939bfca90"
+    },
+    {
+      "source": "src/app/api/memory/search/route.ts",
+      "sha256": "f7f816447ebbdd7f0b040c7351ab6f92154fa124c1e400c0dba39fb192be14df"
+    },
+    {
+      "source": "src/app/api/memory/usage/route.ts",
+      "sha256": "60031994bfee7b7fb8cca737eaa90988f62ba7de45e22fd6e0da0ed67147ce09"
+    },
+    {
+      "source": "src/app/api/models/route.ts",
+      "sha256": "138acb5e6f2d66128b7112d3164cc16341d7a5b83aa0fed52aa31bf9f59f98b8"
+    },
+    {
+      "source": "src/app/api/public-chat/route.ts",
+      "sha256": "1441cbfbe77fea0a3f20452440882e855f4ac76105463afdfe2dcd600ff70279"
+    },
+    {
+      "source": "src/app/api/public-files/[fileId]/content/route.ts",
+      "sha256": "b8e2a5b480658ec0f7ddae16085e2eb1388d2738bf2d3d6a2c0fa9091545f382"
+    },
+    {
+      "source": "src/app/api/public-files/route.ts",
+      "sha256": "628e56a77af55d0a021b06c613702d34a61ddf8abc348b7a6fd01afca748df27"
+    },
+    {
+      "source": "src/app/api/public-images/generations/[jobId]/content/route.ts",
+      "sha256": "a0a63b3f4defd1a96a0866bfee39bda6781a606a93a897e14d466d39d409bb87"
+    },
+    {
+      "source": "src/app/api/public-images/generations/[jobId]/route.ts",
+      "sha256": "46a5b840c83d1e8a073cd46d6746e04ad5a3ab468c12ba7323980b92e54453ed"
+    },
+    {
+      "source": "src/app/api/public-images/generations/route.ts",
+      "sha256": "a954f8fac88d3b32a1b24e907223583b5a93905169372ca32235639f1173d3e0"
+    },
+    {
+      "source": "src/app/api/public-music/[jobId]/content/route.ts",
+      "sha256": "694b67e7c5ba4ef33df62e2558de39a43812a54229df23dda99bbc96aca08818"
+    },
+    {
+      "source": "src/app/api/public-music/[jobId]/route.ts",
+      "sha256": "bdab36d1feb345277e3674e440f6ed36e00176245e3f8b1a61b878e16e37b4c0"
+    },
+    {
+      "source": "src/app/api/public-music/route.ts",
+      "sha256": "0c53b8b040e083a7a1608276a71e5954a6a9e0d8f9818c3bafd06ae73f6e92a4"
+    },
+    {
+      "source": "src/app/api/security/sensitive-actions/request/route.ts",
+      "sha256": "6963f35cf6084c8e208e827fba42993bf34b00af6cf4b2ec7c45495009800398"
+    },
+    {
+      "source": "src/app/api/security/sensitive-actions/resend/route.ts",
+      "sha256": "6900bb4537ffc0c64f1fc8c167c6d657ba10602289a34b505c0213764fa43f5a"
+    },
+    {
+      "source": "src/app/api/security/sensitive-actions/verify/route.ts",
+      "sha256": "7c848a8943eecee7de13d695aa85aa88c7bd5141849f94cdbf7817482dc537d8"
+    },
+    {
+      "source": "src/app/api/usage/details/route.ts",
+      "sha256": "78ec9198b75831fdba18007c37a76917f66c19e1dd59b2243881b65248e959dc"
+    },
+    {
+      "source": "src/app/api/usage/route.ts",
+      "sha256": "d232dd4562e5478fa1f0d826061a107afc4b6a2409f99119711b314307f5e19f"
+    },
+    {
+      "source": "src/app/api/users/me/2fa/disable/request/route.ts",
+      "sha256": "34db8b672073ee0704b4d3acaec7fc99232b0ed8c9acd21f4180defde238a158"
+    },
+    {
+      "source": "src/app/api/users/me/2fa/disable/verify/route.ts",
+      "sha256": "aed75f690d5246a0651e1626d5709b04162349d56dd1ef527b53d09107ea0603"
+    },
+    {
+      "source": "src/app/api/users/me/2fa/enable/request/route.ts",
+      "sha256": "a520f36d36844835e2364633df8f8e70850117d6e340ccabb100b1c7c123d764"
+    },
+    {
+      "source": "src/app/api/users/me/2fa/enable/verify/route.ts",
+      "sha256": "630a0da81b5107b563c4ce9e9588971ea9eca17f40e34489badbeeabe2bbc586"
+    },
+    {
+      "source": "src/app/api/users/me/2fa/route.ts",
+      "sha256": "af0d97ce649827c46f98943be5ebb795c9dad35cce14d51e4133f6adf8b16f07"
+    },
+    {
+      "source": "src/app/api/users/me/complete-profile/route.ts",
+      "sha256": "ed7c8732b44be0f3df3713d6aa5eedaf25e84dea4c9e7720f9a04ac395601538"
+    },
+    {
+      "source": "src/app/api/users/me/memory-preferences/route.ts",
+      "sha256": "84f6aa56b0452754a8805592fd1b4b2097dd7521aa48115e8b0a08c693107527"
+    },
+    {
+      "source": "src/app/api/users/me/profile/resend-otp/route.ts",
+      "sha256": "59ee9013dca1e23c02a83efbbae3f5b815f3dd2e04fee6cb361d64b61cce2ae0"
+    },
+    {
+      "source": "src/app/api/users/me/profile/verify-otp/route.ts",
+      "sha256": "abd8f8e7058aa6ccef0be1304345702fb715334705fce4a6e12e2b659eb5864d"
+    },
+    {
+      "source": "src/app/api/users/me/route.ts",
+      "sha256": "d7fff4e6b2b7317e23c9b9f0af221a40a45d88e3c0d74ae7395f1836fca87443"
+    },
+    {
+      "source": "src/app/api/videos/[jobId]/content/route.ts",
+      "sha256": "5c71f1065cd512a79b8976636f4de14ea7c542eb3730dbcd9c9f875ece6048c1"
+    },
+    {
+      "source": "src/app/api/videos/[jobId]/route.ts",
+      "sha256": "a2f17a42e4c8c80f38c7b08b4c0d60c42fb9a8ad7c678121b10e6f5cc4be5347"
+    },
+    {
+      "source": "src/app/api/videos/[jobId]/thumbnail/route.ts",
+      "sha256": "4775414a63cd406241b11b0b14f2fc9dfbb2b66b9b0e1bc445c087588292fc8e"
+    },
+    {
+      "source": "src/app/api/videos/route.ts",
+      "sha256": "45483cd4fd6c0c25b2e612a13b54212311039510db41b5b9304af9b05043a592"
+    },
+    {
+      "source": "src/app/complete-profile/page.tsx",
+      "sha256": "2d9e4f97a8c6b41b4a4e8149276176cefa98cc865a2c81a882469801c5ff70dd"
+    },
+    {
+      "source": "src/app/forgot-password/page.tsx",
+      "sha256": "908152833f044734d0d0c96d3e2f969ae64d834d8238534853720d2b9f0216ba"
+    },
+    {
+      "source": "src/app/login/page.tsx",
+      "sha256": "d9d31911c4a9bafcadcadebeded8de4ebf9b54ca41281cd6ef699ba5eae7ce7b"
+    },
+    {
+      "source": "src/app/page.tsx",
+      "sha256": "e165d96c9146a319d31a00be793d0ad5ffaa4d4311339592b2c808f84e0addf3"
+    },
+    {
+      "source": "src/app/register/page.tsx",
+      "sha256": "2e7aefc1918d12719478430dc6b097954f38b7363bbda17499c1eeef6cdac3b8"
+    },
+    {
+      "source": "src/app/reset-password/page.tsx",
+      "sha256": "8517ab0162a64e1498541a0af4984786d5c2b1402ba1c4e43a2f6a95e7fc0d77"
+    },
+    {
+      "source": "src/app/top-up-result/page.tsx",
+      "sha256": "c8306d18b07b748900ad087bf9ed84440496d5dcc04750152d0c26a75e728ea5"
+    },
+    {
+      "source": "src/features/apps/services/apps.ts",
+      "sha256": "f7b0db835712ce899a386cb623175bead1a2e74c2c4f2063141dbad44033a186"
+    },
+    {
+      "source": "src/features/auth/components/AuthShell.tsx",
+      "sha256": "3ab41a4e9bf7084bd25acc2adeb8a052cb38aade218bec95cd53248a1777e15f"
+    },
+    {
+      "source": "src/features/auth/components/FormFields.tsx",
+      "sha256": "a7383c326e076471812f69998e017273dbf838c73cb48ec6fe3d8837cb3372ca"
+    },
+    {
+      "source": "src/features/auth/pages/LoginPage.tsx",
+      "sha256": "0336264fed66140cd6125ea178a823476e81ce440226f62c00ce23b3fd8cfcd8"
+    },
+    {
+      "source": "src/features/chat/private/components/ChatMobileHeader.tsx",
+      "sha256": "9d3f39ad2c4e342b6d474cafc6157664be705525a188606ecf67f9b308921e9b"
+    },
+    {
+      "source": "src/features/chat/private/services/conversations.ts",
+      "sha256": "b5557bfa2cce57cc116dbc4d2590cbd63d518170abd67c1f3785e8d31177f643"
+    },
+    {
+      "source": "src/features/configuration/services/memory.ts",
+      "sha256": "3300cd782d1a27c02f617eda5062a17f39a490e45a0a0b1c3de01bbb70985c04"
+    },
+    {
+      "source": "src/features/dashboard/components/DashboardLoadingOverlay.tsx",
+      "sha256": "1ca066a99b61cc1ddbbcccc29b1695ea9c5131c0bd8a7911e2276123bfb461d3"
+    },
+    {
+      "source": "src/features/dashboard/components/DashboardResponsiveShell.tsx",
+      "sha256": "b0c37c53c2390413af1e0f0745feb80df18fc9e94871c4feb43d17fdb4ad2865"
+    },
+    {
+      "source": "src/features/dashboard/components/Navbar.tsx",
+      "sha256": "fb9cbb33c793f6f565b4a9910777b760de6557b7143f6fefd27fdd7ff7117ebb"
+    },
+    {
+      "source": "src/features/dashboard/hooks/useDashboardLoaderSequence.ts",
+      "sha256": "c730852c6f216025deb713eb69792d4524122a95a153e9574d68c63009e216c7"
+    },
+    {
+      "source": "src/features/history/components/History.tsx",
+      "sha256": "8fb5f92579e0c242619b9eabaf96ca0fffb3f30202d2402c71be0181e7f0137f"
+    },
+    {
+      "source": "src/features/legal/legalDocuments.ts",
+      "sha256": "874a752a79b06754c007b387e7acc52f92b791be6d67ba792101759be5d1d8b6"
+    },
+    {
+      "source": "src/features/profile/hooks/useGiftCardQrScanner.ts",
+      "sha256": "55e20fa8f81759891640635905fa36ed869d53c9f15d271e8006eb08ab5e850b"
+    },
+    {
+      "source": "src/features/profile/services/usage.ts",
+      "sha256": "6f114e9580717c393a1e1a3878e1318c1e0e25b85a2c946ba27ec31939e43fd6"
+    },
+    {
+      "source": "src/features/profile/services/usageDetails.ts",
+      "sha256": "96663217feb3e5396441958c47d6c579b0c1f5ab4404089e28773d5fec1bb676"
+    },
+    {
+      "source": "src/features/profile/types/profilePanel.ts",
+      "sha256": "152fbcba50f34661f75bbc3e77eb2505cb844a96fd1df24db7f33b5748635bc8"
+    }
+  ],
+  "limits": "Mappings and source hashes define comparison inputs, never execution or acceptance. Live producer integration, iOS, physical devices, signing and provider delivery require separately available prerequisites and per-build evidence."
+}

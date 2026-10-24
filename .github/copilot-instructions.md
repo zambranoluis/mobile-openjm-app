@@ -3,6 +3,8 @@
 <!-- Source: AGENTS.md -->
 # OpenJM native working agreement
 
+For work through a selected base, use that base's entry and shared planning, execution, runtime coordination and verification methods with this repository's product requirements, commands, security constraints and test lanes. Local shared procedures below support independent work. Keep one selected task record and editable baseline; base-led records use the resolved project home. Actual host priority and explicit user instructions govern.
+
 This repository owns the Android and iOS application. Read the local owner below when its subject affects the request. References route decisions; they never expand authorization. Explicit user direction and platform instructions take precedence.
 
 | Decision | Owner |
@@ -18,7 +20,7 @@ This repository owns the Android and iOS application. Read the local owner below
 
 Implementation requests authorize scoped code, documentation and verification. Reviews and plans do not authorize implementation. Continue authorized work while optional questions are pending; wait only for a required decision or a requested stop. State an unsupported premise and its evidence when it changes the result.
 
-Mobile-only work stays here. Coordinated integration requires explicit scope covering each sibling: `../web-openjm-backend-api` owns Spring and its independent mobile gateway; `../web-openjm-frontend` owns the web client. Read siblings conditionally to resolve contracts. Never edit `../mnk-lab/openjm-api-docs`. Do not stage, commit, push, deploy, publish builds, or change client permissions or agent settings unless requested. Preserve unrelated files, artifacts and user-managed services; check listener ownership before starting a service.
+Mobile-only work stays here. Coordinated integration requires explicit scope covering each sibling: `../web-openjm-backend-api` owns Spring; its former mobile gateway is retired; `../web-openjm-frontend` owns the web client. Read siblings conditionally to resolve contracts. Never edit `../mnk-lab/openjm-api-docs`. Do not stage, commit, push, deploy, publish builds, or change client permissions or agent settings unless requested. Preserve unrelated files, artifacts and user-managed services; check listener ownership before starting a service.
 
 Keep durable execution records in `workspace/<work-item>/`: `investigation.md`, `plan.md`, `records/`, and permitted selected `assets/`. Keep disposable drafts in `local/`, runnable review material in `preview/`, and deliverables in `output/`; these three directories are ignored. Generated test evidence belongs in ignored `test-artifacts/runs/<run-id>/`. Approved visual baselines belong in `tests/baselines/`. Never store credentials, private account content or sensitive captures in tracked records. Shared handoffs must include accessible prerequisites; ignored files need separate sharing.
 
@@ -42,7 +44,7 @@ Standing requirements belong in their local canonical owners, never only in work
 
 ## Ownership
 
-`app/` contains thin Expo Router entries. `src/features/` owns product behavior; `src/ui/` owns reusable native controls and tokens; `src/platform/` owns device storage, notifications, files and external browser adapters; `src/api/` owns the versioned transport client and contract snapshot. Features consume explicit APIs, not sibling source or browser DOM/CSS. OpenJM owns models, quota, credits, plans and upstream decisions. Spring owns authentication, authorization, persistence, shared replay and jobs. The mobile gateway owns versioned transport adaptation; the app owns presentation, drafts and device lifecycle.
+`app/` contains thin Expo Router entries. `src/features/` owns product behavior; `src/ui/` owns reusable native controls and tokens; `src/platform/` owns device storage, notifications, files and external browser adapters; `src/api/` owns the versioned transport client and contract snapshot. Features consume explicit APIs, not sibling source or browser DOM/CSS. OpenJM owns models, quota, credits, plans and upstream decisions. Spring owns authentication, authorization, persistence, shared replay and jobs. A compatible backend-owned native gateway would own versioned transport adaptation; that producer is currently unavailable; the app owns presentation, drafts and device lifecycle.
 
 Keep TypeScript strict. Validate untrusted payloads at the boundary, preserve status/code/state distinctions, authorize before side effects, and avoid automatic retries of non-idempotent operations. Refresh attempts are serialized. Access credentials stay in memory; refresh credentials use SecureStore. Isolate local drafts by authoritative account ID. Installation context is stable across upgrades and network changes. Never embed proxy secrets, upstream keys or credentials in public Expo configuration, builds, logs or recorded fixtures.
 
@@ -50,9 +52,11 @@ Streaming must handle split UTF-8, split lines, CRLF, event framing, resume IDs,
 
 ## Verification
 
+Current Windows source limitation: the conversation feature contains both `ResponseDetails.tsx` and `responseDetails.ts`. Their case-only basename difference causes the component import to resolve to the helper on Windows, blocking normal lint/typechecking. The conversation owner must reconcile those module identities before claiming a passing application gate. Maintained-input/helper checks do not establish that repair or native build readiness.
+
 Every change needs diff review and `git diff --check`. Documentation changes need `npm run docs:check`; regenerate provider adapters and check drift after canonical changes. Application changes need `npm run lint`, `npm run typecheck`, `npm test`, `npm run test:unit`, `npm run contract:check`, and the relevant installed-app lane. Dependencies/configuration need `npx expo install --check`, `npx expo-doctor`, and an export or native build exercising the changed mechanism. Use `npm ci` to reproduce pinned installs.
 
-Security and cross-repository changes also need the owning gateway and Spring tests and affected web checks. Concurrency/replay acceptance requires real Redis; fixture tests are not persistence proof. A migration needs migration and persistence coverage. Never lower a gate or label a blocked check passed. Native visual and lifecycle claims require emulator/device evidence on both platforms as [tests/README.md](../tests/README.md) defines.
+Security and coordinated cross-repository changes need the available producer/Spring tests and affected web checks. The retired gateway has no current executable test lane; missing producer compatibility blocks live integration. Concurrency/replay acceptance requires real Redis; fixture tests are not persistence proof. A migration needs migration and persistence coverage. Never lower a gate or label a blocked check passed. Native visual and lifecycle claims require emulator/device evidence on both platforms as [tests/README.md](../tests/README.md) defines.
 
 
 <!-- Source: AGENTS/NATIVE.md -->
